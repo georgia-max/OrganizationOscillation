@@ -1,0 +1,6 @@
+numpy == 1.24.3
+pandas == 2.1.0
+jupyter
+pysd
+matplotlib 
+netCDF4
