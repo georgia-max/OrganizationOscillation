@@ -4,3 +4,4 @@ jupyter
 pysd
 matplotlib 
 netCDF4
+seaborn 
