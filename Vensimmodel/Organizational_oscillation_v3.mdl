@@ -1,0 +1,308 @@
+{UTF-8}
+Change in Safety Focus=
+	"Effect of Non-Safety Performance on Chge SF"/Time to adjust focus
+	~	
+	~		|
+
+"Change in Non-Safety Focus"=
+	Safety Performance Gap/Time to adjust focus
+	~	
+	~		|
+
+"Effect of Non-Safety Performance on Chge SF"=
+	"Non-Safety Performance"
+	~	
+	~		|
+
+Safety Focus= INTEG (
+	Change in Safety Focus,
+		0)
+	~	
+	~		|
+
+"Non-Safety focus"= INTEG (
+	"Change in Non-Safety Focus",
+		1)
+	~	
+	~		|
+
+Safety Performance Gap=
+	Serious Errors-Safety Focus
+	~	
+	~		|
+
+Pulse Quantity 1=
+	0
+	~	
+	~		|
+
+Pulse repeat time=
+	0
+	~	
+	~		|
+
+Pulse end time=
+	25
+	~	
+	~		|
+
+Pulse start time=
+	1
+	~	
+	~		|
+
+input=
+	STEP(Step Height,Step Time)+
+	(Pulse Quantity 1/TIME STEP)*PULSE(Pulse Time,Pulse Duration
+	)+
+	RAMP(Ramp Slope,Ramp Start Time,Ramp End Time)
+	+ PULSE TRAIN(Pulse start time , Pulse Duration , Pulse repeat time , Pulse end time\
+		 )*(Pulse Quantity/TIME STEP)
+	~	
+	~		|
+
+Pulse Duration=
+	0
+	~	
+	~		|
+
+Serious Errors=
+	initial Safety Threshold+input
+	~	 [0,?]
+	~		|
+
+Ramp End Time=
+	0
+	~	
+	~		|
+
+Ramp Slope=
+	0
+	~	
+	~		|
+
+Ramp Start Time=
+	0
+	~	
+	~		|
+
+initial Safety Threshold=
+	0
+	~	
+	~		|
+
+Step Height=
+	0
+	~	
+	~		|
+
+Pulse Quantity=
+	0
+	~	
+	~		|
+
+Pulse Time=
+	0
+	~	
+	~		|
+
+Step Time=
+	0
+	~	
+	~		|
+
+Time to adjust focus=
+	2
+	~	Month [0,20,2]
+	~		|
+
+Normal NonSafety performance=
+	0
+	~	
+	~		|
+
+"Non-Safety Performance"=
+	"Non-Safety focus"- Normal NonSafety performance
+	~	
+	~		|
+
+********************************************************
+	.Control
+********************************************************~
+		Simulation Control Parameters
+	|
+
+FINAL TIME  = 50
+	~	Year
+	~	The final time for the simulation.
+	|
+
+INITIAL TIME  = 0
+	~	Year
+	~	The initial time for the simulation.
+	|
+
+SAVEPER  = 
+        TIME STEP
+	~	Year [0,?]
+	~	The frequency with which output is stored.
+	|
+
+TIME STEP  = 0.5
+	~	Year [0,?]
+	~	The time step for the simulation.
+	|
+
+\\\---/// Sketch information - do not modify anything except names
+V300  Do not put anything below this section - it will be ignored
+*View 1
+$192-192-192,0,Times New Roman|12||0-0-0|0-0-0|0-0-255|255-255-255|255-255-255|96,96,100,0
+10,1,"Non-Safety focus",343,59,59,25,3,3,0,40,0,0,0,0,0-0-0,0-0-0,Arial|14||0-0-0,0,0,0,0,0,0
+10,2,Safety Focus,287,390,67,27,3,131,0,40,0,0,0,0,0-0-0,0-0-0,Arial|14||0-0-0,0,0,0,0,0,0
+12,3,48,143,55,25,15,0,3,0,40,-1,0,0,0,0-0-0,0-0-0,Arial|14||0-0-0,0,0,0,0,0,0
+1,4,6,1,4,0,0,22,0,0,0,-1--1--1,,1|(261,55)|
+1,5,6,3,100,0,0,22,0,0,0,-1--1--1,,1|(196,55)|
+11,6,0,232,55,7,8,34,3,0,0,1,0,0,0,0,0,0,0,0,0
+10,7,"Change in Non-Safety Focus",232,85,58,22,40,3,0,40,-1,0,0,0,0-0-0,0-0-0,Arial|14||0-0-0,0,0,0,0,0,0
+12,8,48,47,389,25,15,0,3,0,40,-1,0,0,0,0-0-0,0-0-0,Arial|14||0-0-0,0,0,0,0,0,0
+1,9,11,2,4,0,0,22,0,0,0,-1--1--1,,1|(182,389)|
+1,10,11,8,100,0,0,22,0,0,0,-1--1--1,,1|(101,389)|
+11,11,0,137,389,7,8,34,3,0,0,1,0,0,0,0,0,0,0,0,0
+10,12,Change in Safety Focus,137,416,57,19,40,131,0,40,-1,0,0,0,0-0-0,0-0-0,Arial|14||0-0-0,0,0,0,0,0,0
+10,13,"Non-Safety Performance",-16,90,74,24,8,3,0,40,-1,0,0,0,0-0-0,0-0-0,Arial|14||0-0-0,0,0,0,0,0,0
+10,14,Safety Performance Gap,243,182,70,20,8,3,0,40,-1,0,0,0,0-0-0,0-0-0,Arial|14||0-0-0,0,0,0,0,0,0
+10,15,Serious Errors,415,148,63,11,8,3,0,40,-1,0,0,0,0-0-0,0-0-0,Arial|14||0-0-0,0,0,0,0,0,0
+1,16,2,14,1,0,45,0,0,64,0,-1--1--1,,1|(335,276)|
+1,17,15,14,0,0,0,0,0,192,0,-1--1--1,,1|(0,0)|
+1,18,14,7,0,0,43,0,0,192,0,-1--1--1,,1|(0,0)|
+1,19,1,13,1,0,43,0,0,192,0,-1--1--1,,1|(208,10)|
+10,20,Time to adjust focus,140,246,75,11,8,3,0,40,-1,0,0,0,251-2-7,0-0-0,Arial|14||251-2-7,0,0,0,0,0,0
+1,21,20,7,1,0,0,0,0,192,0,-1--1--1,,1|(161,190)|
+12,22,0,1407,87,183,121,8,15,0,32,2,0,0,0,0-0-0,0-0-0,Arial|||0-0-0,0,0,0,0,0,0
+"Non-Safety focus",Graph
+12,23,0,1031,113,186,127,8,15,0,32,2,0,0,0,0-0-0,0-0-0,Arial|||0-0-0,0,0,0,0,0,0
+Safety Focus,Graph
+1,24,13,64,1,0,43,0,0,192,0,-1--1--1,,1|(-80,214)|
+10,25,Normal NonSafety performance,-128,10,69,19,8,3,0,40,-1,0,0,0,0-0-0,0-0-0,Arial|14||251-2-7,0,0,0,0,0,0
+1,26,25,13,0,0,0,0,0,192,0,-1--1--1,,1|(0,0)|
+12,27,0,264,1127,162,156,8,15,0,32,1,0,0,0,0-0-0,0-0-0,Arial|||0-0-0,0,0,0,0,0,0
+Focus_
+12,28,0,-125,-77,31,31,8,0,0,0,-1,0,0,0,0,0,0,0,0,0
+10,29,input,577,267,20,11,8,3,2,32,-1,0,0,0,0-0-0,0-0-0,Arial|||0-0-0,0,0,0,0,0,0
+10,30,initial Safety Threshold,548,70,47,19,8,3,2,32,-1,0,0,0,0-0-0,0-0-0,Arial|||0-0-0,0,0,0,0,0,0
+1,31,29,15,0,2,0,0,0,192,0,-1--1--1,,1|(0,0)|
+1,32,30,15,0,2,0,0,0,192,0,-1--1--1,,1|(0,0)|
+10,33,Pulse Quantity,568,180,55,11,8,3,2,32,-1,0,0,0,0-0-0,0-0-0,Arial|||0-0-0,0,0,0,0,0,0
+1,34,33,29,0,2,0,0,0,64,0,-1--1--1,,1|(0,0)|
+10,35,Pulse Time,588,364,43,11,8,3,2,32,-1,0,0,0,0-0-0,0-0-0,Arial|||0-0-0,0,0,0,0,0,0
+1,36,35,29,0,2,0,0,0,64,0,-1--1--1,,1|(0,0)|
+10,37,Ramp End Time,663,353,60,11,8,3,2,32,-1,0,0,0,0-0-0,0-0-0,Arial|||0-0-0,0,0,0,0,0,0
+1,38,37,29,0,2,0,0,0,64,0,-1--1--1,,1|(0,0)|
+10,39,Ramp Slope,561,325,47,11,8,3,2,32,-1,0,0,0,0-0-0,0-0-0,Arial|||0-0-0,0,0,0,0,0,0
+1,40,39,29,0,2,0,0,0,64,0,-1--1--1,,1|(0,0)|
+10,41,Ramp Start Time,496,337,63,11,8,3,2,32,-1,0,0,0,0-0-0,0-0-0,Arial|||0-0-0,0,0,0,0,0,0
+1,42,41,29,0,2,0,0,0,64,0,-1--1--1,,1|(0,0)|
+10,43,Step Height,476,249,45,11,8,3,2,32,-1,0,0,0,0-0-0,0-0-0,Arial|||0-0-0,0,0,0,0,0,0
+1,44,43,29,0,2,0,0,0,64,0,-1--1--1,,1|(0,0)|
+10,45,Step Time,479,299,39,11,8,3,2,32,-1,0,0,0,0-0-0,0-0-0,Arial|||0-0-0,0,0,0,0,0,0
+1,46,45,29,0,2,0,0,0,64,0,-1--1--1,,1|(0,0)|
+10,47,Time,733,99,29,11,8,2,2,35,-1,0,0,0,128-128-128,0-0-0,Arial|||128-128-128,0,0,0,0,0,0
+10,48,TIME STEP,491,518,55,11,8,2,0,34,-1,0,0,0,128-128-128,0-0-0,Arial|||128-128-128,0,0,0,0,0,0
+1,49,48,29,0,2,0,0,0,64,0,-1--1--1,,1|(0,0)|
+12,50,0,52,189,28,28,5,7,0,40,-1,0,0,0,0-0-0,0-0-0,Arial|14||0-0-0,0,0,0,0,0,0
+B
+12,51,0,1415,612,179,129,8,15,0,32,1,0,0,0,0-0-0,0-0-0,Arial|||0-0-0,0,0,0,0,0,0
+Learning_and_forgetting_
+12,52,0,1412,344,183,127,8,15,0,0,2,0,0,0,0,0,0,0,0,0
+Serious Errors,Graph
+10,53,Pulse Duration,735,247,56,11,8,3,2,32,-1,0,0,0,0-0-0,0-0-0,Arial|||0-0-0,0,0,0,0,0,0
+1,54,53,29,0,2,0,0,0,192,0,-1--1--1,,1|(0,0)|
+10,55,Pulse end time,751,348,56,11,8,3,2,32,-1,0,0,0,0-0-0,0-0-0,Arial|||0-0-0,0,0,0,0,0,0
+1,56,55,29,0,2,0,0,0,64,0,-1--1--1,,1|(0,0)|
+10,57,Pulse repeat time,684,167,65,11,8,3,2,32,-1,0,0,0,0-0-0,0-0-0,Arial|||0-0-0,0,0,0,0,0,0
+1,58,57,29,0,2,0,0,0,64,0,-1--1--1,,1|(0,0)|
+10,59,Pulse start time,752,307,59,11,8,3,2,32,-1,0,0,0,0-0-0,0-0-0,Arial|||0-0-0,0,0,0,0,0,0
+1,60,59,29,0,2,0,0,0,64,0,-1--1--1,,1|(0,0)|
+10,61,Pulse Quantity 1,632,91,61,11,8,3,2,32,-1,0,0,0,0-0-0,0-0-0,Arial|||0-0-0,0,0,0,0,0,0
+1,62,61,29,0,2,0,0,0,64,0,-1--1--1,,1|(0,0)|
+12,63,0,680,1097,203,123,8,15,0,0,2,0,0,0,0,0,0,0,0,0
+Safety Performance Gap,Graph
+10,64,"Effect of Non-Safety Performance on Chge SF",-67,297,91,28,8,131,0,40,-1,0,0,0,0-0-0,0-0-0,Arial|14||0-0-0,0,0,0,0,0,0
+1,65,64,12,0,0,43,0,0,192,0,-1--1--1,,1|(0,0)|
+1,66,20,12,1,0,0,0,0,192,0,-1--1--1,,1|(137,320)|
+12,67,0,1010,434,212,132,8,15,0,0,1,0,0,0,0,0,0,0,0,0
+Performance
+\\\---/// Sketch information - do not modify anything except names
+V300  Do not put anything below this section - it will be ignored
+*View 2
+$192-192-192,0,Times New Roman|12||0-0-0|0-0-0|0-0-255|-1--1--1|255-255-255|96,96,100,0
+///---\\\
+:GRAPH Focus_
+:TITLE Organizational oscillation between safety and non-safety
+:SCALE
+:VAR NonSafety Focus
+:DATASET 
+:LINE-WIDTH 2
+:VAR Safety focus
+:DATASET 
+:LINE-WIDTH 2
+
+:GRAPH Learning_and_forgetting_
+:TITLE Learning and forgetting
+:SCALE
+:VAR Change in Non Safety Focus
+:DATASET 
+:LINE-WIDTH 2
+:VAR Change in Safety Focus
+:DATASET 
+:LINE-WIDTH 2
+
+:GRAPH Performance
+:TITLE Performance
+:SCALE
+:VAR Safety Performance Gap
+:DATASET 
+:LINE-WIDTH 2
+:VAR "Non-Safety Performance"
+:DATASET 
+:LINE-WIDTH 2
+:L<%^E!@
+1:test_v1.vdfx
+4:Time
+5:"Non-Safety Performance"
+9:test_v1
+19:100,0
+24:0
+25:50
+26:50
+23:0
+15:0,0,0,0,0,0
+27:0,
+34:0,
+42:1
+72:0
+73:0
+35:Date
+36:YYYY-MM-DD
+37:2000
+38:1
+39:1
+40:2
+41:0
+95:0
+96:0
+97:0
+77:0
+78:0
+102:0
+93:0
+94:0
+92:0
+91:0
+90:0
+87:0
+75:
+43:
+103:8,8,8,3,8
+105:0,0,0,0,0,0,0,0,0,0
+104:Times New Roman|12||0-0-0|0-0-0|-1--1--1|0-0-255|192-192-192|-1--1--1
