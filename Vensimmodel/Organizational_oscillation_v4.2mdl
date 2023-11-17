@@ -1,4 +1,113 @@
 {UTF-8}
+PINK NOISE macro output=A FUNCTION OF(PINK NOISE macro output,correlation time,mean,seed\
+		,std deviation) ~~|
+PINK NOISE macro output=
+	PINK NOISE (mean,std deviation,correlation time,seed)
+	~	
+	~		|
+
+PINK NOISE structure  = A FUNCTION OF( updating pink noise) ~~|
+PINK NOISE structure = INTEG(updating pink noise,mean+std deviation*RANDOM NORMAL(-6,\
+		6,0,1,seed))
+	~	widgets/week
+	~	Contributed by Ed Anderson, MIT/U. Texas - Austin
+		Description:  The pink noise molecule described generates a simple random 
+		series with autocorrelation.  This is useful in representing time series, 
+		like rainfall from day to day, in which today's value has some correlation 
+		with what happened yesterday.  This particular formulation will also have 
+		properties such as standard deviation and mean that are insensitive both to 
+		the time step and the correlation (smoothing) time.  Finally, the output as 
+		a whole and the difference in values between any two days is guaranteed to 
+		be Gaussian (normal) in distribution.
+		
+		Behavior:  Pink noise series will have both a historical and a random 
+		component during each period.  The relative "trend-to-noise" ratio is 
+		controlled by the length of the correlation time. As the correlation time 
+		approaches zero, the pink noise output will become more independent of its 
+		historical value and more "noisy."  On the other hand, as the correlation 
+		time approaches infinity, the pink noise output will approximate a 
+		continuous time random walk or Brownian motion.  Displayed above are two 
+		time series with correlation times of 1 and 8 months.  While both series 
+		have approximately the same standard deviation, the 1-month correlation time 
+		series is less smooth from period to period than the 8-month series, which 
+		is characterized by "sustained" swings in a given direction.  Note that this 
+		behavior will be independent of the time-step.
+		
+		The "pink" in pink noise refers to the power spectrum of the output.  A time 
+		series in which each period's observation is independent of the past is 
+		characterized by a flat or "white" power spectrum.  Smoothing a time series 
+		attenuates the higher or "bluer" frequencies of the power spectrum, leaving 
+		the lower or "redder" frequencies relatively stronger in the output.
+		
+		Caveats:  This assumes the use of Euler integration with a time step of no 
+		more than 1/4 of the correlation time.  Very long correlation times should be 
+		avoided also as the multiplication in the scaled white noise will become 
+		progressively less accurate.
+		
+		Technical Notes:  This particular form of pink noise is superior to that of 
+		Britting presented in Richardson and Pugh (1981) because the Gaussian 
+		(Normal) distribution of the output does not depend on the Central Limit 
+		Theorem.  (Dynamo did not have a Gaussian random number generator and hence 
+		R&P had to invoke the CLM to get a normal distribution.)  Rather, this 
+		molecule's normal output is a result of the observations being a sum of 
+		Gaussian draws.  Hence, the series over short intervals should better 
+		approximate normality than the macro in R&P. 
+		
+		MEAN: This is the desired mean for the pink noise.
+		STD DEVIATION: This is the desired standard deviation for the pink noise.
+		CORRELATION TIME: This is the smooth time for the noise, or for the more technically \
+		minded this is the inverse of the filter's cut-off frequency in radians.
+		
+		Updated by Tom Fiddaman, 2010, to include a random initial value,
+		correct units, and use TIME STEP$ keyword
+	|
+
+mean=
+	10
+	~	widgets/week [0,?]
+	~		|
+
+correlation time=
+	10
+	~	week [1,100]
+	~		|
+
+std deviation=
+	5
+	~	widgets/week [0,?]
+	~		|
+
+updating pink noise = gap/correlation time
+	~	widgets/week/week
+	~		|
+
+seed=
+	1
+	~	dmnl [1,10000,1]
+	~		|
+
+scaled white noise=
+	mean+white noise*std deviation*SQRT((2-TIME STEP/correlation time
+	)/(TIME STEP/correlation time))
+	~	widgets/week
+	~	This adjusts the standard deviation of the white noise to compensate for the time \
+		step and the
+		         correlation time to produce the appropriate pink noise std \
+		deviation.
+	|
+
+white noise = RANDOM NORMAL(-6,6,0,1,seed)
+	~	dmnl
+	~	This is an independent, identically distributed random quantity drawn every time \
+		step.  The distribution is gaussian with mean = 0 and variance = 1.
+		Note that RANDOM NORMAL is truncated +/- 6 standard deviations here.
+		For Vensim 1.62 syntax, remove the arguments to RANDOM NORMAL.
+	|
+
+gap = scaled white noise-PINK NOISE structure
+	~	widgets/week
+	~		|
+
 Acceptable Safety Performance=
 	5
 	~	 [0,?]
@@ -173,100 +282,134 @@ TIME STEP  = 0.5
 V300  Do not put anything below this section - it will be ignored
 *View 1
 $192-192-192,0,Times New Roman|12||0-0-0|0-0-0|0-0-255|255-255-255|255-255-255|96,96,100,0
-10,1,NonSafety Focus,494,89,60,27,3,3,0,56,0,0,0,0,0-0-0,0-0-0,Arial|16||0-0-0,0,0,0,0,0,0
-10,2,Safety Focus,582,414,67,27,3,131,0,56,0,0,0,0,0-0-0,0-0-0,Arial|16||0-0-0,0,0,0,0,0,0
-12,3,48,787,88,25,15,0,3,0,56,-1,0,0,0,0-0-0,0-0-0,Arial|16||0-0-0,0,0,0,0,0,0
-1,4,6,1,4,0,0,22,0,0,0,-1--1--1,,1|(597,88)|
-1,5,6,3,100,0,0,22,0,0,0,-1--1--1,,1|(708,88)|
-11,6,0,648,88,7,8,34,3,0,0,1,0,0,0,0,0,0,0,0,0
-10,7,Change in NonSafety Focus,648,127,71,31,40,3,0,56,-1,0,0,0,0-0-0,0-0-0,Arial|16||0-0-0,0,0,0,0,0,0
-12,8,48,315,429,25,15,0,3,0,56,-1,0,0,0,0-0-0,0-0-0,Arial|16||0-0-0,0,0,0,0,0,0
-1,9,11,2,4,0,0,22,0,0,0,-1--1--1,,1|(469,429)|
-1,10,11,8,100,0,0,22,0,0,0,-1--1--1,,1|(375,429)|
-11,11,0,417,429,7,8,34,3,0,0,1,0,0,0,0,0,0,0,0,0
-10,12,Change in Safety Focus,417,456,57,19,40,131,0,56,-1,0,0,0,0-0-0,0-0-0,Arial|16||0-0-0,0,0,0,0,0,0
-10,13,NonSafety Performance,264,130,74,24,8,3,0,56,-1,0,0,0,0-0-0,0-0-0,Arial|16||0-0-0,0,0,0,0,0,0
-10,14,Error Margin,710,275,70,20,8,3,0,56,-1,0,0,0,0-0-0,0-0-0,Arial|16||0-0-0,0,0,0,0,0,0
-10,15,Acceptable Safety Performance,824,149,69,24,8,3,0,58,-1,0,0,0,0-0-0,0-0-0,Arial|16||251-2-7,0,0,0,0,0,0
-1,16,2,14,1,0,45,0,0,64,0,-1--1--1,,1|(681,378)|
-1,17,14,7,1,0,43,0,0,192,0,-1--1--1,,1|(716,222)|
-1,18,1,13,1,0,43,0,0,192,0,-1--1--1,,1|(402,65)|
-10,19,Time to adjust focus,514,310,75,11,8,3,0,58,-1,0,0,0,251-2-7,0-0-0,Arial|16||251-2-7,0,0,0,0,0,0
+10,1,NonSafety Focus,514,139,60,27,3,3,0,56,0,0,0,0,0-0-0,0-0-0,Arial|16||0-0-0,0,0,0,0,0,0
+10,2,Safety Focus,602,464,67,27,3,131,0,56,0,0,0,0,0-0-0,0-0-0,Arial|16||0-0-0,0,0,0,0,0,0
+12,3,48,807,138,25,15,0,3,0,56,-1,0,0,0,0-0-0,0-0-0,Arial|16||0-0-0,0,0,0,0,0,0
+1,4,6,1,4,0,0,22,0,0,0,-1--1--1,,1|(617,138)|
+1,5,6,3,100,0,0,22,0,0,0,-1--1--1,,1|(728,138)|
+11,6,0,668,138,7,8,34,3,0,0,1,0,0,0,0,0,0,0,0,0
+10,7,Change in NonSafety Focus,668,177,71,31,40,3,0,56,-1,0,0,0,0-0-0,0-0-0,Arial|16||0-0-0,0,0,0,0,0,0
+12,8,48,335,479,25,15,0,3,0,56,-1,0,0,0,0-0-0,0-0-0,Arial|16||0-0-0,0,0,0,0,0,0
+1,9,11,2,4,0,0,22,0,0,0,-1--1--1,,1|(489,479)|
+1,10,11,8,100,0,0,22,0,0,0,-1--1--1,,1|(395,479)|
+11,11,0,437,479,7,8,34,3,0,0,1,0,0,0,0,0,0,0,0,0
+10,12,Change in Safety Focus,437,506,57,19,40,131,0,56,-1,0,0,0,0-0-0,0-0-0,Arial|16||0-0-0,0,0,0,0,0,0
+10,13,NonSafety Performance,284,180,74,24,8,3,0,56,-1,0,0,0,0-0-0,0-0-0,Arial|16||0-0-0,0,0,0,0,0,0
+10,14,Error Margin,730,325,70,20,8,3,0,56,-1,0,0,0,0-0-0,0-0-0,Arial|16||0-0-0,0,0,0,0,0,0
+10,15,Acceptable Safety Performance,844,199,69,24,8,3,0,58,-1,0,0,0,0-0-0,0-0-0,Arial|16||251-2-7,0,0,0,0,0,0
+1,16,2,14,1,0,45,0,0,64,0,-1--1--1,,1|(701,428)|
+1,17,14,7,1,0,43,0,0,192,0,-1--1--1,,1|(736,272)|
+1,18,1,13,1,0,43,0,0,192,0,-1--1--1,,1|(422,115)|
+10,19,Time to adjust focus,534,360,75,11,8,3,0,58,-1,0,0,0,251-2-7,0-0-0,Arial|16||251-2-7,0,0,0,0,0,0
 1,20,19,7,0,0,0,0,0,192,0,-1--1--1,,1|(0,0)|
-12,21,0,1890,113,183,121,8,15,0,32,2,0,0,0,0-0-0,0-0-0,Arial|||0-0-0,0,0,0,0,0,0
+12,21,0,1910,163,183,121,8,15,0,32,2,0,0,0,0-0-0,0-0-0,Arial|||0-0-0,0,0,0,0,0,0
 NonSafety Focus,Graph
-12,22,0,1510,113,192,121,8,15,0,32,2,0,0,0,0-0-0,0-0-0,Arial|||0-0-0,0,0,0,0,0,0
+12,22,0,1530,163,192,121,8,15,0,32,2,0,0,0,0-0-0,0-0-0,Arial|||0-0-0,0,0,0,0,0,0
 Safety Focus,Graph
-1,23,13,60,1,0,43,0,0,192,0,-1--1--1,,1|(200,254)|
-10,24,Normal NonSafety performance,163,37,74,30,8,3,0,58,-1,0,0,0,0-0-0,0-0-0,Arial|16||251-2-7,0,0,0,0,0,0
+1,23,13,60,1,0,43,0,0,192,0,-1--1--1,,1|(220,304)|
+10,24,Normal NonSafety performance,183,87,74,30,8,3,0,58,-1,0,0,0,0-0-0,0-0-0,Arial|16||251-2-7,0,0,0,0,0,0
 1,25,24,13,0,0,0,0,0,192,0,-1--1--1,,1|(0,0)|
-12,26,0,440,667,262,159,8,15,0,32,1,0,0,0,0-0-0,0-0-0,Arial|||0-0-0,0,0,0,0,0,0
+12,26,0,460,717,262,159,8,15,0,32,1,0,0,0,0-0-0,0-0-0,Arial|||0-0-0,0,0,0,0,0,0
 Focus_
-10,27,function,1023,315,40,17,8,3,2,32,-1,0,0,0,0-0-0,0-0-0,Arial|||0-0-0,0,0,0,0,0,0
-10,28,Constant,1066,66,47,19,8,3,2,32,-1,0,0,0,0-0-0,0-0-0,Arial|||0-0-0,0,0,0,0,0,0
-10,29,Pulse Quantity,1032,448,55,11,8,3,2,32,-1,0,0,0,0-0-0,0-0-0,Arial|||0-0-0,0,0,0,0,0,0
+10,27,function,1043,365,40,17,8,3,2,32,-1,0,0,0,0-0-0,0-0-0,Arial|||0-0-0,0,0,0,0,0,0
+10,28,Constant,1086,116,47,19,8,3,2,32,-1,0,0,0,0-0-0,0-0-0,Arial|||0-0-0,0,0,0,0,0,0
+10,29,Pulse Quantity,1052,498,55,11,8,3,2,32,-1,0,0,0,0-0-0,0-0-0,Arial|||0-0-0,0,0,0,0,0,0
 1,30,29,27,0,2,0,0,0,64,0,-1--1--1,,1|(0,0)|
-10,31,Pulse Time,878,228,43,11,8,3,2,32,-1,0,0,0,0-0-0,0-0-0,Arial|||0-0-0,0,0,0,0,0,0
+10,31,Pulse Time,898,278,43,11,8,3,2,32,-1,0,0,0,0-0-0,0-0-0,Arial|||0-0-0,0,0,0,0,0,0
 1,32,31,27,0,2,0,0,0,64,0,-1--1--1,,1|(0,0)|
-10,33,Ramp End Time,1082,404,60,11,8,3,2,32,-1,0,0,0,0-0-0,0-0-0,Arial|||0-0-0,0,0,0,0,0,0
+10,33,Ramp End Time,1102,454,60,11,8,3,2,32,-1,0,0,0,0-0-0,0-0-0,Arial|||0-0-0,0,0,0,0,0,0
 1,34,33,27,0,2,0,0,0,64,0,-1--1--1,,1|(0,0)|
-10,35,Ramp Slope,871,359,47,11,8,3,2,32,-1,0,0,0,0-0-0,0-0-0,Arial|||0-0-0,0,0,0,0,0,0
+10,35,Ramp Slope,891,409,47,11,8,3,2,32,-1,0,0,0,0-0-0,0-0-0,Arial|||0-0-0,0,0,0,0,0,0
 1,36,35,27,0,2,0,0,0,64,0,-1--1--1,,1|(0,0)|
-10,37,Ramp Start Time,915,388,63,11,8,3,2,32,-1,0,0,0,0-0-0,0-0-0,Arial|||0-0-0,0,0,0,0,0,0
+10,37,Ramp Start Time,935,438,63,11,8,3,2,32,-1,0,0,0,0-0-0,0-0-0,Arial|||0-0-0,0,0,0,0,0,0
 1,38,37,27,0,2,0,0,0,64,0,-1--1--1,,1|(0,0)|
-10,39,Step Height,897,264,45,11,8,3,2,32,-1,0,0,0,0-0-0,0-0-0,Arial|||0-0-0,0,0,0,0,0,0
+10,39,Step Height,917,314,45,11,8,3,2,32,-1,0,0,0,0-0-0,0-0-0,Arial|||0-0-0,0,0,0,0,0,0
 1,40,39,27,0,2,0,0,0,64,0,-1--1--1,,1|(0,0)|
-10,41,Step Time,870,323,39,11,8,3,2,32,-1,0,0,0,0-0-0,0-0-0,Arial|||0-0-0,0,0,0,0,0,0
+10,41,Step Time,890,373,39,11,8,3,2,32,-1,0,0,0,0-0-0,0-0-0,Arial|||0-0-0,0,0,0,0,0,0
 1,42,41,27,0,2,0,0,0,64,0,-1--1--1,,1|(0,0)|
-10,43,Time,1045,532,29,11,8,2,2,35,-1,0,0,0,128-128-128,0-0-0,Arial|||128-128-128,0,0,0,0,0,0
-10,44,TIME STEP,894,552,55,11,8,2,0,58,-1,0,0,0,128-128-128,0-0-0,Arial|16||128-128-128,0,0,0,0,0,0
+10,43,Time,1065,582,29,11,8,2,2,35,-1,0,0,0,128-128-128,0-0-0,Arial|||128-128-128,0,0,0,0,0,0
+10,44,TIME STEP,914,602,55,11,8,2,0,58,-1,0,0,0,128-128-128,0-0-0,Arial|16||128-128-128,0,0,0,0,0,0
 1,45,44,27,0,2,0,0,0,64,0,-1--1--1,,1|(0,0)|
-12,46,0,388,238,25,25,5,7,0,56,-1,0,0,0,0-0-0,0-0-0,Arial|16|B|0-0-0,0,0,0,0,0,0
+12,46,0,408,288,25,25,5,7,0,56,-1,0,0,0,0-0-0,0-0-0,Arial|16|B|0-0-0,0,0,0,0,0,0
 B
-12,47,0,1895,634,179,129,8,15,0,32,1,0,0,0,0-0-0,0-0-0,Arial|||0-0-0,0,0,0,0,0,0
+12,47,0,1915,684,179,129,8,15,0,32,1,0,0,0,0-0-0,0-0-0,Arial|||0-0-0,0,0,0,0,0,0
 Learning_and_forgetting_
-12,48,0,1892,369,183,127,8,15,0,0,2,0,0,0,0,0,0,0,0,0
+12,48,0,1912,419,183,127,8,15,0,0,2,0,0,0,0,0,0,0,0,0
 Acceptable Safety Performance,Graph
-10,49,Pulse Duration,1163,302,56,11,8,3,2,32,-1,0,0,0,0-0-0,0-0-0,Arial|||0-0-0,0,0,0,0,0,0
+10,49,Pulse Duration,1183,352,56,11,8,3,2,32,-1,0,0,0,0-0-0,0-0-0,Arial|||0-0-0,0,0,0,0,0,0
 1,50,49,27,0,2,0,0,0,192,0,-1--1--1,,1|(0,0)|
-10,51,Pulse end time,1170,399,56,11,8,3,2,32,-1,0,0,0,0-0-0,0-0-0,Arial|||0-0-0,0,0,0,0,0,0
+10,51,Pulse end time,1190,449,56,11,8,3,2,32,-1,0,0,0,0-0-0,0-0-0,Arial|||0-0-0,0,0,0,0,0,0
 1,52,51,27,0,2,0,0,0,64,0,-1--1--1,,1|(0,0)|
-10,53,Pulse repeat time,1149,270,65,11,8,3,2,32,-1,0,0,0,0-0-0,0-0-0,Arial|||0-0-0,0,0,0,0,0,0
+10,53,Pulse repeat time,1169,320,65,11,8,3,2,32,-1,0,0,0,0-0-0,0-0-0,Arial|||0-0-0,0,0,0,0,0,0
 1,54,53,27,0,2,0,0,0,64,0,-1--1--1,,1|(0,0)|
-10,55,Pulse start time,1171,358,59,11,8,3,2,32,-1,0,0,0,0-0-0,0-0-0,Arial|||0-0-0,0,0,0,0,0,0
+10,55,Pulse start time,1191,408,59,11,8,3,2,32,-1,0,0,0,0-0-0,0-0-0,Arial|||0-0-0,0,0,0,0,0,0
 1,56,55,27,0,2,0,0,0,64,0,-1--1--1,,1|(0,0)|
-10,57,Pulse Quantity 1,935,193,61,11,8,3,2,32,-1,0,0,0,0-0-0,0-0-0,Arial|||0-0-0,0,0,0,0,0,0
+10,57,Pulse Quantity 1,955,243,61,11,8,3,2,32,-1,0,0,0,0-0-0,0-0-0,Arial|||0-0-0,0,0,0,0,0,0
 1,58,57,27,0,2,0,0,0,64,0,-1--1--1,,1|(0,0)|
-12,59,0,1062,823,203,123,8,15,0,0,2,0,0,0,0,0,0,0,0,0
+12,59,0,1082,873,203,123,8,15,0,0,2,0,0,0,0,0,0,0,0,0
 Error Margin,Graph
-10,60,Pressure to focus on Safety,213,337,91,28,8,131,0,56,-1,0,0,0,0-0-0,0-0-0,Arial|16||0-0-0,0,0,0,0,0,0
-1,61,60,12,1,0,43,0,0,192,0,-1--1--1,,1|(273,402)|
+10,60,Pressure to focus on Safety,233,387,91,28,8,131,0,56,-1,0,0,0,0-0-0,0-0-0,Arial|16||0-0-0,0,0,0,0,0,0
+1,61,60,12,1,0,43,0,0,192,0,-1--1--1,,1|(293,452)|
 1,62,19,12,0,0,0,0,0,192,0,-1--1--1,,1|(0,0)|
-12,63,0,1516,359,190,117,8,15,0,0,1,0,0,0,0,0,0,0,0,0
+12,63,0,1536,409,190,117,8,15,0,0,1,0,0,0,0,0,0,0,0,0
 Performance
 1,64,15,14,0,0,43,0,0,192,0,-1--1--1,,1|(0,0)|
-12,65,0,1506,655,205,152,8,15,0,0,2,0,0,0,0,0,0,0,0,0
+12,65,0,1526,705,205,152,8,15,0,0,2,0,0,0,0,0,0,0,0,0
 Normal NonSafety performance,Graph
-12,66,0,2310,125,222,131,8,15,0,0,2,0,0,0,0,0,0,0,0,0
+12,66,0,2330,175,222,131,8,15,0,0,2,0,0,0,0,0,0,0,0,0
 Pressure to focus on Safety,Graph
-10,67,Accident,69,252,54,22,8,3,0,58,-1,0,0,0,0-0-0,0-0-0,Arial|16||251-2-7,0,0,0,0,0,0
+10,67,Accident,89,302,54,22,8,3,0,58,-1,0,0,0,0-0-0,0-0-0,Arial|16||251-2-7,0,0,0,0,0,0
 1,68,67,60,0,0,0,0,0,192,0,-1--1--1,,1|(0,0)|
-12,69,0,2299,394,212,127,8,15,0,0,2,0,0,0,0,0,0,0,0,0
+12,69,0,2319,444,212,127,8,15,0,0,2,0,0,0,0,0,0,0,0,0
 Serious Error,Graph
-12,70,0,2294,655,211,124,8,15,0,0,2,0,0,0,0,0,0,0,0,0
+12,70,0,2314,705,211,124,8,15,0,0,2,0,0,0,0,0,0,0,0,0
 Accident,Graph
-12,71,0,2452,850,300,200,0,11,0,0,2,0,0,0,0,0,0,0,0,0
-10,72,SWITCH,61,440,32,8,8,2,1,3,-1,0,0,0,128-128-128,0-0-0,|||128-128-128,0,0,0,0,0,0
+12,71,0,2472,900,300,200,0,11,0,0,2,0,0,0,0,0,0,0,0,0
+10,72,SWITCH,81,490,32,8,8,2,1,3,-1,0,0,0,128-128-128,0-0-0,|||128-128-128,0,0,0,0,0,0
 1,73,72,60,0,1,0,0,0,64,0,-1--1--1,,1|(0,0)|
-10,74,Serious Error,24,389,41,8,8,2,1,2,-1,0,0,0,-1--1--1,-1--1--1,|||128-128-128,0,0,0,0,0,0
+10,74,Serious Error,44,439,41,8,8,2,1,2,-1,0,0,0,-1--1--1,-1--1--1,|||128-128-128,0,0,0,0,0,0
 1,75,74,60,0,1,0,0,0,64,0,-1--1--1,,1|(0,0)|
-10,76,Serious Error,1115,184,34,9,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
-1,77,28,76,0,0,0,0,0,0,0,-1--1--1,,1|(0,0)|
-1,78,27,76,0,0,0,0,0,0,0,-1--1--1,,1|(0,0)|
+10,76,Serious Error,1135,234,34,9,8,3,1,0,-1,0,0,0,0,0,0,0,0,0
+1,77,28,76,0,1,0,0,0,0,0,-1--1--1,,1|(0,0)|
+1,78,27,76,0,1,0,0,0,0,0,-1--1--1,,1|(0,0)|
 \\\---/// Sketch information - do not modify anything except names
 V300  Do not put anything below this section - it will be ignored
 *View 2
 $192-192-192,0,Times New Roman|12||0-0-0|0-0-0|0-0-255|-1--1--1|255-255-255|96,96,100,0
+10,1,PINK NOISE structure,480,222,40,26,3,131,0,0,-1,0,0,0,0,0,0,0,0,0
+12,2,48,231,224,25,15,0,3,0,0,-1,0,0,0,0,0,0,0,0,0
+1,3,5,1,4,0,0,22,0,0,0,-1--1--1,,1|(401,224)|
+1,4,5,2,100,0,0,22,0,0,0,-1--1--1,,1|(303,224)|
+11,5,0,356,224,6,8,34,3,0,0,1,0,0,0,0,0,0,0,0,0
+10,6,updating pink noise,356,240,50,8,40,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,7,correlation time,201,367,47,8,8,2,0,3,-1,0,0,0,128-128-128,0-0-0,|||128-128-128,0,0,0,0,0,0
+1,8,7,6,0,0,0,0,0,0,0,-1--1--1,,1|(0,0)|
+10,9,gap,422,324,11,8,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+1,10,9,6,1,0,0,0,0,0,0,-1--1--1,,1|(376,304)|
+1,11,1,9,1,0,0,0,0,0,0,-1--1--1,,1|(472,277)|
+10,12,scaled white noise,432,405,46,8,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+1,13,12,9,0,0,0,0,0,0,0,-1--1--1,,1|(0,0)|
+1,14,7,12,0,0,0,0,0,0,0,-1--1--1,,1|(0,0)|
+10,15,mean,671,312,22,8,8,2,0,3,-1,0,0,0,128-128-128,0-0-0,|||128-128-128,0,0,0,0,0,0
+1,16,15,12,0,0,0,0,0,0,0,-1--1--1,,1|(0,0)|
+10,17,std deviation,230,528,40,8,8,2,0,3,-1,0,0,0,128-128-128,0-0-0,|||128-128-128,0,0,0,0,0,0
+1,18,17,12,0,0,0,0,0,0,0,-1--1--1,,1|(0,0)|
+10,19,TIME STEP,552,464,39,8,8,2,0,3,-1,0,0,0,128-128-128,0-0-0,|||128-128-128,0,0,0,0,0,0
+1,20,19,12,0,0,0,0,0,0,0,-1--1--1,,1|(0,0)|
+10,21,white noise,459,517,30,8,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+1,22,21,12,0,0,0,0,0,0,0,-1--1--1,,1|(0,0)|
+10,23,seed,467,595,20,8,8,2,0,3,-1,0,0,0,128-128-128,0-0-0,|||128-128-128,0,0,0,0,0,0
+1,24,23,21,0,0,0,0,0,0,0,-1--1--1,,1|(0,0)|
+12,25,0,0,0,30,30,8,0,0,0,-1,0,0,0,0,0,0,0,0,0
+10,26,correlation time,896,194,40,9,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,27,std deviation,886,284,33,9,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,28,seed,881,345,40,7,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,29,mean,926,383,15,9,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,30,PINK NOISE macro output,1100,265,51,22,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+1,31,26,30,0,0,0,0,0,192,0,-1--1--1,,1|(0,0)|
+1,32,27,30,0,0,0,0,0,192,0,-1--1--1,,1|(0,0)|
+1,33,28,30,0,0,0,0,0,192,0,-1--1--1,,1|(0,0)|
+1,34,29,30,0,0,0,0,0,192,0,-1--1--1,,1|(0,0)|
 ///---\\\
 :GRAPH Focus_
 :TITLE Organizational oscillation between safety and non-safety
@@ -306,9 +449,9 @@ $192-192-192,0,Times New Roman|12||0-0-0|0-0-0|0-0-255|-1--1--1|255-255-255|96,9
 1:b.vdfx
 1:p.vdfx
 4:Time
-5:Error Margin
+5:PINK NOISE structure
 9:change_sp
-19:100,0
+19:100,1
 24:0
 25:50
 26:50
