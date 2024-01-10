@@ -1,0 +1,451 @@
+{UTF-8}
+Acceptable Safety Boundary=
+	0
+	~	 [0,?]
+	~		|
+
+Accident=
+	PINK NOISE macro output
+	~	
+	~		|
+
+PINK NOISE macro output=
+	PINK NOISE structure
+	~	widgets/week
+	~		|
+
+PINK NOISE structure= INTEG (
+	updating pink noise,
+		0)
+	~	widgets/week
+	~	Contributed by Ed Anderson, MIT/U. Texas - Austin
+		Description:  The pink noise molecule described generates a simple random 
+		series with autocorrelation.  This is useful in representing time series, 
+		like rainfall from day to day, in which today's value has some correlation 
+		with what happened yesterday.  This particular formulation will also have 
+		properties such as standard deviation and mean that are insensitive both to 
+		the time step and the correlation (smoothing) time.  Finally, the output as 
+		a whole and the difference in values between any two days is guaranteed to 
+		be Gaussian (normal) in distribution.
+		
+		Behavior:  Pink noise series will have both a historical and a random 
+		component during each period.  The relative "trend-to-noise" ratio is 
+		controlled by the length of the correlation time. As the correlation time 
+		approaches zero, the pink noise output will become more independent of its 
+		historical value and more "noisy."  On the other hand, as the correlation 
+		time approaches infinity, the pink noise output will approximate a 
+		continuous time random walk or Brownian motion.  Displayed above are two 
+		time series with correlation times of 1 and 8 months.  While both series 
+		have approximately the same standard deviation, the 1-month correlation time 
+		series is less smooth from period to period than the 8-month series, which 
+		is characterized by "sustained" swings in a given direction.  Note that this 
+		behavior will be independent of the time-step.
+		
+		The "pink" in pink noise refers to the power spectrum of the output.  A time 
+		series in which each period's observation is independent of the past is 
+		characterized by a flat or "white" power spectrum.  Smoothing a time series 
+		attenuates the higher or "bluer" frequencies of the power spectrum, leaving 
+		the lower or "redder" frequencies relatively stronger in the output.
+		
+		Caveats:  This assumes the use of Euler integration with a time step of no 
+		more than 1/4 of the correlation time.  Very long correlation times should be 
+		avoided also as the multiplication in the scaled white noise will become 
+		progressively less accurate.
+		
+		Technical Notes:  This particular form of pink noise is superior to that of 
+		Britting presented in Richardson and Pugh (1981) because the Gaussian 
+		(Normal) distribution of the output does not depend on the Central Limit 
+		Theorem.  (Dynamo did not have a Gaussian random number generator and hence 
+		R&P had to invoke the CLM to get a normal distribution.)  Rather, this 
+		molecule's normal output is a result of the observations being a sum of 
+		Gaussian draws.  Hence, the series over short intervals should better 
+		approximate normality than the macro in R&P. 
+		
+		MEAN: This is the desired mean for the pink noise.
+		STD DEVIATION: This is the desired standard deviation for the pink noise.
+		CORRELATION TIME: This is the smooth time for the noise, or for the more technically \
+		minded this is the inverse of the filter's cut-off frequency in radians.
+		
+		Updated by Tom Fiddaman, 2010, to include a random initial value,
+		correct units, and use TIME STEP$ keyword
+	|
+
+scaled white noise=
+	mean+white noise*std deviation*SQRT((2-TIME STEP/correlation time
+	)/(TIME STEP/correlation time))
+	~	widgets/week
+	~	This adjusts the standard deviation of the white noise to compensate for the time \
+		step and the
+		         correlation time to produce the appropriate pink noise std \
+		deviation.
+	|
+
+seed=
+	1
+	~	dmnl [1,10000,1]
+	~		|
+
+correlation time=
+	10
+	~	week [1,100]
+	~		|
+
+Pressure to focus on Safety=
+	NonSafety Performance+Accident
+	~	
+	~		|
+
+gap = scaled white noise-PINK NOISE structure
+	~	widgets/week
+	~		|
+
+mean=
+	0
+	~	widgets/week [0,?]
+	~		|
+
+white noise = RANDOM NORMAL(-6,6,0,1,seed)
+	~	dmnl
+	~	This is an independent, identically distributed random quantity drawn every time \
+		step.  The distribution is gaussian with mean = 0 and variance = 1.
+		Note that RANDOM NORMAL is truncated +/- 6 standard deviations here.
+		For Vensim 1.62 syntax, remove the arguments to RANDOM NORMAL.
+	|
+
+updating pink noise = gap/correlation time
+	~	widgets/week/week
+	~		|
+
+std deviation=
+	10
+	~	widgets/week [0,?]
+	~		|
+
+Change in Safety Focus=
+	Pressure to focus on Safety/Time to adjust focus
+	~	
+	~		|
+
+"Change in Non-Safety Focus"=
+	Error Margin/Time to adjust focus
+	~	
+	~		|
+
+Safety Focus= INTEG (
+	Change in Safety Focus,
+		0)
+	~	
+	~		|
+
+NonSafety Focus= INTEG (
+	"Change in Non-Safety Focus",
+		1)
+	~	
+	~		|
+
+Error Margin=
+	Acceptable Safety Boundary-Safety Focus
+	~	
+	~		|
+
+Pulse Quantity 1=
+	0
+	~	
+	~		|
+
+Pulse repeat time=
+	0
+	~	
+	~		|
+
+Pulse end time=
+	25
+	~	
+	~		|
+
+Pulse start time=
+	1
+	~	
+	~		|
+
+input=
+	STEP(Step Height,Step Time)+
+	(Pulse Quantity 1/TIME STEP)*PULSE(Pulse Time,Pulse Duration
+	)+
+	RAMP(Ramp Slope,Ramp Start Time,Ramp End Time)
+	+ PULSE TRAIN(Pulse start time , Pulse Duration , Pulse repeat time , Pulse end time\
+		 )*(Pulse Quantity/TIME STEP)
+	~	
+	~		|
+
+Pulse Duration=
+	0
+	~	
+	~		|
+
+Ramp End Time=
+	0
+	~	
+	~		|
+
+Ramp Slope=
+	0
+	~	
+	~		|
+
+Ramp Start Time=
+	0
+	~	
+	~		|
+
+initial Safety Threshold=
+	0
+	~	
+	~		|
+
+Step Height=
+	0
+	~	
+	~		|
+
+Pulse Quantity=
+	0
+	~	
+	~		|
+
+Pulse Time=
+	0
+	~	
+	~		|
+
+Step Time=
+	0
+	~	
+	~		|
+
+Time to adjust focus=
+	2
+	~	Month [0,20,2]
+	~		|
+
+Normal NonSafety performance=
+	0
+	~	
+	~		|
+
+NonSafety Performance=
+	NonSafety Focus- Normal NonSafety performance
+	~	
+	~		|
+
+********************************************************
+	.Control
+********************************************************~
+		Simulation Control Parameters
+	|
+
+FINAL TIME  = 50
+	~	Year
+	~	The final time for the simulation.
+	|
+
+INITIAL TIME  = 0
+	~	Year
+	~	The initial time for the simulation.
+	|
+
+SAVEPER  = 
+        TIME STEP
+	~	Year [0,?]
+	~	The frequency with which output is stored.
+	|
+
+TIME STEP  = 0.0625
+	~	Year [0,?]
+	~	The time step for the simulation.
+	|
+
+\\\---/// Sketch information - do not modify anything except names
+V300  Do not put anything below this section - it will be ignored
+*View 1
+$192-192-192,0,Times New Roman|12||0-0-0|0-0-0|0-0-255|255-255-255|255-255-255|96,96,100,0
+10,1,NonSafety Focus,615,128,59,25,3,3,0,40,0,0,0,0,0-0-0,0-0-0,Arial|14||0-0-0,0,0,0,0,0,0
+10,2,Safety Focus,559,460,67,27,3,131,0,40,0,0,0,0,0-0-0,0-0-0,Arial|14||0-0-0,0,0,0,0,0,0
+12,3,48,415,124,13,11,0,3,0,40,-1,0,0,0,0-0-0,0-0-0,Arial|14||0-0-0,0,0,0,0,0,0
+1,4,6,1,4,0,0,22,0,0,0,-1--1--1,,1|(533,124)|
+1,5,6,3,100,0,0,22,0,0,0,-1--1--1,,1|(462,124)|
+11,6,0,504,124,7,8,34,3,0,0,1,0,0,0,0,0,0,0,0,0
+10,7,"Change in Non-Safety Focus",504,155,59,23,40,3,0,40,-1,0,0,0,0-0-0,0-0-0,Arial|14||0-0-0,0,0,0,0,0,0
+12,8,48,319,459,13,11,0,3,0,40,-1,0,0,0,0-0-0,0-0-0,Arial|14||0-0-0,0,0,0,0,0,0
+1,9,11,2,4,0,0,22,0,0,0,-1--1--1,,1|(454,459)|
+1,10,11,8,100,0,0,22,0,0,0,-1--1--1,,1|(367,459)|
+11,11,0,409,459,7,8,34,3,0,0,1,0,0,0,0,0,0,0,0,0
+10,12,Change in Safety Focus,409,485,57,19,40,131,0,40,-1,0,0,0,0-0-0,0-0-0,Arial|14||0-0-0,0,0,0,0,0,0
+10,13,NonSafety Performance,256,160,43,16,8,3,0,40,-1,0,0,0,0-0-0,0-0-0,Arial|14||0-0-0,0,0,0,0,0,0
+10,14,Error Margin,515,252,41,9,8,3,0,40,-1,0,0,0,0-0-0,0-0-0,Arial|14||0-0-0,0,0,0,0,0,0
+10,15,Acceptable Safety Boundary,687,217,55,16,8,3,0,40,-1,0,0,0,0-0-0,0-0-0,Arial|14||0-0-0,0,0,0,0,0,0
+1,16,2,14,1,0,45,0,0,64,0,-1--1--1,,1|(607,345)|
+1,17,15,14,0,0,0,0,0,192,0,-1--1--1,,1|(0,0)|
+1,18,14,7,0,0,43,0,0,192,0,-1--1--1,,1|(0,0)|
+1,19,1,13,1,0,43,0,0,192,0,-1--1--1,,1|(480,80)|
+10,20,Time to adjust focus,412,316,75,11,8,3,0,40,-1,0,0,0,251-2-7,0-0-0,Arial|14||251-2-7,0,0,0,0,0,0
+1,21,20,7,1,0,0,0,0,192,0,-1--1--1,,1|(433,260)|
+12,22,0,1425,133,183,121,8,47,0,32,2,0,0,0,0-0-0,0-0-0,Arial|||0-0-0,0,0,0,0,0,0
+NonSafety Focus,Graph
+12,23,0,1874,186,187,127,8,47,0,32,2,0,0,0,0-0-0,0-0-0,Arial|||0-0-0,0,0,0,0,0,0
+Safety Focus,Graph
+1,24,13,62,1,0,43,0,0,192,0,-1--1--1,,1|(192,284)|
+10,25,Normal NonSafety performance,144,80,69,19,8,3,0,40,-1,0,0,0,0-0-0,0-0-0,Arial|14||251-2-7,0,0,0,0,0,0
+1,26,25,13,0,0,0,0,0,192,0,-1--1--1,,1|(0,0)|
+12,27,0,536,1196,163,156,8,15,0,32,1,0,0,0,0-0-0,0-0-0,Arial|||0-0-0,0,0,0,0,0,0
+Focus_
+12,28,0,147,-8,31,31,8,0,0,0,-1,0,0,0,0,0,0,0,0,0
+10,29,input,849,336,20,11,8,3,2,32,-1,0,0,0,0-0-0,0-0-0,Arial|||0-0-0,0,0,0,0,0,0
+10,30,initial Safety Threshold,801,99,47,19,8,3,2,32,-1,0,0,0,0-0-0,0-0-0,Arial|||0-0-0,0,0,0,0,0,0
+10,31,Pulse Quantity,840,249,55,11,8,3,2,32,-1,0,0,0,0-0-0,0-0-0,Arial|||0-0-0,0,0,0,0,0,0
+1,32,31,29,0,2,0,0,0,64,0,-1--1--1,,1|(0,0)|
+10,33,Pulse Time,860,433,43,11,8,3,2,32,-1,0,0,0,0-0-0,0-0-0,Arial|||0-0-0,0,0,0,0,0,0
+1,34,33,29,0,2,0,0,0,64,0,-1--1--1,,1|(0,0)|
+10,35,Ramp End Time,935,423,60,11,8,3,2,32,-1,0,0,0,0-0-0,0-0-0,Arial|||0-0-0,0,0,0,0,0,0
+1,36,35,29,0,2,0,0,0,64,0,-1--1--1,,1|(0,0)|
+10,37,Ramp Slope,833,395,47,11,8,3,2,32,-1,0,0,0,0-0-0,0-0-0,Arial|||0-0-0,0,0,0,0,0,0
+1,38,37,29,0,2,0,0,0,64,0,-1--1--1,,1|(0,0)|
+10,39,Ramp Start Time,768,407,63,11,8,3,2,32,-1,0,0,0,0-0-0,0-0-0,Arial|||0-0-0,0,0,0,0,0,0
+1,40,39,29,0,2,0,0,0,64,0,-1--1--1,,1|(0,0)|
+10,41,Step Height,748,319,45,11,8,3,2,32,-1,0,0,0,0-0-0,0-0-0,Arial|||0-0-0,0,0,0,0,0,0
+1,42,41,29,0,2,0,0,0,64,0,-1--1--1,,1|(0,0)|
+10,43,Step Time,751,368,39,11,8,3,2,32,-1,0,0,0,0-0-0,0-0-0,Arial|||0-0-0,0,0,0,0,0,0
+1,44,43,29,0,2,0,0,0,64,0,-1--1--1,,1|(0,0)|
+10,45,Time,1005,168,29,11,8,2,2,35,-1,0,0,0,128-128-128,0-0-0,Arial|||128-128-128,0,0,0,0,0,0
+10,46,TIME STEP,763,588,55,11,8,2,0,34,-1,0,0,0,128-128-128,0-0-0,Arial|||128-128-128,0,0,0,0,0,0
+1,47,46,29,0,2,0,0,0,64,0,-1--1--1,,1|(0,0)|
+12,48,0,324,259,28,28,5,7,0,40,-1,0,0,0,0-0-0,0-0-0,Arial|14||0-0-0,0,0,0,0,0,0
+B
+12,49,0,1687,681,179,129,8,15,0,32,1,0,0,0,0-0-0,0-0-0,Arial|||0-0-0,0,0,0,0,0,0
+Learning_and_forgetting_
+12,50,0,1684,413,183,127,8,15,0,0,2,0,0,0,0,0,0,0,0,0
+Acceptable Safety Boundary,Graph
+10,51,Pulse Duration,1007,316,56,11,8,3,2,32,-1,0,0,0,0-0-0,0-0-0,Arial|||0-0-0,0,0,0,0,0,0
+1,52,51,29,0,2,0,0,0,192,0,-1--1--1,,1|(0,0)|
+10,53,Pulse end time,1023,417,56,11,8,3,2,32,-1,0,0,0,0-0-0,0-0-0,Arial|||0-0-0,0,0,0,0,0,0
+1,54,53,29,0,2,0,0,0,64,0,-1--1--1,,1|(0,0)|
+10,55,Pulse repeat time,956,236,65,11,8,3,2,32,-1,0,0,0,0-0-0,0-0-0,Arial|||0-0-0,0,0,0,0,0,0
+1,56,55,29,0,2,0,0,0,64,0,-1--1--1,,1|(0,0)|
+10,57,Pulse start time,1024,376,59,11,8,3,2,32,-1,0,0,0,0-0-0,0-0-0,Arial|||0-0-0,0,0,0,0,0,0
+1,58,57,29,0,2,0,0,0,64,0,-1--1--1,,1|(0,0)|
+10,59,Pulse Quantity 1,904,160,61,11,8,3,2,32,-1,0,0,0,0-0-0,0-0-0,Arial|||0-0-0,0,0,0,0,0,0
+1,60,59,29,0,2,0,0,0,64,0,-1--1--1,,1|(0,0)|
+12,61,0,1109,1157,203,123,8,47,0,0,2,0,0,0,0,0,0,0,0,0
+Error Margin,Graph
+10,62,Pressure to focus on Safety,205,367,91,28,8,131,0,40,-1,0,0,0,0-0-0,0-0-0,Arial|14||0-0-0,0,0,0,0,0,0
+1,63,62,12,0,0,43,0,0,192,0,-1--1--1,,1|(0,0)|
+1,64,20,12,1,0,0,0,0,192,0,-1--1--1,,1|(409,389)|
+12,65,0,1283,504,212,132,8,15,0,0,1,0,0,0,0,0,0,0,0,0
+Performance
+10,66,PINK NOISE macro output,253,794,36,14,8,3,0,0,0,0,0,0,0,0,0,0,0,0
+10,67,correlation time,563,909,40,8,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,68,mean,582,966,15,8,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,69,seed,754,1102,13,8,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,70,std deviation,615,1040,33,8,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,71,PINK NOISE structure,764,732,40,26,3,131,0,0,-1,0,0,0,0,0,0,0,0,0
+12,72,48,545,732,25,15,0,3,0,0,-1,0,0,0,0,0,0,0,0,0
+1,73,75,71,4,0,0,22,0,0,0,-1--1--1,,1|(685,734)|
+1,74,75,72,100,0,0,22,0,0,0,-1--1--1,,1|(602,734)|
+11,75,0,640,734,6,8,34,3,0,0,1,0,0,0,0,0,0,0,0,0
+10,76,updating pink noise,640,761,50,8,40,3,0,0,-1,0,0,0,0,0,0,0,0,0
+1,77,67,76,0,0,0,0,0,0,0,-1--1--1,,1|(0,0)|
+10,78,gap,706,834,11,8,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+1,79,78,76,1,0,0,0,0,0,0,-1--1--1,,1|(669,813)|
+1,80,71,78,1,0,0,0,0,0,0,-1--1--1,,1|(756,787)|
+10,81,scaled white noise,716,915,46,8,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+1,82,81,78,0,0,0,0,0,0,0,-1--1--1,,1|(0,0)|
+1,83,67,81,0,0,0,0,0,0,0,-1--1--1,,1|(0,0)|
+1,84,68,81,0,0,0,0,0,0,0,-1--1--1,,1|(0,0)|
+1,85,70,81,0,0,0,0,0,0,0,-1--1--1,,1|(0,0)|
+10,86,TIME STEP,836,974,39,8,8,2,0,3,-1,0,0,0,128-128-128,0-0-0,|||128-128-128,0,0,0,0,0,0
+1,87,86,81,0,0,0,0,0,0,0,-1--1--1,,1|(0,0)|
+10,88,white noise,743,1027,30,8,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+1,89,88,81,0,0,0,0,0,0,0,-1--1--1,,1|(0,0)|
+1,90,69,88,0,0,0,0,0,0,0,-1--1--1,,1|(0,0)|
+10,91,Accident,67,419,24,8,8,3,0,0,0,0,0,0,0,0,0,0,0,0
+1,92,91,62,0,0,0,0,0,128,0,-1--1--1,,1|(0,0)|
+1,93,71,66,1,0,0,0,0,128,0,-1--1--1,,1|(476,702)|
+10,94,PINK NOISE macro output,136,479,40,14,8,2,0,3,-1,0,0,0,128-128-128,0-0-0,|||128-128-128,0,0,0,0,0,0
+1,95,94,91,0,0,0,0,0,128,0,-1--1--1,,1|(0,0)|
+12,96,0,2066,461,150,150,3,44,0,0,2,0,0,0,0,0,0,0,0,0
+Accident,Graph
+\\\---/// Sketch information - do not modify anything except names
+V300  Do not put anything below this section - it will be ignored
+*View 2
+$192-192-192,0,Times New Roman|12||0-0-0|0-0-0|0-0-255|-1--1--1|255-255-255|96,96,100,0
+///---\\\
+:GRAPH Focus_
+:TITLE Organizational oscillation between safety and non-safety
+:SCALE
+:VAR NonSafety Focus
+:DATASET 
+:LINE-WIDTH 2
+:VAR Safety focus
+:DATASET 
+:LINE-WIDTH 2
+
+:GRAPH Learning_and_forgetting_
+:TITLE Learning and forgetting
+:SCALE
+:VAR Change in Non Safety Focus
+:DATASET 
+:LINE-WIDTH 2
+:VAR Change in Safety Focus
+:DATASET 
+:LINE-WIDTH 2
+
+:GRAPH Performance
+:TITLE Performance
+:SCALE
+:VAR Error Margin
+:DATASET 
+:LINE-WIDTH 2
+:VAR NonSafety Performance
+:DATASET 
+:LINE-WIDTH 2
+:L<%^E!@
+1:test_v2.vdfx
+1:test_v1.vdfx
+4:Time
+5:white noise
+9:test_v2
+19:100,0
+24:0
+25:50
+26:50
+23:0
+15:0,0,0,0,0,0
+27:0,
+34:0,
+42:1
+72:0
+73:0
+35:Date
+36:YYYY-MM-DD
+37:2000
+38:1
+39:1
+40:2
+41:0
+95:0
+96:0
+97:0
+77:0
+78:0
+102:0
+93:0
+94:0
+92:0
+91:0
+90:0
+87:0
+75:
+43:
+103:8,8,8,3,8
+105:0,0,0,0,0,0,0,0,0,0
+104:Times New Roman|12||0-0-0|0-0-0|-1--1--1|0-0-255|192-192-192|-1--1--1

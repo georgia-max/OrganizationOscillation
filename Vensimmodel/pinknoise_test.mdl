@@ -1,0 +1,229 @@
+{UTF-8}
+updating pink noise=
+	(white noise-auto noise)/correlation time
+	~	widgets/week/week
+	~		|
+
+pink noise=
+	auto noise
+	~	widgets/week
+	~		|
+
+auto noise= INTEG (
+	updating pink noise,
+		0)
+	~	widgets/week
+	~	Contributed by Ed Anderson, MIT/U. Texas - Austin
+		Description:  The pink noise molecule described generates a simple random 
+		series with autocorrelation.  This is useful in representing time series, 
+		like rainfall from day to day, in which today's value has some correlation 
+		with what happened yesterday.  This particular formulation will also have 
+		properties such as standard deviation and mean that are insensitive both to 
+		the time step and the correlation (smoothing) time.  Finally, the output as 
+		a whole and the difference in values between any two days is guaranteed to 
+		be Gaussian (normal) in distribution.
+		
+		Behavior:  Pink noise series will have both a historical and a random 
+		component during each period.  The relative "trend-to-noise" ratio is 
+		controlled by the length of the correlation time. As the correlation time 
+		approaches zero, the pink noise output will become more independent of its 
+		historical value and more "noisy."  On the other hand, as the correlation 
+		time approaches infinity, the pink noise output will approximate a 
+		continuous time random walk or Brownian motion.  Displayed above are two 
+		time series with correlation times of 1 and 8 months.  While both series 
+		have approximately the same standard deviation, the 1-month correlation time 
+		series is less smooth from period to period than the 8-month series, which 
+		is characterized by "sustained" swings in a given direction.  Note that this 
+		behavior will be independent of the time-step.
+		
+		The "pink" in pink noise refers to the power spectrum of the output.  A time 
+		series in which each period's observation is independent of the past is 
+		characterized by a flat or "white" power spectrum.  Smoothing a time series 
+		attenuates the higher or "bluer" frequencies of the power spectrum, leaving 
+		the lower or "redder" frequencies relatively stronger in the output.
+		
+		Caveats:  This assumes the use of Euler integration with a time step of no 
+		more than 1/4 of the correlation time.  Very long correlation times should be 
+		avoided also as the multiplication in the scaled white noise will become 
+		progressively less accurate.
+		
+		Technical Notes:  This particular form of pink noise is superior to that of 
+		Britting presented in Richardson and Pugh (1981) because the Gaussian 
+		(Normal) distribution of the output does not depend on the Central Limit 
+		Theorem.  (Dynamo did not have a Gaussian random number generator and hence 
+		R&P had to invoke the CLM to get a normal distribution.)  Rather, this 
+		molecule's normal output is a result of the observations being a sum of 
+		Gaussian draws.  Hence, the series over short intervals should better 
+		approximate normality than the macro in R&P. 
+		
+		MEAN: This is the desired mean for the pink noise.
+		STD DEVIATION: This is the desired standard deviation for the pink noise.
+		CORRELATION TIME: This is the smooth time for the noise, or for the more technically \
+		minded this is the inverse of the filter's cut-off frequency in radians.
+		
+		Updated by Tom Fiddaman, 2010, to include a random initial value,
+		correct units, and use TIME STEP$ keyword
+	|
+
+white noise=
+	mean + std deviation * ((24*correlation time/TIME STEP) ^0.5 ) *RANDOM UNIFORM( -0.5\
+		 , 0.5 ,seed )
+	~	widgets/week
+	~	This adjusts the standard deviation of the white noise to compensate for the time \
+		step and the
+		         correlation time to produce the appropriate pink noise std \
+		deviation.
+	|
+
+seed=
+	1
+	~	dmnl [1,10000,1]
+	~		|
+
+correlation time=
+	10
+	~	week [1,100]
+	~		|
+
+mean=
+	0
+	~	widgets/week [0,?]
+	~		|
+
+std deviation=
+	10
+	~	widgets/week [0,?]
+	~		|
+
+********************************************************
+	.Control
+********************************************************~
+		Simulation Control Parameters
+	|
+
+FINAL TIME  = 50
+	~	Year
+	~	The final time for the simulation.
+	|
+
+INITIAL TIME  = 0
+	~	Year
+	~	The initial time for the simulation.
+	|
+
+SAVEPER  = 
+        TIME STEP
+	~	Year [0,?]
+	~	The frequency with which output is stored.
+	|
+
+TIME STEP  = 0.0625
+	~	Year [0,?]
+	~	The time step for the simulation.
+	|
+
+\\\---/// Sketch information - do not modify anything except names
+V300  Do not put anything below this section - it will be ignored
+*View 1
+$192-192-192,0,Times New Roman|12||0-0-0|0-0-0|0-0-255|255-255-255|255-255-255|96,96,100,0
+12,1,0,99,104,31,31,8,0,0,0,-1,0,0,0,0,0,0,0,0,0
+10,2,Time,224,352,29,11,8,2,2,35,-1,0,0,0,128-128-128,0-0-0,Arial|||128-128-128,0,0,0,0,0,0
+10,3,TIME STEP,671,318,55,11,8,2,0,34,-1,0,0,0,128-128-128,0-0-0,Arial|||128-128-128,0,0,0,0,0,0
+10,4,pink noise,100,137,27,8,8,3,0,0,0,0,0,0,0,0,0,0,0,0
+10,5,correlation time,410,252,40,8,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,6,mean,429,309,15,8,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,7,seed,684,421,13,8,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,8,std deviation,462,383,33,8,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,9,auto noise,611,75,40,26,3,131,0,0,-1,0,0,0,0,0,0,0,0,0
+12,10,48,392,75,25,15,0,3,0,0,-1,0,0,0,0,0,0,0,0,0
+1,11,13,9,4,0,0,22,0,0,0,-1--1--1,,1|(532,77)|
+1,12,13,10,100,0,0,22,0,0,0,-1--1--1,,1|(449,77)|
+11,13,0,487,77,6,8,34,3,0,0,1,0,0,0,0,0,0,0,0,0
+10,14,updating pink noise,487,104,50,8,40,3,0,0,-1,0,0,0,0,0,0,0,0,0
+1,15,5,14,0,0,0,0,0,0,0,-1--1--1,,1|(0,0)|
+10,16,white noise,563,258,46,8,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+1,17,16,14,0,0,0,0,0,0,0,-1--1--1,,1|(0,0)|
+1,18,5,16,0,0,0,0,0,0,0,-1--1--1,,1|(0,0)|
+1,19,6,16,0,0,0,0,0,0,0,-1--1--1,,1|(0,0)|
+1,20,8,16,0,0,0,0,0,0,0,-1--1--1,,1|(0,0)|
+10,21,TIME STEP,683,317,39,8,8,2,0,3,-1,0,0,0,128-128-128,0-0-0,|||128-128-128,0,0,0,0,0,0
+1,22,21,16,0,0,0,0,0,0,0,-1--1--1,,1|(0,0)|
+1,23,9,4,1,0,0,0,0,128,0,-1--1--1,,1|(323,45)|
+1,24,9,14,1,0,0,0,0,128,0,-1--1--1,,1|(573,138)|
+1,25,7,16,0,0,0,0,0,64,0,-1--1--1,,1|(0,0)|
+\\\---/// Sketch information - do not modify anything except names
+V300  Do not put anything below this section - it will be ignored
+*View 2
+$192-192-192,0,Times New Roman|12||0-0-0|0-0-0|0-0-255|-1--1--1|255-255-255|96,96,100,0
+///---\\\
+:GRAPH Focus_
+:TITLE Organizational oscillation between safety and non-safety
+:SCALE
+:VAR NonSafety Focus
+:DATASET 
+:LINE-WIDTH 2
+:VAR Safety focus
+:DATASET 
+:LINE-WIDTH 2
+
+:GRAPH Learning_and_forgetting_
+:TITLE Learning and forgetting
+:SCALE
+:VAR Change in Non Safety Focus
+:DATASET 
+:LINE-WIDTH 2
+:VAR Change in Safety Focus
+:DATASET 
+:LINE-WIDTH 2
+
+:GRAPH Performance
+:TITLE Performance
+:SCALE
+:VAR Error Margin
+:DATASET 
+:LINE-WIDTH 2
+:VAR NonSafety Performance
+:DATASET 
+:LINE-WIDTH 2
+:L<%^E!@
+1:pink.vdfx
+1:test_v2.vdfx
+1:test_v1.vdfx
+4:Time
+5:pink noise
+9:pink
+19:100,0
+24:0
+25:50
+26:50
+23:0
+15:0,0,0,0,0,0
+27:0,
+34:0,
+42:1
+72:0
+73:0
+35:Date
+36:YYYY-MM-DD
+37:2000
+38:1
+39:1
+40:2
+41:0
+95:0
+96:0
+97:0
+77:0
+78:0
+102:0
+93:0
+94:0
+92:0
+91:0
+90:0
+87:0
+75:
+43:
+103:8,8,8,3,8
+105:0,0,0,0,0,0,0,0,0,0
+104:Times New Roman|12||0-0-0|0-0-0|-1--1--1|0-0-255|192-192-192|-1--1--1
