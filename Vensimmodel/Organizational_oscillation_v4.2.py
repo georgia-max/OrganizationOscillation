@@ -242,7 +242,7 @@ def white_noise():
     """
     This is an independent, identically distributed random quantity drawn every time step. The distribution is gaussian with mean = 0 and variance = 1. Note that RANDOM NORMAL is truncated +/- 6 standard deviations here. For Vensim 1.62 syntax, remove the arguments to RANDOM NORMAL.
     """
-    return stats.truncnorm.rvs(-6, 6, loc=0, scale=1, random_state= 8)
+    return stats.truncnorm.rvs(-6, 6, loc=0, scale=1, size=(), random_state= 8)
 
 
 @component.add(

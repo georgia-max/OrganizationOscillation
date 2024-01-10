@@ -1,7 +1,7 @@
-numpy 
-pandas 
+numpy == 1.24.3
+pandas == 2.1.0
 jupyter
-pysd == 3.9.1
+pysd
 matplotlib 
 netCDF4
 seaborn 
