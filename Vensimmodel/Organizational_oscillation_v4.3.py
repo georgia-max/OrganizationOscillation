@@ -6,11 +6,11 @@ Translated using PySD
 from pathlib import Path
 import numpy as np
 
-from pysd.py_backend.functions import pulse, if_then_else, step, ramp
+from pysd.py_backend.functions import ramp, pulse, step, if_then_else
 from pysd.py_backend.statefuls import Integ
 from pysd import Component
 
-__pysd_version__ = "3.9.1"
+__pysd_version__ = "3.9.0"
 
 __data = {"scope": None, "time": lambda: 0}
 
@@ -121,9 +121,9 @@ def switch():
     comp_subtype="Normal",
     depends_on={
         "nonsafety_performance": 1,
-        "accident": 1,
-        "switch": 1,
         "serious_errors": 1,
+        "switch": 1,
+        "accident": 1,
     },
 )
 def pressure_to_focus_on_safety():
@@ -201,11 +201,10 @@ _integ_auto_noise = Integ(lambda: updating_pink_noise(), lambda: 0, "_integ_auto
     comp_subtype="Normal",
     depends_on={
         "mean": 1,
-        "time": 1,
-        "time_step": 1,
         "seed": 1,
-        "correlation_time": 1,
+        "time_step": 1,
         "std_deviation": 1,
+        "correlation_time": 1,
     },
 )
 def white_noise():
@@ -358,15 +357,15 @@ def pulse_start_time():
         "step_height": 1,
         "step_time": 1,
         "time": 4,
-        "pulse_quantity_1": 1,
         "pulse_duration": 2,
         "pulse_time": 1,
         "time_step": 2,
-        "ramp_slope": 1,
+        "pulse_quantity_1": 1,
         "ramp_end_time": 1,
         "ramp_start_time": 1,
-        "pulse_end_time": 1,
+        "ramp_slope": 1,
         "pulse_start_time": 1,
+        "pulse_end_time": 1,
         "pulse_repeat_time": 1,
         "pulse_quantity": 1,
     },
