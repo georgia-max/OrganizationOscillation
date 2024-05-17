@@ -27,7 +27,7 @@ Simulation Model on organizational oscillation between learning and forgetting
 1. Clone the repository:
 
     ```bash
-    https://github.com/georgia-max/CldMaker.git
+    https://github.com/georgia-max/OrganizationOscillation.git
     ```
 2. Activate virtual environment in your terminal:
    ```
