@@ -22,10 +22,19 @@ Simulation Model on organizational oscillation between learning and forgetting
 - Python 3.8 or higher
 - pip (Python package installer)
 
-### Setting Up the Virtual Environment
+## Setting up the repo 
 
-1. **Clone the repository**
+1. Clone the repository:
 
-   ```bash
-   git clone https://github.com/yourusername/your-repository.git
-   cd your-repository
+    ```bash
+    https://github.com/georgia-max/CldMaker.git
+    ```
+2. Activate virtual environment in your terminal:
+   ```
+    source venv/bin/activate
+    ```
+3. Install the required dependencies:
+
+    ```
+    pip install -r requirements.txt
+    ```
