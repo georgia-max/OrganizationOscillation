@@ -1,106 +1,107 @@
 [
     {
-        "label": "Path",
-        "importPath": "pathlib",
-        "description": "pathlib",
+        "label": "pysd",
+        "kind": 6,
         "isExtraImport": true,
-        "detail": "pathlib",
+        "importPath": "pysd",
+        "description": "pysd",
+        "detail": "pysd",
         "documentation": {}
     },
     {
-        "label": "Path",
-        "importPath": "pathlib",
-        "description": "pathlib",
+        "label": "Component",
+        "importPath": "pysd",
+        "description": "pysd",
         "isExtraImport": true,
-        "detail": "pathlib",
+        "detail": "pysd",
         "documentation": {}
     },
     {
-        "label": "Path",
-        "importPath": "pathlib",
-        "description": "pathlib",
+        "label": "Component",
+        "importPath": "pysd",
+        "description": "pysd",
         "isExtraImport": true,
-        "detail": "pathlib",
+        "detail": "pysd",
         "documentation": {}
     },
     {
-        "label": "Path",
-        "importPath": "pathlib",
-        "description": "pathlib",
+        "label": "Component",
+        "importPath": "pysd",
+        "description": "pysd",
         "isExtraImport": true,
-        "detail": "pathlib",
+        "detail": "pysd",
         "documentation": {}
     },
     {
-        "label": "Path",
-        "importPath": "pathlib",
-        "description": "pathlib",
+        "label": "Component",
+        "importPath": "pysd",
+        "description": "pysd",
         "isExtraImport": true,
-        "detail": "pathlib",
+        "detail": "pysd",
         "documentation": {}
     },
     {
-        "label": "Path",
-        "importPath": "pathlib",
-        "description": "pathlib",
+        "label": "Component",
+        "importPath": "pysd",
+        "description": "pysd",
         "isExtraImport": true,
-        "detail": "pathlib",
+        "detail": "pysd",
         "documentation": {}
     },
     {
-        "label": "Path",
-        "importPath": "pathlib",
-        "description": "pathlib",
+        "label": "Component",
+        "importPath": "pysd",
+        "description": "pysd",
         "isExtraImport": true,
-        "detail": "pathlib",
+        "detail": "pysd",
         "documentation": {}
     },
     {
-        "label": "Path",
-        "importPath": "pathlib",
-        "description": "pathlib",
+        "label": "Component",
+        "importPath": "pysd",
+        "description": "pysd",
         "isExtraImport": true,
-        "detail": "pathlib",
+        "detail": "pysd",
         "documentation": {}
     },
     {
-        "label": "Path",
-        "importPath": "pathlib",
-        "description": "pathlib",
+        "label": "Component",
+        "importPath": "pysd",
+        "description": "pysd",
         "isExtraImport": true,
-        "detail": "pathlib",
+        "detail": "pysd",
         "documentation": {}
     },
     {
-        "label": "Path",
-        "importPath": "pathlib",
-        "description": "pathlib",
+        "label": "Component",
+        "importPath": "pysd",
+        "description": "pysd",
         "isExtraImport": true,
-        "detail": "pathlib",
+        "detail": "pysd",
         "documentation": {}
     },
     {
-        "label": "Path",
-        "importPath": "pathlib",
-        "description": "pathlib",
+        "label": "Component",
+        "importPath": "pysd",
+        "description": "pysd",
         "isExtraImport": true,
-        "detail": "pathlib",
+        "detail": "pysd",
         "documentation": {}
     },
     {
-        "label": "Path",
-        "importPath": "pathlib",
-        "description": "pathlib",
+        "label": "Component",
+        "importPath": "pysd",
+        "description": "pysd",
         "isExtraImport": true,
-        "detail": "pathlib",
+        "detail": "pysd",
         "documentation": {}
     },
     {
-        "label": "Path",
-        "importPath": "pathlib",
-        "description": "pathlib",
+        "label": "Component",
+        "importPath": "pysd",
+        "description": "pysd",
         "isExtraImport": true,
-        "detail": "pathlib",
+        "detail": "pysd",
         "documentation": {}
     },
     {
@@ -113,6 +114,158 @@
         "documentation": {}
     },
     {
+        "label": "stats",
+        "importPath": "scipy",
+        "description": "scipy",
+        "isExtraImport": true,
+        "detail": "scipy",
+        "documentation": {}
+    },
+    {
+        "label": "stats",
+        "importPath": "scipy",
+        "description": "scipy",
+        "isExtraImport": true,
+        "detail": "scipy",
+        "documentation": {}
+    },
+    {
+        "label": "stats",
+        "importPath": "scipy",
+        "description": "scipy",
+        "isExtraImport": true,
+        "detail": "scipy",
+        "documentation": {}
+    },
+    {
+        "label": "stats",
+        "importPath": "scipy",
+        "description": "scipy",
+        "isExtraImport": true,
+        "detail": "scipy",
+        "documentation": {}
+    },
+    {
+        "label": "stats",
+        "importPath": "scipy",
+        "description": "scipy",
+        "isExtraImport": true,
+        "detail": "scipy",
+        "documentation": {}
+    },
+    {
+        "label": "stats",
+        "importPath": "scipy",
+        "description": "scipy",
+        "isExtraImport": true,
+        "detail": "scipy",
+        "documentation": {}
+    },
+    {
+        "label": "stats",
+        "importPath": "scipy",
+        "description": "scipy",
+        "isExtraImport": true,
+        "detail": "scipy",
+        "documentation": {}
+    },
+    {
+        "label": "Path",
+        "importPath": "pathlib",
+        "description": "pathlib",
+        "isExtraImport": true,
+        "detail": "pathlib",
+        "documentation": {}
+    },
+    {
+        "label": "Path",
+        "importPath": "pathlib",
+        "description": "pathlib",
+        "isExtraImport": true,
+        "detail": "pathlib",
+        "documentation": {}
+    },
+    {
+        "label": "Path",
+        "importPath": "pathlib",
+        "description": "pathlib",
+        "isExtraImport": true,
+        "detail": "pathlib",
+        "documentation": {}
+    },
+    {
+        "label": "Path",
+        "importPath": "pathlib",
+        "description": "pathlib",
+        "isExtraImport": true,
+        "detail": "pathlib",
+        "documentation": {}
+    },
+    {
+        "label": "Path",
+        "importPath": "pathlib",
+        "description": "pathlib",
+        "isExtraImport": true,
+        "detail": "pathlib",
+        "documentation": {}
+    },
+    {
+        "label": "Path",
+        "importPath": "pathlib",
+        "description": "pathlib",
+        "isExtraImport": true,
+        "detail": "pathlib",
+        "documentation": {}
+    },
+    {
+        "label": "Path",
+        "importPath": "pathlib",
+        "description": "pathlib",
+        "isExtraImport": true,
+        "detail": "pathlib",
+        "documentation": {}
+    },
+    {
+        "label": "Path",
+        "importPath": "pathlib",
+        "description": "pathlib",
+        "isExtraImport": true,
+        "detail": "pathlib",
+        "documentation": {}
+    },
+    {
+        "label": "Path",
+        "importPath": "pathlib",
+        "description": "pathlib",
+        "isExtraImport": true,
+        "detail": "pathlib",
+        "documentation": {}
+    },
+    {
+        "label": "Path",
+        "importPath": "pathlib",
+        "description": "pathlib",
+        "isExtraImport": true,
+        "detail": "pathlib",
+        "documentation": {}
+    },
+    {
+        "label": "Path",
+        "importPath": "pathlib",
+        "description": "pathlib",
+        "isExtraImport": true,
+        "detail": "pathlib",
+        "documentation": {}
+    },
+    {
+        "label": "Path",
+        "importPath": "pathlib",
+        "description": "pathlib",
+        "isExtraImport": true,
+        "detail": "pathlib",
+        "documentation": {}
+    },
+    {
         "label": "xarray",
         "kind": 6,
         "isExtraImport": true,
@@ -122,94 +275,6 @@
         "documentation": {}
     },
     {
-        "label": "stats",
-        "importPath": "scipy",
-        "description": "scipy",
-        "isExtraImport": true,
-        "detail": "scipy",
-        "documentation": {}
-    },
-    {
-        "label": "stats",
-        "importPath": "scipy",
-        "description": "scipy",
-        "isExtraImport": true,
-        "detail": "scipy",
-        "documentation": {}
-    },
-    {
-        "label": "stats",
-        "importPath": "scipy",
-        "description": "scipy",
-        "isExtraImport": true,
-        "detail": "scipy",
-        "documentation": {}
-    },
-    {
-        "label": "stats",
-        "importPath": "scipy",
-        "description": "scipy",
-        "isExtraImport": true,
-        "detail": "scipy",
-        "documentation": {}
-    },
-    {
-        "label": "stats",
-        "importPath": "scipy",
-        "description": "scipy",
-        "isExtraImport": true,
-        "detail": "scipy",
-        "documentation": {}
-    },
-    {
-        "label": "stats",
-        "importPath": "scipy",
-        "description": "scipy",
-        "isExtraImport": true,
-        "detail": "scipy",
-        "documentation": {}
-    },
-    {
-        "label": "stats",
-        "importPath": "scipy",
-        "description": "scipy",
-        "isExtraImport": true,
-        "detail": "scipy",
-        "documentation": {}
-    },
-    {
-        "label": "xidz",
-        "importPath": "pysd.py_backend.functions",
-        "description": "pysd.py_backend.functions",
-        "isExtraImport": true,
-        "detail": "pysd.py_backend.functions",
-        "documentation": {}
-    },
-    {
-        "label": "not_implemented_function",
-        "importPath": "pysd.py_backend.functions",
-        "description": "pysd.py_backend.functions",
-        "isExtraImport": true,
-        "detail": "pysd.py_backend.functions",
-        "documentation": {}
-    },
-    {
-        "label": "if_then_else",
-        "importPath": "pysd.py_backend.functions",
-        "description": "pysd.py_backend.functions",
-        "isExtraImport": true,
-        "detail": "pysd.py_backend.functions",
-        "documentation": {}
-    },
-    {
-        "label": "sum",
-        "importPath": "pysd.py_backend.functions",
-        "description": "pysd.py_backend.functions",
-        "isExtraImport": true,
-        "detail": "pysd.py_backend.functions",
-        "documentation": {}
-    },
-    {
         "label": "xidz",
         "importPath": "pysd.py_backend.functions",
         "description": "pysd.py_backend.functions",
@@ -474,22 +539,6 @@
         "documentation": {}
     },
     {
-        "label": "Initial",
-        "importPath": "pysd.py_backend.statefuls",
-        "description": "pysd.py_backend.statefuls",
-        "isExtraImport": true,
-        "detail": "pysd.py_backend.statefuls",
-        "documentation": {}
-    },
-    {
-        "label": "Smooth",
-        "importPath": "pysd.py_backend.statefuls",
-        "description": "pysd.py_backend.statefuls",
-        "isExtraImport": true,
-        "detail": "pysd.py_backend.statefuls",
-        "documentation": {}
-    },
-    {
         "label": "Integ",
         "importPath": "pysd.py_backend.statefuls",
         "description": "pysd.py_backend.statefuls",
@@ -567,118 +616,6 @@
         "description": "pysd.py_backend.statefuls",
         "isExtraImport": true,
         "detail": "pysd.py_backend.statefuls",
-        "documentation": {}
-    },
-    {
-        "label": "Integ",
-        "importPath": "pysd.py_backend.statefuls",
-        "description": "pysd.py_backend.statefuls",
-        "isExtraImport": true,
-        "detail": "pysd.py_backend.statefuls",
-        "documentation": {}
-    },
-    {
-        "label": "Component",
-        "importPath": "pysd",
-        "description": "pysd",
-        "isExtraImport": true,
-        "detail": "pysd",
-        "documentation": {}
-    },
-    {
-        "label": "Component",
-        "importPath": "pysd",
-        "description": "pysd",
-        "isExtraImport": true,
-        "detail": "pysd",
-        "documentation": {}
-    },
-    {
-        "label": "Component",
-        "importPath": "pysd",
-        "description": "pysd",
-        "isExtraImport": true,
-        "detail": "pysd",
-        "documentation": {}
-    },
-    {
-        "label": "Component",
-        "importPath": "pysd",
-        "description": "pysd",
-        "isExtraImport": true,
-        "detail": "pysd",
-        "documentation": {}
-    },
-    {
-        "label": "Component",
-        "importPath": "pysd",
-        "description": "pysd",
-        "isExtraImport": true,
-        "detail": "pysd",
-        "documentation": {}
-    },
-    {
-        "label": "Component",
-        "importPath": "pysd",
-        "description": "pysd",
-        "isExtraImport": true,
-        "detail": "pysd",
-        "documentation": {}
-    },
-    {
-        "label": "Component",
-        "importPath": "pysd",
-        "description": "pysd",
-        "isExtraImport": true,
-        "detail": "pysd",
-        "documentation": {}
-    },
-    {
-        "label": "Component",
-        "importPath": "pysd",
-        "description": "pysd",
-        "isExtraImport": true,
-        "detail": "pysd",
-        "documentation": {}
-    },
-    {
-        "label": "Component",
-        "importPath": "pysd",
-        "description": "pysd",
-        "isExtraImport": true,
-        "detail": "pysd",
-        "documentation": {}
-    },
-    {
-        "label": "Component",
-        "importPath": "pysd",
-        "description": "pysd",
-        "isExtraImport": true,
-        "detail": "pysd",
-        "documentation": {}
-    },
-    {
-        "label": "Component",
-        "importPath": "pysd",
-        "description": "pysd",
-        "isExtraImport": true,
-        "detail": "pysd",
-        "documentation": {}
-    },
-    {
-        "label": "Component",
-        "importPath": "pysd",
-        "description": "pysd",
-        "isExtraImport": true,
-        "detail": "pysd",
-        "documentation": {}
-    },
-    {
-        "label": "Component",
-        "importPath": "pysd",
-        "description": "pysd",
-        "isExtraImport": true,
-        "detail": "pysd",
         "documentation": {}
     },
     {
@@ -723,687 +660,39 @@
         "documentation": {}
     },
     {
-        "label": "time",
+        "label": "matplotlib.pyplot",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "matplotlib.pyplot",
+        "description": "matplotlib.pyplot",
+        "detail": "matplotlib.pyplot",
+        "documentation": {}
+    },
+    {
+        "label": "add_random_poisson_to_pysd",
         "kind": 2,
-        "importPath": "2025.model_12_gl",
-        "description": "2025.model_12_gl",
-        "peekOfCode": "def time():\n    \"\"\"\n    Current time of the model.\n    \"\"\"\n    return __data[\"time\"]()\n@component.add(\n    name=\"FINAL TIME\", units=\"Month\", comp_type=\"Constant\", comp_subtype=\"Normal\"\n)\ndef final_time():\n    \"\"\"",
-        "detail": "2025.model_12_gl",
+        "importPath": "2025.fix_pysd_poisson",
+        "description": "2025.fix_pysd_poisson",
+        "peekOfCode": "def add_random_poisson_to_pysd():\n    \"\"\"Add random_poisson function to PySD's functionspace\"\"\"\n    # Import the functionspace\n    from pysd.builders.python.python_expressions_builder import functionspace\n    # Define the random_poisson function following PySD's pattern\n    # Vensim RANDOM POISSON(min, max, mean, shift, stretch, seed)\n    # PySD expects: random_poisson(min, max, mean, shift, stretch, seed)\n    random_poisson_expression = \"\"\"\n    np.clip(\n        np.random.poisson(lam=%(2)s, size=%(size)s) * %(4)s + %(3)s,",
+        "detail": "2025.fix_pysd_poisson",
         "documentation": {}
     },
     {
-        "label": "final_time",
+        "label": "test_random_poisson_function",
         "kind": 2,
-        "importPath": "2025.model_12_gl",
-        "description": "2025.model_12_gl",
-        "peekOfCode": "def final_time():\n    \"\"\"\n    The final time for the simulation.\n    \"\"\"\n    return __data[\"time\"].final_time()\n@component.add(\n    name=\"INITIAL TIME\", units=\"Month\", comp_type=\"Constant\", comp_subtype=\"Normal\"\n)\ndef initial_time():\n    \"\"\"",
-        "detail": "2025.model_12_gl",
+        "importPath": "2025.fix_pysd_poisson",
+        "description": "2025.fix_pysd_poisson",
+        "peekOfCode": "def test_random_poisson_function():\n    \"\"\"Test the random_poisson function\"\"\"\n    print(\"\\n🧪 TESTING RANDOM POISSON FUNCTION:\")\n    print(\"=\" * 50)\n    # Test parameters (from your Vensim model)\n    min_val = 0\n    max_val = 5\n    mean = 1.0 * 0.0625  # accident_rate * TIME_STEP\n    shift = 0\n    stretch = 1",
+        "detail": "2025.fix_pysd_poisson",
         "documentation": {}
     },
     {
-        "label": "initial_time",
+        "label": "create_corrected_model",
         "kind": 2,
-        "importPath": "2025.model_12_gl",
-        "description": "2025.model_12_gl",
-        "peekOfCode": "def initial_time():\n    \"\"\"\n    The initial time for the simulation.\n    \"\"\"\n    return __data[\"time\"].initial_time()\n@component.add(\n    name=\"SAVEPER\",\n    units=\"Month\",\n    limits=(0.0, np.nan),\n    comp_type=\"Auxiliary\",",
-        "detail": "2025.model_12_gl",
-        "documentation": {}
-    },
-    {
-        "label": "saveper",
-        "kind": 2,
-        "importPath": "2025.model_12_gl",
-        "description": "2025.model_12_gl",
-        "peekOfCode": "def saveper():\n    \"\"\"\n    The frequency with which output is stored.\n    \"\"\"\n    return __data[\"time\"].saveper()\n@component.add(\n    name=\"TIME STEP\",\n    units=\"Month\",\n    limits=(0.0, np.nan),\n    comp_type=\"Constant\",",
-        "detail": "2025.model_12_gl",
-        "documentation": {}
-    },
-    {
-        "label": "time_step",
-        "kind": 2,
-        "importPath": "2025.model_12_gl",
-        "description": "2025.model_12_gl",
-        "peekOfCode": "def time_step():\n    \"\"\"\n    The time step for the simulation.\n    \"\"\"\n    return __data[\"time\"].time_step()\n#######################################################################\n#                           MODEL VARIABLES                           #\n#######################################################################\n@component.add(\n    name=\"change in asp\",",
-        "detail": "2025.model_12_gl",
-        "documentation": {}
-    },
-    {
-        "label": "change_in_asp",
-        "kind": 2,
-        "importPath": "2025.model_12_gl",
-        "description": "2025.model_12_gl",
-        "peekOfCode": "def change_in_asp():\n    \"\"\"\n    there should be some nonlinearity here, if perf gap is zero, change in aspirations should be positive rather than zero. Georgia: adding (1+k asp*Accident shock level), with big accidents, aspiration accelerates. -> crisis reveal aspirations. “Aspirations adjust to the performance gap at a base rate determined by t change asp, but this rate is multiplied by (1 + sensitivity × shock). If shocks are present, managers shorten the time horizon for adjustment — they react faster.”\n    \"\"\"\n    return (\n        -perceived_perfromance_gap()\n        * sw_endogen_aspiration()\n        * (1 + k_asp() * accident_shock_level())\n        / t_change_asp()\n    )",
-        "detail": "2025.model_12_gl",
-        "documentation": {}
-    },
-    {
-        "label": "accident_rate",
-        "kind": 2,
-        "importPath": "2025.model_12_gl",
-        "description": "2025.model_12_gl",
-        "peekOfCode": "def accident_rate():\n    return 1\n@component.add(name=\"accident severity\", comp_type=\"Constant\", comp_subtype=\"Normal\")\ndef accident_severity():\n    \"\"\"\n    Magnitude of performance loss per accident event\n    \"\"\"\n    return 10\n@component.add(\n    name=\"Accident shock level\",",
-        "detail": "2025.model_12_gl",
-        "documentation": {}
-    },
-    {
-        "label": "accident_severity",
-        "kind": 2,
-        "importPath": "2025.model_12_gl",
-        "description": "2025.model_12_gl",
-        "peekOfCode": "def accident_severity():\n    \"\"\"\n    Magnitude of performance loss per accident event\n    \"\"\"\n    return 10\n@component.add(\n    name=\"Accident shock level\",\n    comp_type=\"Stateful\",\n    comp_subtype=\"Integ\",\n    depends_on={\"_integ_accident_shock_level\": 1},",
-        "detail": "2025.model_12_gl",
-        "documentation": {}
-    },
-    {
-        "label": "accident_shock_level",
-        "kind": 2,
-        "importPath": "2025.model_12_gl",
-        "description": "2025.model_12_gl",
-        "peekOfCode": "def accident_shock_level():\n    return _integ_accident_shock_level()\n_integ_accident_shock_level = Integ(\n    lambda: accidents() - recovery_rate(), lambda: 0, \"_integ_accident_shock_level\"\n)\n@component.add(\n    name=\"accidents\",\n    comp_type=\"Auxiliary\",\n    comp_subtype=\"Normal\",\n    depends_on={\"accident_rate\": 1, \"time_step\": 1, \"seed\": 1, \"accident_severity\": 1},",
-        "detail": "2025.model_12_gl",
-        "documentation": {}
-    },
-    {
-        "label": "accidents",
-        "kind": 2,
-        "importPath": "2025.model_12_gl",
-        "description": "2025.model_12_gl",
-        "peekOfCode": "def accidents():\n    # Replace random_poisson with numpy.random.poisson\n    # Parameters: lambda (mean), size, random_state\n    poisson_value = np.random.poisson(\n        lam=accident_rate() * time_step(), \n        size=1\n    )[0]\n    return -poisson_value * accident_severity()\n@component.add(\n    name=\"performance\",",
-        "detail": "2025.model_12_gl",
-        "documentation": {}
-    },
-    {
-        "label": "performance",
-        "kind": 2,
-        "importPath": "2025.model_12_gl",
-        "description": "2025.model_12_gl",
-        "peekOfCode": "def performance():\n    \"\"\"\n    add stochasticity potentially generative vs protective generative can be additive with a small stochastic component and for protective with can have a rare event large impact (like safety) combined performance determines endogenous resource inflow of future\n    \"\"\"\n    value = xr.DataArray(np.nan, {\"Goal\": _subscript_dict[\"Goal\"]}, [\"Goal\"])\n    value.loc[[\"A\"]] = (\n        caa() * float(resources().loc[\"A\"])\n        + cba() * float(resources().loc[\"B\"])\n        + sw_to_proctetive() * resource_generative_outcome()\n        + (1 - sw_to_proctetive()) * shock_effect_on_performance()",
-        "detail": "2025.model_12_gl",
-        "documentation": {}
-    },
-    {
-        "label": "recovery_time",
-        "kind": 2,
-        "importPath": "2025.model_12_gl",
-        "description": "2025.model_12_gl",
-        "peekOfCode": "def recovery_time():\n    return float(\n        np.maximum(0.1, recovery_time_base() / (1 + k_asp() * total_investments()))\n    )\n@component.add(\n    name=\"total investments\",\n    comp_type=\"Auxiliary\",\n    comp_subtype=\"Normal\",\n    depends_on={\"resources\": 1},\n)",
-        "detail": "2025.model_12_gl",
-        "documentation": {}
-    },
-    {
-        "label": "total_investments",
-        "kind": 2,
-        "importPath": "2025.model_12_gl",
-        "description": "2025.model_12_gl",
-        "peekOfCode": "def total_investments():\n    return sum(resources().rename({\"Goal\": \"Goal!\"}), dim=[\"Goal!\"])\n@component.add(\n    name=\"recovery rate\",\n    comp_type=\"Auxiliary\",\n    comp_subtype=\"Normal\",\n    depends_on={\"accident_shock_level\": 1, \"recovery_time\": 1},\n)\ndef recovery_rate():\n    return accident_shock_level() / recovery_time()",
-        "detail": "2025.model_12_gl",
-        "documentation": {}
-    },
-    {
-        "label": "recovery_rate",
-        "kind": 2,
-        "importPath": "2025.model_12_gl",
-        "description": "2025.model_12_gl",
-        "peekOfCode": "def recovery_rate():\n    return accident_shock_level() / recovery_time()\n@component.add(\n    name=\"k asp\", limits=(0.001, 0.5), comp_type=\"Constant\", comp_subtype=\"Normal\"\n)\ndef k_asp():\n    \"\"\"\n    Sensitivity of aspiration updating to shocks. Higher = aspirations move faster when accidents occur\n    \"\"\"\n    return 0.02",
-        "detail": "2025.model_12_gl",
-        "documentation": {}
-    },
-    {
-        "label": "k_asp",
-        "kind": 2,
-        "importPath": "2025.model_12_gl",
-        "description": "2025.model_12_gl",
-        "peekOfCode": "def k_asp():\n    \"\"\"\n    Sensitivity of aspiration updating to shocks. Higher = aspirations move faster when accidents occur\n    \"\"\"\n    return 0.02\n@component.add(\n    name=\"recovery time base\",\n    units=\"Month\",\n    limits=(5.0, 30.0, 1.0),\n    comp_type=\"Constant\",",
-        "detail": "2025.model_12_gl",
-        "documentation": {}
-    },
-    {
-        "label": "recovery_time_base",
-        "kind": 2,
-        "importPath": "2025.model_12_gl",
-        "description": "2025.model_12_gl",
-        "peekOfCode": "def recovery_time_base():\n    return 12\n@component.add(\n    name=\"shock sensitivity\", units=\"Dmnl\", comp_type=\"Constant\", comp_subtype=\"Normal\"\n)\ndef shock_sensitivity():\n    return 1\n@component.add(\n    name=\"shock effect on performance\",\n    comp_type=\"Auxiliary\",",
-        "detail": "2025.model_12_gl",
-        "documentation": {}
-    },
-    {
-        "label": "shock_sensitivity",
-        "kind": 2,
-        "importPath": "2025.model_12_gl",
-        "description": "2025.model_12_gl",
-        "peekOfCode": "def shock_sensitivity():\n    return 1\n@component.add(\n    name=\"shock effect on performance\",\n    comp_type=\"Auxiliary\",\n    comp_subtype=\"Normal\",\n    depends_on={\"accident_shock_level\": 1, \"shock_sensitivity\": 1},\n)\ndef shock_effect_on_performance():\n    return accident_shock_level() * shock_sensitivity()",
-        "detail": "2025.model_12_gl",
-        "documentation": {}
-    },
-    {
-        "label": "shock_effect_on_performance",
-        "kind": 2,
-        "importPath": "2025.model_12_gl",
-        "description": "2025.model_12_gl",
-        "peekOfCode": "def shock_effect_on_performance():\n    return accident_shock_level() * shock_sensitivity()\n@component.add(\n    name=\"sw to proctetive\",\n    limits=(0.0, 1.0, 1.0),\n    comp_type=\"Constant\",\n    comp_subtype=\"Normal\",\n)\ndef sw_to_proctetive():\n    return 0",
-        "detail": "2025.model_12_gl",
-        "documentation": {}
-    },
-    {
-        "label": "sw_to_proctetive",
-        "kind": 2,
-        "importPath": "2025.model_12_gl",
-        "description": "2025.model_12_gl",
-        "peekOfCode": "def sw_to_proctetive():\n    return 0\n@component.add(\n    name=\"resource generative outcome\",\n    comp_type=\"Auxiliary\",\n    comp_subtype=\"Normal\",\n    depends_on={\"gstdv\": 1, \"seed\": 1, \"time\": 1},\n)\ndef resource_generative_outcome():\n    return float(",
-        "detail": "2025.model_12_gl",
-        "documentation": {}
-    },
-    {
-        "label": "resource_generative_outcome",
-        "kind": 2,
-        "importPath": "2025.model_12_gl",
-        "description": "2025.model_12_gl",
-        "peekOfCode": "def resource_generative_outcome():\n    return float(\n        stats.truncnorm.rvs(\n            xidz(-10 - 0, gstdv(), -np.inf),\n            xidz(10 - 0, gstdv(), np.inf),\n            loc=0,\n            scale=gstdv(),\n            size=(),\n        )\n    )",
-        "detail": "2025.model_12_gl",
-        "documentation": {}
-    },
-    {
-        "label": "aspiration",
-        "kind": 2,
-        "importPath": "2025.model_12_gl",
-        "description": "2025.model_12_gl",
-        "peekOfCode": "def aspiration():\n    \"\"\"\n    if perfromance is consistently falling short, adjust aspiration down if aspirations are consistently met, adjust them up future: market trends, ecosystem dynamics\n    \"\"\"\n    return _integ_aspiration()\n_integ_aspiration = Integ(\n    lambda: change_in_asp(),\n    lambda: xr.DataArray(\n        exogen_aspiration(), {\"Goal\": _subscript_dict[\"Goal\"]}, [\"Goal\"]\n    ),",
-        "detail": "2025.model_12_gl",
-        "documentation": {}
-    },
-    {
-        "label": "init_perc_comb_perf",
-        "kind": 2,
-        "importPath": "2025.model_12_gl",
-        "description": "2025.model_12_gl",
-        "peekOfCode": "def init_perc_comb_perf():\n    return _initial_init_perc_comb_perf()\n_initial_init_perc_comb_perf = Initial(\n    lambda: caa() * init_a() + cba() * init_b() + cab() * init_a() + cbb() * init_b(),\n    \"_initial_init_perc_comb_perf\",\n)\n@component.add(\n    name=\"Perceived comb perf\",\n    units=\"Dmnl\",\n    comp_type=\"Stateful\",",
-        "detail": "2025.model_12_gl",
-        "documentation": {}
-    },
-    {
-        "label": "perceived_comb_perf",
-        "kind": 2,
-        "importPath": "2025.model_12_gl",
-        "description": "2025.model_12_gl",
-        "peekOfCode": "def perceived_comb_perf():\n    return _integ_perceived_comb_perf()\n_integ_perceived_comb_perf = Integ(\n    lambda: change_in_perc_comb_perf(),\n    lambda: init_perc_comb_perf(),\n    \"_integ_perceived_comb_perf\",\n)\n@component.add(\n    name=\"Perceived perfromance gap\",\n    units=\"Dmnl\",",
-        "detail": "2025.model_12_gl",
-        "documentation": {}
-    },
-    {
-        "label": "perceived_perfromance_gap",
-        "kind": 2,
-        "importPath": "2025.model_12_gl",
-        "description": "2025.model_12_gl",
-        "peekOfCode": "def perceived_perfromance_gap():\n    return _smooth_perceived_perfromance_gap()\n_smooth_perceived_perfromance_gap = Smooth(\n    lambda: performance_gap(),\n    lambda: xr.DataArray(\n        t_update_perf_gap(), {\"Goal\": _subscript_dict[\"Goal\"]}, [\"Goal\"]\n    ),\n    lambda: performance_gap(),\n    lambda: 1,\n    \"_smooth_perceived_perfromance_gap\",",
-        "detail": "2025.model_12_gl",
-        "documentation": {}
-    },
-    {
-        "label": "change_in_perc_comb_perf",
-        "kind": 2,
-        "importPath": "2025.model_12_gl",
-        "description": "2025.model_12_gl",
-        "peekOfCode": "def change_in_perc_comb_perf():\n    return (combined_performance() - perceived_comb_perf()) / if_then_else(\n        combined_performance() > perceived_comb_perf(),\n        lambda: t_adj_perc_upwards(),\n        lambda: t_adj_perc_downwards(),\n    )\n@component.add(\n    name=\"t adj perc upwards\",\n    units=\"Month\",\n    limits=(0.01, 50.0, 0.5),",
-        "detail": "2025.model_12_gl",
-        "documentation": {}
-    },
-    {
-        "label": "t_adj_perc_upwards",
-        "kind": 2,
-        "importPath": "2025.model_12_gl",
-        "description": "2025.model_12_gl",
-        "peekOfCode": "def t_adj_perc_upwards():\n    return 20\n@component.add(\n    name=\"resource inflow\",\n    units=\"Dollar/Month\",\n    limits=(0.0, 100.0, 0.1),\n    comp_type=\"Auxiliary\",\n    comp_subtype=\"Normal\",\n    depends_on={\"sw_endog_inflow\": 2, \"endogen_resource_inflow\": 1, \"exogen_inflow\": 1},\n)",
-        "detail": "2025.model_12_gl",
-        "documentation": {}
-    },
-    {
-        "label": "resource_inflow",
-        "kind": 2,
-        "importPath": "2025.model_12_gl",
-        "description": "2025.model_12_gl",
-        "peekOfCode": "def resource_inflow():\n    \"\"\"\n    endogenous inflow: function of performance (combined performance)\n    \"\"\"\n    return (\n        sw_endog_inflow() * endogen_resource_inflow()\n        + (1 - sw_endog_inflow()) * exogen_inflow()\n    )\n@component.add(\n    name=\"endogen resource inflow\",",
-        "detail": "2025.model_12_gl",
-        "documentation": {}
-    },
-    {
-        "label": "endogen_resource_inflow",
-        "kind": 2,
-        "importPath": "2025.model_12_gl",
-        "description": "2025.model_12_gl",
-        "peekOfCode": "def endogen_resource_inflow():\n    \"\"\"\n    https://www.desmos.com/calculator/dnhbwdyqdq\n    \"\"\"\n    return (1 / sens_res_inflow()) * float(\n        np.log(\n            1\n            + float(\n                np.exp(sens_res_inflow() * inflow_per_perf() * perceived_comb_perf())\n            )",
-        "detail": "2025.model_12_gl",
-        "documentation": {}
-    },
-    {
-        "label": "seed",
-        "kind": 2,
-        "importPath": "2025.model_12_gl",
-        "description": "2025.model_12_gl",
-        "peekOfCode": "def seed():\n    return 1\n@component.add(\n    name=\"exogen aspiration\",\n    units=\"Dmnl\",\n    limits=(0.0, 1000.0, 1.0),\n    comp_type=\"Constant\",\n    comp_subtype=\"Normal\",\n)\ndef exogen_aspiration():",
-        "detail": "2025.model_12_gl",
-        "documentation": {}
-    },
-    {
-        "label": "exogen_aspiration",
-        "kind": 2,
-        "importPath": "2025.model_12_gl",
-        "description": "2025.model_12_gl",
-        "peekOfCode": "def exogen_aspiration():\n    \"\"\"\n    if perfromance is consistently falling short, adjust aspiration down if aspirations are consistently met, adjust them up future: market trends, ecosystem dynamics\n    \"\"\"\n    return 100\n@component.add(\n    name=\"sens res inflow\",\n    units=\"Dmnl\",\n    limits=(0.0, 2.0, 0.1),\n    comp_type=\"Constant\",",
-        "detail": "2025.model_12_gl",
-        "documentation": {}
-    },
-    {
-        "label": "sens_res_inflow",
-        "kind": 2,
-        "importPath": "2025.model_12_gl",
-        "description": "2025.model_12_gl",
-        "peekOfCode": "def sens_res_inflow():\n    return 1\n@component.add(\n    name=\"t change asp\",\n    units=\"Month\",\n    limits=(1.0, 50.0, 1.0),\n    comp_type=\"Constant\",\n    comp_subtype=\"Normal\",\n)\ndef t_change_asp():",
-        "detail": "2025.model_12_gl",
-        "documentation": {}
-    },
-    {
-        "label": "t_change_asp",
-        "kind": 2,
-        "importPath": "2025.model_12_gl",
-        "description": "2025.model_12_gl",
-        "peekOfCode": "def t_change_asp():\n    return 40\n@component.add(\n    name=\"gstdv\",\n    units=\"Dmnl\",\n    limits=(0.0, 30.0, 0.5),\n    comp_type=\"Constant\",\n    comp_subtype=\"Normal\",\n)\ndef gstdv():",
-        "detail": "2025.model_12_gl",
-        "documentation": {}
-    },
-    {
-        "label": "gstdv",
-        "kind": 2,
-        "importPath": "2025.model_12_gl",
-        "description": "2025.model_12_gl",
-        "peekOfCode": "def gstdv():\n    return 0\n@component.add(\n    name=\"inflow per perf\",\n    units=\"Dollar/Month\",\n    limits=(0.0, 0.5, 0.001),\n    comp_type=\"Constant\",\n    comp_subtype=\"Normal\",\n)\ndef inflow_per_perf():",
-        "detail": "2025.model_12_gl",
-        "documentation": {}
-    },
-    {
-        "label": "inflow_per_perf",
-        "kind": 2,
-        "importPath": "2025.model_12_gl",
-        "description": "2025.model_12_gl",
-        "peekOfCode": "def inflow_per_perf():\n    return 0.05\n@component.add(\n    name=\"t adj perc downwards\",\n    units=\"Month\",\n    limits=(0.01, 50.0, 0.5),\n    comp_type=\"Constant\",\n    comp_subtype=\"Normal\",\n)\ndef t_adj_perc_downwards():",
-        "detail": "2025.model_12_gl",
-        "documentation": {}
-    },
-    {
-        "label": "t_adj_perc_downwards",
-        "kind": 2,
-        "importPath": "2025.model_12_gl",
-        "description": "2025.model_12_gl",
-        "peekOfCode": "def t_adj_perc_downwards():\n    return 2\n@component.add(\n    name=\"t update perf gap\",\n    units=\"Month\",\n    limits=(1.0, 20.0, 1.0),\n    comp_type=\"Constant\",\n    comp_subtype=\"Normal\",\n)\ndef t_update_perf_gap():",
-        "detail": "2025.model_12_gl",
-        "documentation": {}
-    },
-    {
-        "label": "t_update_perf_gap",
-        "kind": 2,
-        "importPath": "2025.model_12_gl",
-        "description": "2025.model_12_gl",
-        "peekOfCode": "def t_update_perf_gap():\n    return 5\n@component.add(\n    name=\"performance gap\",\n    units=\"Dmnl\",\n    subscripts=[\"Goal\"],\n    comp_type=\"Auxiliary\",\n    comp_subtype=\"Normal\",\n    depends_on={\"aspiration\": 1, \"performance\": 1},\n)",
-        "detail": "2025.model_12_gl",
-        "documentation": {}
-    },
-    {
-        "label": "performance_gap",
-        "kind": 2,
-        "importPath": "2025.model_12_gl",
-        "description": "2025.model_12_gl",
-        "peekOfCode": "def performance_gap():\n    return aspiration() - performance()\n@component.add(\n    name=\"sw endog inflow\",\n    units=\"Dmnl\",\n    limits=(0.0, 1.0, 1.0),\n    comp_type=\"Constant\",\n    comp_subtype=\"Normal\",\n)\ndef sw_endog_inflow():",
-        "detail": "2025.model_12_gl",
-        "documentation": {}
-    },
-    {
-        "label": "sw_endog_inflow",
-        "kind": 2,
-        "importPath": "2025.model_12_gl",
-        "description": "2025.model_12_gl",
-        "peekOfCode": "def sw_endog_inflow():\n    return 0\n@component.add(\n    name=\"sw endogen aspiration\",\n    units=\"Dmnl\",\n    limits=(0.0, 1.0, 1.0),\n    comp_type=\"Constant\",\n    comp_subtype=\"Normal\",\n)\ndef sw_endogen_aspiration():",
-        "detail": "2025.model_12_gl",
-        "documentation": {}
-    },
-    {
-        "label": "sw_endogen_aspiration",
-        "kind": 2,
-        "importPath": "2025.model_12_gl",
-        "description": "2025.model_12_gl",
-        "peekOfCode": "def sw_endogen_aspiration():\n    return 0\n@component.add(\n    name=\"init resource\",\n    units=\"Dollar\",\n    limits=(0.0, 200.0, 1.0),\n    subscripts=[\"Goal\"],\n    comp_type=\"Auxiliary\",\n    comp_subtype=\"Normal\",\n    depends_on={\"init_a\": 1, \"init_b\": 1},",
-        "detail": "2025.model_12_gl",
-        "documentation": {}
-    },
-    {
-        "label": "init_resource",
-        "kind": 2,
-        "importPath": "2025.model_12_gl",
-        "description": "2025.model_12_gl",
-        "peekOfCode": "def init_resource():\n    value = xr.DataArray(np.nan, {\"Goal\": _subscript_dict[\"Goal\"]}, [\"Goal\"])\n    value.loc[[\"A\"]] = init_a()\n    value.loc[[\"B\"]] = init_b()\n    return value\n@component.add(\n    name=\"combined performance\",\n    units=\"Dmnl\",\n    comp_type=\"Auxiliary\",\n    comp_subtype=\"Normal\",",
-        "detail": "2025.model_12_gl",
-        "documentation": {}
-    },
-    {
-        "label": "combined_performance",
-        "kind": 2,
-        "importPath": "2025.model_12_gl",
-        "description": "2025.model_12_gl",
-        "peekOfCode": "def combined_performance():\n    return sum(performance().rename({\"Goal\": \"Goal!\"}), dim=[\"Goal!\"])\n@component.add(\n    name=\"init res\",\n    units=\"Dollar\",\n    subscripts=[\"Goal\"],\n    comp_type=\"Stateful\",\n    comp_subtype=\"Initial\",\n    depends_on={\"_initial_init_res\": 1},\n    other_deps={",
-        "detail": "2025.model_12_gl",
-        "documentation": {}
-    },
-    {
-        "label": "init_res",
-        "kind": 2,
-        "importPath": "2025.model_12_gl",
-        "description": "2025.model_12_gl",
-        "peekOfCode": "def init_res():\n    return _initial_init_res()\n_initial_init_res = Initial(\n    lambda: (1 - eq_init()) * init_resource(), \"_initial_init_res\"\n)\n@component.add(\n    name=\"inv weight\",\n    units=\"Dmnl\",\n    subscripts=[\"Goal\"],\n    comp_type=\"Auxiliary\",",
-        "detail": "2025.model_12_gl",
-        "documentation": {}
-    },
-    {
-        "label": "inv_weight",
-        "kind": 2,
-        "importPath": "2025.model_12_gl",
-        "description": "2025.model_12_gl",
-        "peekOfCode": "def inv_weight():\n    return np.exp(softmax_snstvty() * performance_gap()) / pg_denum()\n@component.add(\n    name=\"deterioration resources\",\n    units=\"Dollar/Month\",\n    subscripts=[\"Goal\"],\n    comp_type=\"Auxiliary\",\n    comp_subtype=\"Normal\",\n    depends_on={\"resources\": 1, \"t_deteriorate\": 1},\n)",
-        "detail": "2025.model_12_gl",
-        "documentation": {}
-    },
-    {
-        "label": "deterioration_resources",
-        "kind": 2,
-        "importPath": "2025.model_12_gl",
-        "description": "2025.model_12_gl",
-        "peekOfCode": "def deterioration_resources():\n    return resources() / t_deteriorate()\n@component.add(\n    name=\"Resources\",\n    units=\"Dollar\",\n    subscripts=[\"Goal\"],\n    comp_type=\"Stateful\",\n    comp_subtype=\"Integ\",\n    depends_on={\"_integ_resources\": 1},\n    other_deps={",
-        "detail": "2025.model_12_gl",
-        "documentation": {}
-    },
-    {
-        "label": "resources",
-        "kind": 2,
-        "importPath": "2025.model_12_gl",
-        "description": "2025.model_12_gl",
-        "peekOfCode": "def resources():\n    return _integ_resources()\n_integ_resources = Integ(\n    lambda: maturing_inv() - deterioration_resources(),\n    lambda: init_res(),\n    \"_integ_resources\",\n)\n@component.add(\n    name=\"init A\",\n    units=\"Dollar\",",
-        "detail": "2025.model_12_gl",
-        "documentation": {}
-    },
-    {
-        "label": "init_a",
-        "kind": 2,
-        "importPath": "2025.model_12_gl",
-        "description": "2025.model_12_gl",
-        "peekOfCode": "def init_a():\n    return 80\n@component.add(\n    name=\"pg denum\",\n    units=\"Dmnl\",\n    comp_type=\"Auxiliary\",\n    comp_subtype=\"Normal\",\n    depends_on={\"softmax_snstvty\": 1, \"performance_gap\": 1},\n)\ndef pg_denum():",
-        "detail": "2025.model_12_gl",
-        "documentation": {}
-    },
-    {
-        "label": "pg_denum",
-        "kind": 2,
-        "importPath": "2025.model_12_gl",
-        "description": "2025.model_12_gl",
-        "peekOfCode": "def pg_denum():\n    \"\"\"\n    (exp(softmax snstvty * performance gap[A]) + exp(softmax snstvty * performance gap[B]))\n    \"\"\"\n    return sum(\n        np.exp(softmax_snstvty() * performance_gap().rename({\"Goal\": \"Goal!\"})),\n        dim=[\"Goal!\"],\n    )\n@component.add(\n    name=\"init B\",",
-        "detail": "2025.model_12_gl",
-        "documentation": {}
-    },
-    {
-        "label": "init_b",
-        "kind": 2,
-        "importPath": "2025.model_12_gl",
-        "description": "2025.model_12_gl",
-        "peekOfCode": "def init_b():\n    return 80\n@component.add(\n    name=\"maturing inv\",\n    units=\"Dollar/Month\",\n    subscripts=[\"Goal\"],\n    comp_type=\"Auxiliary\",\n    comp_subtype=\"Normal\",\n    depends_on={\"undeveloped_resources\": 1, \"t_mature\": 1},\n)",
-        "detail": "2025.model_12_gl",
-        "documentation": {}
-    },
-    {
-        "label": "maturing_inv",
-        "kind": 2,
-        "importPath": "2025.model_12_gl",
-        "description": "2025.model_12_gl",
-        "peekOfCode": "def maturing_inv():\n    return undeveloped_resources() / t_mature()\n@component.add(\n    name=\"init UR\",\n    units=\"Dollar\",\n    subscripts=[\"Goal\"],\n    comp_type=\"Stateful\",\n    comp_subtype=\"Initial\",\n    depends_on={\"_initial_init_ur\": 1},\n    other_deps={",
-        "detail": "2025.model_12_gl",
-        "documentation": {}
-    },
-    {
-        "label": "init_ur",
-        "kind": 2,
-        "importPath": "2025.model_12_gl",
-        "description": "2025.model_12_gl",
-        "peekOfCode": "def init_ur():\n    return _initial_init_ur()\n_initial_init_ur = Initial(\n    lambda: (init_res() / t_deteriorate()) * t_mature(), \"_initial_init_ur\"\n)\n@component.add(\n    name=\"t mature\",\n    units=\"Month\",\n    limits=(1.0, 20.0, 1.0),\n    comp_type=\"Constant\",",
-        "detail": "2025.model_12_gl",
-        "documentation": {}
-    },
-    {
-        "label": "t_mature",
-        "kind": 2,
-        "importPath": "2025.model_12_gl",
-        "description": "2025.model_12_gl",
-        "peekOfCode": "def t_mature():\n    return 5\n@component.add(\n    name=\"Undeveloped Resources\",\n    units=\"Dollar\",\n    subscripts=[\"Goal\"],\n    comp_type=\"Stateful\",\n    comp_subtype=\"Integ\",\n    depends_on={\"_integ_undeveloped_resources\": 1},\n    other_deps={",
-        "detail": "2025.model_12_gl",
-        "documentation": {}
-    },
-    {
-        "label": "undeveloped_resources",
-        "kind": 2,
-        "importPath": "2025.model_12_gl",
-        "description": "2025.model_12_gl",
-        "peekOfCode": "def undeveloped_resources():\n    return _integ_undeveloped_resources()\n_integ_undeveloped_resources = Integ(\n    lambda: investing() - maturing_inv(),\n    lambda: init_ur(),\n    \"_integ_undeveloped_resources\",\n)\n@component.add(\n    name=\"exogen inflow\",\n    units=\"Dollar/Month\",",
-        "detail": "2025.model_12_gl",
-        "documentation": {}
-    },
-    {
-        "label": "exogen_inflow",
-        "kind": 2,
-        "importPath": "2025.model_12_gl",
-        "description": "2025.model_12_gl",
-        "peekOfCode": "def exogen_inflow():\n    return 8\n@component.add(\n    name=\"eq init\",\n    units=\"Dmnl\",\n    limits=(0.0, 1.0, 1.0),\n    comp_type=\"Constant\",\n    comp_subtype=\"Normal\",\n)\ndef eq_init():",
-        "detail": "2025.model_12_gl",
-        "documentation": {}
-    },
-    {
-        "label": "eq_init",
-        "kind": 2,
-        "importPath": "2025.model_12_gl",
-        "description": "2025.model_12_gl",
-        "peekOfCode": "def eq_init():\n    return 0\n@component.add(\n    name=\"softmax snstvty\",\n    units=\"Dmnl\",\n    limits=(0.0, 0.5, 0.001),\n    comp_type=\"Constant\",\n    comp_subtype=\"Normal\",\n)\ndef softmax_snstvty():",
-        "detail": "2025.model_12_gl",
-        "documentation": {}
-    },
-    {
-        "label": "softmax_snstvty",
-        "kind": 2,
-        "importPath": "2025.model_12_gl",
-        "description": "2025.model_12_gl",
-        "peekOfCode": "def softmax_snstvty():\n    return 0.03\n@component.add(\n    name=\"investing\",\n    units=\"Dollar/Month\",\n    subscripts=[\"Goal\"],\n    comp_type=\"Auxiliary\",\n    comp_subtype=\"Normal\",\n    depends_on={\"inv_weight\": 1, \"resource_inflow\": 1},\n)",
-        "detail": "2025.model_12_gl",
-        "documentation": {}
-    },
-    {
-        "label": "investing",
-        "kind": 2,
-        "importPath": "2025.model_12_gl",
-        "description": "2025.model_12_gl",
-        "peekOfCode": "def investing():\n    return inv_weight() * resource_inflow()\n@component.add(\n    name=\"cAB\",\n    units=\"1/Dollar\",\n    limits=(-1.0, 1.0, 0.01),\n    comp_type=\"Constant\",\n    comp_subtype=\"Normal\",\n)\ndef cab():",
-        "detail": "2025.model_12_gl",
-        "documentation": {}
-    },
-    {
-        "label": "cab",
-        "kind": 2,
-        "importPath": "2025.model_12_gl",
-        "description": "2025.model_12_gl",
-        "peekOfCode": "def cab():\n    return 0\n@component.add(\n    name=\"cBA\",\n    units=\"1/Dollar\",\n    limits=(-1.0, 1.0, 0.01),\n    comp_type=\"Constant\",\n    comp_subtype=\"Normal\",\n)\ndef cba():",
-        "detail": "2025.model_12_gl",
-        "documentation": {}
-    },
-    {
-        "label": "cba",
-        "kind": 2,
-        "importPath": "2025.model_12_gl",
-        "description": "2025.model_12_gl",
-        "peekOfCode": "def cba():\n    return 0\n@component.add(\n    name=\"cAA\",\n    units=\"1/Dollar\",\n    limits=(0.0, 1.0, 0.01),\n    comp_type=\"Constant\",\n    comp_subtype=\"Normal\",\n)\ndef caa():",
-        "detail": "2025.model_12_gl",
-        "documentation": {}
-    },
-    {
-        "label": "caa",
-        "kind": 2,
-        "importPath": "2025.model_12_gl",
-        "description": "2025.model_12_gl",
-        "peekOfCode": "def caa():\n    return 1\n@component.add(\n    name=\"cBB\",\n    units=\"1/Dollar\",\n    limits=(0.0, 1.0, 0.01),\n    comp_type=\"Constant\",\n    comp_subtype=\"Normal\",\n)\ndef cbb():",
-        "detail": "2025.model_12_gl",
-        "documentation": {}
-    },
-    {
-        "label": "cbb",
-        "kind": 2,
-        "importPath": "2025.model_12_gl",
-        "description": "2025.model_12_gl",
-        "peekOfCode": "def cbb():\n    return 1\n@component.add(\n    name=\"t deteriorate\",\n    units=\"Month\",\n    limits=(1.0, 50.0, 1.0),\n    comp_type=\"Constant\",\n    comp_subtype=\"Normal\",\n)\ndef t_deteriorate():",
-        "detail": "2025.model_12_gl",
-        "documentation": {}
-    },
-    {
-        "label": "t_deteriorate",
-        "kind": 2,
-        "importPath": "2025.model_12_gl",
-        "description": "2025.model_12_gl",
-        "peekOfCode": "def t_deteriorate():\n    return 25",
-        "detail": "2025.model_12_gl",
-        "documentation": {}
-    },
-    {
-        "label": "__pysd_version__",
-        "kind": 5,
-        "importPath": "2025.model_12_gl",
-        "description": "2025.model_12_gl",
-        "peekOfCode": "__pysd_version__ = \"3.14.3\"\n__data = {\"scope\": None, \"time\": lambda: 0}\n_root = Path(__file__).parent\n_subscript_dict = {\"Goal\": [\"A\", \"B\"]}\ncomponent = Component()\n#######################################################################\n#                          CONTROL VARIABLES                          #\n#######################################################################\n_control_vars = {\n    \"initial_time\": lambda: 0,",
-        "detail": "2025.model_12_gl",
-        "documentation": {}
-    },
-    {
-        "label": "__data",
-        "kind": 5,
-        "importPath": "2025.model_12_gl",
-        "description": "2025.model_12_gl",
-        "peekOfCode": "__data = {\"scope\": None, \"time\": lambda: 0}\n_root = Path(__file__).parent\n_subscript_dict = {\"Goal\": [\"A\", \"B\"]}\ncomponent = Component()\n#######################################################################\n#                          CONTROL VARIABLES                          #\n#######################################################################\n_control_vars = {\n    \"initial_time\": lambda: 0,\n    \"final_time\": lambda: 100,",
-        "detail": "2025.model_12_gl",
-        "documentation": {}
-    },
-    {
-        "label": "_root",
-        "kind": 5,
-        "importPath": "2025.model_12_gl",
-        "description": "2025.model_12_gl",
-        "peekOfCode": "_root = Path(__file__).parent\n_subscript_dict = {\"Goal\": [\"A\", \"B\"]}\ncomponent = Component()\n#######################################################################\n#                          CONTROL VARIABLES                          #\n#######################################################################\n_control_vars = {\n    \"initial_time\": lambda: 0,\n    \"final_time\": lambda: 100,\n    \"time_step\": lambda: 0.0625,",
-        "detail": "2025.model_12_gl",
-        "documentation": {}
-    },
-    {
-        "label": "_subscript_dict",
-        "kind": 5,
-        "importPath": "2025.model_12_gl",
-        "description": "2025.model_12_gl",
-        "peekOfCode": "_subscript_dict = {\"Goal\": [\"A\", \"B\"]}\ncomponent = Component()\n#######################################################################\n#                          CONTROL VARIABLES                          #\n#######################################################################\n_control_vars = {\n    \"initial_time\": lambda: 0,\n    \"final_time\": lambda: 100,\n    \"time_step\": lambda: 0.0625,\n    \"saveper\": lambda: time_step(),",
-        "detail": "2025.model_12_gl",
-        "documentation": {}
-    },
-    {
-        "label": "component",
-        "kind": 5,
-        "importPath": "2025.model_12_gl",
-        "description": "2025.model_12_gl",
-        "peekOfCode": "component = Component()\n#######################################################################\n#                          CONTROL VARIABLES                          #\n#######################################################################\n_control_vars = {\n    \"initial_time\": lambda: 0,\n    \"final_time\": lambda: 100,\n    \"time_step\": lambda: 0.0625,\n    \"saveper\": lambda: time_step(),\n}",
-        "detail": "2025.model_12_gl",
-        "documentation": {}
-    },
-    {
-        "label": "_control_vars",
-        "kind": 5,
-        "importPath": "2025.model_12_gl",
-        "description": "2025.model_12_gl",
-        "peekOfCode": "_control_vars = {\n    \"initial_time\": lambda: 0,\n    \"final_time\": lambda: 100,\n    \"time_step\": lambda: 0.0625,\n    \"saveper\": lambda: time_step(),\n}\ndef _init_outer_references(data):\n    for key in data:\n        __data[key] = data[key]\n@component.add(name=\"Time\")",
-        "detail": "2025.model_12_gl",
-        "documentation": {}
-    },
-    {
-        "label": "_integ_accident_shock_level",
-        "kind": 5,
-        "importPath": "2025.model_12_gl",
-        "description": "2025.model_12_gl",
-        "peekOfCode": "_integ_accident_shock_level = Integ(\n    lambda: accidents() - recovery_rate(), lambda: 0, \"_integ_accident_shock_level\"\n)\n@component.add(\n    name=\"accidents\",\n    comp_type=\"Auxiliary\",\n    comp_subtype=\"Normal\",\n    depends_on={\"accident_rate\": 1, \"time_step\": 1, \"seed\": 1, \"accident_severity\": 1},\n)\ndef accidents():",
-        "detail": "2025.model_12_gl",
-        "documentation": {}
-    },
-    {
-        "label": "_integ_aspiration",
-        "kind": 5,
-        "importPath": "2025.model_12_gl",
-        "description": "2025.model_12_gl",
-        "peekOfCode": "_integ_aspiration = Integ(\n    lambda: change_in_asp(),\n    lambda: xr.DataArray(\n        exogen_aspiration(), {\"Goal\": _subscript_dict[\"Goal\"]}, [\"Goal\"]\n    ),\n    \"_integ_aspiration\",\n)\n@component.add(\n    name=\"init perc comb perf\",\n    units=\"Dmnl\",",
-        "detail": "2025.model_12_gl",
-        "documentation": {}
-    },
-    {
-        "label": "_initial_init_perc_comb_perf",
-        "kind": 5,
-        "importPath": "2025.model_12_gl",
-        "description": "2025.model_12_gl",
-        "peekOfCode": "_initial_init_perc_comb_perf = Initial(\n    lambda: caa() * init_a() + cba() * init_b() + cab() * init_a() + cbb() * init_b(),\n    \"_initial_init_perc_comb_perf\",\n)\n@component.add(\n    name=\"Perceived comb perf\",\n    units=\"Dmnl\",\n    comp_type=\"Stateful\",\n    comp_subtype=\"Integ\",\n    depends_on={\"_integ_perceived_comb_perf\": 1},",
-        "detail": "2025.model_12_gl",
-        "documentation": {}
-    },
-    {
-        "label": "_integ_perceived_comb_perf",
-        "kind": 5,
-        "importPath": "2025.model_12_gl",
-        "description": "2025.model_12_gl",
-        "peekOfCode": "_integ_perceived_comb_perf = Integ(\n    lambda: change_in_perc_comb_perf(),\n    lambda: init_perc_comb_perf(),\n    \"_integ_perceived_comb_perf\",\n)\n@component.add(\n    name=\"Perceived perfromance gap\",\n    units=\"Dmnl\",\n    subscripts=[\"Goal\"],\n    comp_type=\"Stateful\",",
-        "detail": "2025.model_12_gl",
-        "documentation": {}
-    },
-    {
-        "label": "_smooth_perceived_perfromance_gap",
-        "kind": 5,
-        "importPath": "2025.model_12_gl",
-        "description": "2025.model_12_gl",
-        "peekOfCode": "_smooth_perceived_perfromance_gap = Smooth(\n    lambda: performance_gap(),\n    lambda: xr.DataArray(\n        t_update_perf_gap(), {\"Goal\": _subscript_dict[\"Goal\"]}, [\"Goal\"]\n    ),\n    lambda: performance_gap(),\n    lambda: 1,\n    \"_smooth_perceived_perfromance_gap\",\n)\n@component.add(",
-        "detail": "2025.model_12_gl",
-        "documentation": {}
-    },
-    {
-        "label": "_initial_init_res",
-        "kind": 5,
-        "importPath": "2025.model_12_gl",
-        "description": "2025.model_12_gl",
-        "peekOfCode": "_initial_init_res = Initial(\n    lambda: (1 - eq_init()) * init_resource(), \"_initial_init_res\"\n)\n@component.add(\n    name=\"inv weight\",\n    units=\"Dmnl\",\n    subscripts=[\"Goal\"],\n    comp_type=\"Auxiliary\",\n    comp_subtype=\"Normal\",\n    depends_on={\"softmax_snstvty\": 1, \"performance_gap\": 1, \"pg_denum\": 1},",
-        "detail": "2025.model_12_gl",
-        "documentation": {}
-    },
-    {
-        "label": "_integ_resources",
-        "kind": 5,
-        "importPath": "2025.model_12_gl",
-        "description": "2025.model_12_gl",
-        "peekOfCode": "_integ_resources = Integ(\n    lambda: maturing_inv() - deterioration_resources(),\n    lambda: init_res(),\n    \"_integ_resources\",\n)\n@component.add(\n    name=\"init A\",\n    units=\"Dollar\",\n    limits=(0.0, 200.0, 1.0),\n    comp_type=\"Constant\",",
-        "detail": "2025.model_12_gl",
-        "documentation": {}
-    },
-    {
-        "label": "_initial_init_ur",
-        "kind": 5,
-        "importPath": "2025.model_12_gl",
-        "description": "2025.model_12_gl",
-        "peekOfCode": "_initial_init_ur = Initial(\n    lambda: (init_res() / t_deteriorate()) * t_mature(), \"_initial_init_ur\"\n)\n@component.add(\n    name=\"t mature\",\n    units=\"Month\",\n    limits=(1.0, 20.0, 1.0),\n    comp_type=\"Constant\",\n    comp_subtype=\"Normal\",\n)",
-        "detail": "2025.model_12_gl",
-        "documentation": {}
-    },
-    {
-        "label": "_integ_undeveloped_resources",
-        "kind": 5,
-        "importPath": "2025.model_12_gl",
-        "description": "2025.model_12_gl",
-        "peekOfCode": "_integ_undeveloped_resources = Integ(\n    lambda: investing() - maturing_inv(),\n    lambda: init_ur(),\n    \"_integ_undeveloped_resources\",\n)\n@component.add(\n    name=\"exogen inflow\",\n    units=\"Dollar/Month\",\n    limits=(0.0, 20.0, 0.1),\n    comp_type=\"Constant\",",
-        "detail": "2025.model_12_gl",
+        "importPath": "2025.fix_pysd_poisson",
+        "description": "2025.fix_pysd_poisson",
+        "peekOfCode": "def create_corrected_model():\n    \"\"\"Create a corrected model using the proper PySD approach\"\"\"\n    print(f\"\\n🔧 CREATING CORRECTED MODEL:\")\n    print(\"=\" * 50)\n    # First, add random_poisson to PySD\n    add_random_poisson_to_pysd()\n    # Now try to translate the model again\n    try:\n        print(\"Translating model with random_poisson support...\")\n        model = pysd.read_vensim('2025/model_13.mdl')",
+        "detail": "2025.fix_pysd_poisson",
         "documentation": {}
     },
     {
@@ -1510,7 +799,16 @@
         "kind": 2,
         "importPath": "2025.model_13_gl",
         "description": "2025.model_13_gl",
-        "peekOfCode": "def accidents():\n    # Replace random_poisson with numpy.random.poisson\n    # Parameters: lambda (mean), size, random_state\n    poisson_value = np.random.poisson(\n        lam=accident_rate() * time_step(), \n        size=1\n    )[0]\n    return -poisson_value * accident_severity()\n@component.add(\n    name=\"recovery time\",",
+        "peekOfCode": "def accidents():\n    \"\"\"\n    Uses PySD functionspace random_poisson function\n    Implements Vensim RANDOM POISSON(0, 5, accident_rate*TIME_STEP, 0, 1, seed)\n    This will use the PySD functionspace random_poisson when the model is loaded\n    \"\"\"\n    # Use the PySD functionspace random_poisson function\n    # This will be handled by PySD's functionspace when the model is loaded\n    # with the fix_pysd_poisson.py applied\n    # The functionspace approach uses this pattern:",
+        "detail": "2025.model_13_gl",
+        "documentation": {}
+    },
+    {
+        "label": "random_poisson",
+        "kind": 2,
+        "importPath": "2025.model_13_gl",
+        "description": "2025.model_13_gl",
+        "peekOfCode": "def random_poisson(min_val, max_val, mean, shift, stretch, seed_val):\n    \"\"\"\n    Proper implementation of Vensim RANDOM POISSON function\n    Following PySD's pattern for random functions\n    \"\"\"\n    # Use time-based seed for variation during simulation\n    # This ensures accidents vary over time, not just based on fixed seed\n    time_based_seed = (int(seed_val) + int(time() * 1000)) % 10000\n    # Set random seed\n    np.random.seed(time_based_seed)",
         "detail": "2025.model_13_gl",
         "documentation": {}
     },
@@ -5832,6 +5130,87 @@
         "description": "venv.bin.vba_extract",
         "peekOfCode": "vba_signature_filename = \"vbaProjectSignature.bin\"\n# Get the xlsm file name from the commandline.\nif len(sys.argv) > 1:\n    xlsm_file = sys.argv[1]\nelse:\n    print(\n        \"\\nUtility to extract a vbaProject.bin binary from an Excel 2007+ \"\n        \"xlsm macro file for insertion into an XlsxWriter file.\\n\"\n        \"If the macros are digitally signed, extracts also a vbaProjectSignature.bin \"\n        \"file.\\n\"",
         "detail": "venv.bin.vba_extract",
+        "documentation": {}
+    },
+    {
+        "label": "setup_pysd_functionspace",
+        "kind": 2,
+        "importPath": "test_model_13_gl_with_pysd_poisson",
+        "description": "test_model_13_gl_with_pysd_poisson",
+        "peekOfCode": "def setup_pysd_functionspace():\n    \"\"\"Set up PySD functionspace with random_poisson function\"\"\"\n    print(\"🔧 SETTING UP PYSD FUNCTIONSPACE WITH RANDOM POISSON:\")\n    print(\"=\" * 70)\n    # Import the functionspace\n    from pysd.builders.python.python_expressions_builder import functionspace\n    # Define the random_poisson function following PySD's pattern\n    # This matches exactly what's in fix_pysd_poisson.py\n    random_poisson_expression = \"\"\"\n    np.clip(",
+        "detail": "test_model_13_gl_with_pysd_poisson",
+        "documentation": {}
+    },
+    {
+        "label": "test_model_13_gl",
+        "kind": 2,
+        "importPath": "test_model_13_gl_with_pysd_poisson",
+        "description": "test_model_13_gl_with_pysd_poisson",
+        "peekOfCode": "def test_model_13_gl():\n    \"\"\"Test model_13_gl.py with the PySD functionspace random_poisson\"\"\"\n    print(f\"\\n🧪 TESTING MODEL_13_GL.PY WITH PYSD FUNCTIONSPACE:\")\n    print(\"=\" * 60)\n    try:\n        # Load the model\n        model = pysd.load(\"2025/model_13_gl.py\")\n        print(\"✅ Model loaded successfully\")\n        # Run simulation\n        print(\"Running simulation...\")",
+        "detail": "test_model_13_gl_with_pysd_poisson",
+        "documentation": {}
+    },
+    {
+        "label": "test_multiple_runs",
+        "kind": 2,
+        "importPath": "test_model_13_gl_with_pysd_poisson",
+        "description": "test_model_13_gl_with_pysd_poisson",
+        "peekOfCode": "def test_multiple_runs():\n    \"\"\"Test multiple runs to see variation\"\"\"\n    print(f\"\\n🧪 TESTING MULTIPLE RUNS FOR VARIATION:\")\n    print(\"=\" * 50)\n    try:\n        model = pysd.load(\"2025/model_13_gl.py\")\n        # Run multiple simulations with different seeds\n        all_accidents = []\n        for i in range(5):\n            np.random.seed(i)",
+        "detail": "test_model_13_gl_with_pysd_poisson",
+        "documentation": {}
+    },
+    {
+        "label": "explain_results",
+        "kind": 2,
+        "importPath": "test_model_13_gl_with_pysd_poisson",
+        "description": "test_model_13_gl_with_pysd_poisson",
+        "peekOfCode": "def explain_results():\n    \"\"\"Explain the results and why accidents are mostly 0\"\"\"\n    print(f\"\\n📊 EXPLANATION OF RESULTS:\")\n    print(\"=\" * 50)\n    print(\"Why accidents are mostly 0:\")\n    print(\"- accident_rate = 1.0\")\n    print(\"- time_step = 0.0625\")\n    print(\"- mean = accident_rate * time_step = 0.0625\")\n    print(\"- This small mean results in mostly 0 accidents\")\n    print(\"- This is mathematically correct for Poisson distribution\")",
+        "detail": "test_model_13_gl_with_pysd_poisson",
+        "documentation": {}
+    },
+    {
+        "label": "add_random_poisson_to_pysd",
+        "kind": 2,
+        "importPath": "validate_pysd_random_poisson",
+        "description": "validate_pysd_random_poisson",
+        "peekOfCode": "def add_random_poisson_to_pysd():\n    \"\"\"Add random_poisson function to PySD's functionspace\"\"\"\n    print(\"🔧 ADDING RANDOM POISSON TO PYSD FUNCTIONSPACE:\")\n    print(\"=\" * 60)\n    # Import the functionspace\n    from pysd.builders.python.python_expressions_builder import functionspace\n    # Define the random_poisson function following PySD's pattern\n    # Vensim RANDOM POISSON(min, max, mean, shift, stretch, seed)\n    # PySD expects: random_poisson(min, max, mean, shift, stretch, seed)\n    random_poisson_expression = \"\"\"",
+        "detail": "validate_pysd_random_poisson",
+        "documentation": {}
+    },
+    {
+        "label": "validate_pysd_has_random_poisson",
+        "kind": 2,
+        "importPath": "validate_pysd_random_poisson",
+        "description": "validate_pysd_random_poisson",
+        "peekOfCode": "def validate_pysd_has_random_poisson():\n    \"\"\"Validate that PySD functionspace now contains random_poisson\"\"\"\n    print(f\"\\n🔍 VALIDATING PYSD HAS RANDOM POISSON:\")\n    print(\"=\" * 50)\n    # Check if random_poisson is in functionspace\n    from pysd.builders.python.python_expressions_builder import functionspace\n    if 'random_poisson' in functionspace:\n        print(\"✅ SUCCESS: PySD functionspace contains 'random_poisson'\")\n        print(f\"Function definition: {functionspace['random_poisson'][0]}\")\n        print(f\"Required modules: {functionspace['random_poisson'][1]}\")",
+        "detail": "validate_pysd_random_poisson",
+        "documentation": {}
+    },
+    {
+        "label": "test_model_with_pysd_random_poisson",
+        "kind": 2,
+        "importPath": "validate_pysd_random_poisson",
+        "description": "validate_pysd_random_poisson",
+        "peekOfCode": "def test_model_with_pysd_random_poisson():\n    \"\"\"Test the model using PySD's random_poisson function\"\"\"\n    print(f\"\\n🧪 TESTING MODEL WITH PYSD RANDOM POISSON:\")\n    print(\"=\" * 60)\n    try:\n        # Load the model\n        model = pysd.load(\"2025/model_13_gl.py\")\n        print(\"✅ Model loaded successfully\")\n        # Run simulation\n        print(\"Running simulation...\")",
+        "detail": "validate_pysd_random_poisson",
+        "documentation": {}
+    },
+    {
+        "label": "compare_with_expected_behavior",
+        "kind": 2,
+        "importPath": "validate_pysd_random_poisson",
+        "description": "validate_pysd_random_poisson",
+        "peekOfCode": "def compare_with_expected_behavior():\n    \"\"\"Compare results with expected Vensim behavior\"\"\"\n    print(f\"\\n📊 COMPARISON WITH EXPECTED VENSIM BEHAVIOR:\")\n    print(\"=\" * 60)\n    print(\"Expected Vensim behavior (from your plot):\")\n    print(\"- Frequent small accidents (around -10)\")\n    print(\"- Occasional large accidents (around -25 to -28)\")\n    print(\"- Random timing and magnitude\")\n    print(\"- Stochastic variation over time\")\n    print(f\"\\nNote: With current parameters:\")",
+        "detail": "validate_pysd_random_poisson",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "validate_pysd_random_poisson",
+        "description": "validate_pysd_random_poisson",
+        "peekOfCode": "def main():\n    \"\"\"Main validation function\"\"\"\n    print(\"🧪 COMPREHENSIVE VALIDATION OF PYSD RANDOM POISSON\")\n    print(\"=\" * 80)\n    # Step 1: Add random_poisson to PySD\n    functionspace = add_random_poisson_to_pysd()\n    # Step 2: Validate PySD has the function\n    has_function = validate_pysd_has_random_poisson()\n    if has_function:\n        # Step 3: Test the model",
+        "detail": "validate_pysd_random_poisson",
         "documentation": {}
     }
 ]
