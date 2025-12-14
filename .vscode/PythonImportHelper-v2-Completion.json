@@ -1,5 +1,23 @@
 [
     {
+        "label": "sys",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "sys",
+        "description": "sys",
+        "detail": "sys",
+        "documentation": {}
+    },
+    {
+        "label": "os",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "os",
+        "description": "os",
+        "detail": "os",
+        "documentation": {}
+    },
+    {
         "label": "pysd",
         "kind": 6,
         "isExtraImport": true,
@@ -105,6 +123,71 @@
         "documentation": {}
     },
     {
+        "label": "Component",
+        "importPath": "pysd",
+        "description": "pysd",
+        "isExtraImport": true,
+        "detail": "pysd",
+        "documentation": {}
+    },
+    {
+        "label": "Component",
+        "importPath": "pysd",
+        "description": "pysd",
+        "isExtraImport": true,
+        "detail": "pysd",
+        "documentation": {}
+    },
+    {
+        "label": "pandas",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "pandas",
+        "description": "pandas",
+        "detail": "pandas",
+        "documentation": {}
+    },
+    {
+        "label": "add_random_poisson_to_pysd",
+        "importPath": "fix_pysd_poisson",
+        "description": "fix_pysd_poisson",
+        "isExtraImport": true,
+        "detail": "fix_pysd_poisson",
+        "documentation": {}
+    },
+    {
+        "label": "add_random_poisson_to_pysd",
+        "importPath": "fix_pysd_poisson",
+        "description": "fix_pysd_poisson",
+        "isExtraImport": true,
+        "detail": "fix_pysd_poisson",
+        "documentation": {}
+    },
+    {
+        "label": "add_random_poisson_to_pysd",
+        "importPath": "fix_pysd_poisson",
+        "description": "fix_pysd_poisson",
+        "isExtraImport": true,
+        "detail": "fix_pysd_poisson",
+        "documentation": {}
+    },
+    {
+        "label": "add_random_poisson_to_pysd",
+        "importPath": "fix_pysd_poisson",
+        "description": "fix_pysd_poisson",
+        "isExtraImport": true,
+        "detail": "fix_pysd_poisson",
+        "documentation": {}
+    },
+    {
+        "label": "add_random_poisson_to_pysd",
+        "importPath": "fix_pysd_poisson",
+        "description": "fix_pysd_poisson",
+        "isExtraImport": true,
+        "detail": "fix_pysd_poisson",
+        "documentation": {}
+    },
+    {
         "label": "numpy",
         "kind": 6,
         "isExtraImport": true,
@@ -167,6 +250,46 @@
         "description": "scipy",
         "isExtraImport": true,
         "detail": "scipy",
+        "documentation": {}
+    },
+    {
+        "label": "stats",
+        "importPath": "scipy",
+        "description": "scipy",
+        "isExtraImport": true,
+        "detail": "scipy",
+        "documentation": {}
+    },
+    {
+        "label": "stats",
+        "importPath": "scipy",
+        "description": "scipy",
+        "isExtraImport": true,
+        "detail": "scipy",
+        "documentation": {}
+    },
+    {
+        "label": "stats",
+        "importPath": "scipy",
+        "description": "scipy",
+        "isExtraImport": true,
+        "detail": "scipy",
+        "documentation": {}
+    },
+    {
+        "label": "Path",
+        "importPath": "pathlib",
+        "description": "pathlib",
+        "isExtraImport": true,
+        "detail": "pathlib",
+        "documentation": {}
+    },
+    {
+        "label": "Path",
+        "importPath": "pathlib",
+        "description": "pathlib",
+        "isExtraImport": true,
+        "detail": "pathlib",
         "documentation": {}
     },
     {
@@ -272,6 +395,54 @@
         "importPath": "xarray",
         "description": "xarray",
         "detail": "xarray",
+        "documentation": {}
+    },
+    {
+        "label": "if_then_else",
+        "importPath": "pysd.py_backend.functions",
+        "description": "pysd.py_backend.functions",
+        "isExtraImport": true,
+        "detail": "pysd.py_backend.functions",
+        "documentation": {}
+    },
+    {
+        "label": "xidz",
+        "importPath": "pysd.py_backend.functions",
+        "description": "pysd.py_backend.functions",
+        "isExtraImport": true,
+        "detail": "pysd.py_backend.functions",
+        "documentation": {}
+    },
+    {
+        "label": "sum",
+        "importPath": "pysd.py_backend.functions",
+        "description": "pysd.py_backend.functions",
+        "isExtraImport": true,
+        "detail": "pysd.py_backend.functions",
+        "documentation": {}
+    },
+    {
+        "label": "xidz",
+        "importPath": "pysd.py_backend.functions",
+        "description": "pysd.py_backend.functions",
+        "isExtraImport": true,
+        "detail": "pysd.py_backend.functions",
+        "documentation": {}
+    },
+    {
+        "label": "sum",
+        "importPath": "pysd.py_backend.functions",
+        "description": "pysd.py_backend.functions",
+        "isExtraImport": true,
+        "detail": "pysd.py_backend.functions",
+        "documentation": {}
+    },
+    {
+        "label": "if_then_else",
+        "importPath": "pysd.py_backend.functions",
+        "description": "pysd.py_backend.functions",
+        "isExtraImport": true,
+        "detail": "pysd.py_backend.functions",
         "documentation": {}
     },
     {
@@ -507,6 +678,54 @@
         "documentation": {}
     },
     {
+        "label": "Initial",
+        "importPath": "pysd.py_backend.statefuls",
+        "description": "pysd.py_backend.statefuls",
+        "isExtraImport": true,
+        "detail": "pysd.py_backend.statefuls",
+        "documentation": {}
+    },
+    {
+        "label": "Integ",
+        "importPath": "pysd.py_backend.statefuls",
+        "description": "pysd.py_backend.statefuls",
+        "isExtraImport": true,
+        "detail": "pysd.py_backend.statefuls",
+        "documentation": {}
+    },
+    {
+        "label": "Smooth",
+        "importPath": "pysd.py_backend.statefuls",
+        "description": "pysd.py_backend.statefuls",
+        "isExtraImport": true,
+        "detail": "pysd.py_backend.statefuls",
+        "documentation": {}
+    },
+    {
+        "label": "Integ",
+        "importPath": "pysd.py_backend.statefuls",
+        "description": "pysd.py_backend.statefuls",
+        "isExtraImport": true,
+        "detail": "pysd.py_backend.statefuls",
+        "documentation": {}
+    },
+    {
+        "label": "Smooth",
+        "importPath": "pysd.py_backend.statefuls",
+        "description": "pysd.py_backend.statefuls",
+        "isExtraImport": true,
+        "detail": "pysd.py_backend.statefuls",
+        "documentation": {}
+    },
+    {
+        "label": "Initial",
+        "importPath": "pysd.py_backend.statefuls",
+        "description": "pysd.py_backend.statefuls",
+        "isExtraImport": true,
+        "detail": "pysd.py_backend.statefuls",
+        "documentation": {}
+    },
+    {
         "label": "Integ",
         "importPath": "pysd.py_backend.statefuls",
         "description": "pysd.py_backend.statefuls",
@@ -619,6 +838,59 @@
         "documentation": {}
     },
     {
+        "label": "functionspace",
+        "importPath": "pysd.builders.python.python_expressions_builder",
+        "description": "pysd.builders.python.python_expressions_builder",
+        "isExtraImport": true,
+        "detail": "pysd.builders.python.python_expressions_builder",
+        "documentation": {}
+    },
+    {
+        "label": "matplotlib.pyplot",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "matplotlib.pyplot",
+        "description": "matplotlib.pyplot",
+        "detail": "matplotlib.pyplot",
+        "documentation": {}
+    },
+    {
+        "label": "seaborn",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "seaborn",
+        "description": "seaborn",
+        "detail": "seaborn",
+        "documentation": {}
+    },
+    {
+        "label": "netCDF4",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "netCDF4",
+        "description": "netCDF4",
+        "detail": "netCDF4",
+        "documentation": {}
+    },
+    {
+        "label": "time",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "time",
+        "description": "time",
+        "detail": "time",
+        "documentation": {}
+    },
+    {
+        "label": "signal",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "signal",
+        "description": "signal",
+        "detail": "signal",
+        "documentation": {}
+    },
+    {
         "label": "Macro",
         "importPath": "pysd.py_backend.model",
         "description": "pysd.py_backend.model",
@@ -632,15 +904,6 @@
         "description": "__future__",
         "isExtraImport": true,
         "detail": "__future__",
-        "documentation": {}
-    },
-    {
-        "label": "sys",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "sys",
-        "description": "sys",
-        "detail": "sys",
         "documentation": {}
     },
     {
@@ -660,12 +923,795 @@
         "documentation": {}
     },
     {
-        "label": "matplotlib.pyplot",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "matplotlib.pyplot",
-        "description": "matplotlib.pyplot",
-        "detail": "matplotlib.pyplot",
+        "label": "add_random_poisson_to_pysd",
+        "kind": 2,
+        "importPath": "2025.2025.12.fix_pysd_poisson",
+        "description": "2025.2025.12.fix_pysd_poisson",
+        "peekOfCode": "def add_random_poisson_to_pysd():\n    \"\"\"Add random_poisson function to PySD's functionspace\"\"\"\n    # Import the functionspace\n    from pysd.builders.python.python_expressions_builder import functionspace\n    # Define the random_poisson function following PySD's pattern\n    # Vensim RANDOM POISSON(min, max, mean, shift, stretch, seed)\n    # PySD expects: random_poisson(min, max, mean, shift, stretch, seed)\n    random_poisson_expression = \"\"\"\n    np.clip(\n        np.random.poisson(lam=%(2)s, size=%(size)s) * %(4)s + %(3)s,",
+        "detail": "2025.2025.12.fix_pysd_poisson",
+        "documentation": {}
+    },
+    {
+        "label": "test_random_poisson_function",
+        "kind": 2,
+        "importPath": "2025.2025.12.fix_pysd_poisson",
+        "description": "2025.2025.12.fix_pysd_poisson",
+        "peekOfCode": "def test_random_poisson_function():\n    \"\"\"Test the random_poisson function\"\"\"\n    print(\"\\n🧪 TESTING RANDOM POISSON FUNCTION:\")\n    print(\"=\" * 50)\n    # Test parameters (from your Vensim model)\n    min_val = 0\n    max_val = 5\n    mean = 1.0 * 0.0625  # accident_rate * TIME_STEP\n    shift = 0\n    stretch = 1",
+        "detail": "2025.2025.12.fix_pysd_poisson",
+        "documentation": {}
+    },
+    {
+        "label": "create_corrected_model",
+        "kind": 2,
+        "importPath": "2025.2025.12.fix_pysd_poisson",
+        "description": "2025.2025.12.fix_pysd_poisson",
+        "peekOfCode": "def create_corrected_model():\n    \"\"\"Create a corrected model using the proper PySD approach\"\"\"\n    print(f\"\\n🔧 CREATING CORRECTED MODEL:\")\n    print(\"=\" * 50)\n    # First, add random_poisson to PySD\n    add_random_poisson_to_pysd()\n    # Now try to translate the model again\n    try:\n        print(\"Translating model with random_poisson support...\")\n        model = pysd.read_vensim('2025/model_13.mdl')",
+        "detail": "2025.2025.12.fix_pysd_poisson",
+        "documentation": {}
+    },
+    {
+        "label": "time",
+        "kind": 2,
+        "importPath": "2025.2025.12.model_13",
+        "description": "2025.2025.12.model_13",
+        "peekOfCode": "def time():\n    \"\"\"\n    Current time of the model.\n    \"\"\"\n    return __data[\"time\"]()\n@component.add(\n    name=\"FINAL TIME\", units=\"Month\", comp_type=\"Constant\", comp_subtype=\"Normal\"\n)\ndef final_time():\n    \"\"\"",
+        "detail": "2025.2025.12.model_13",
+        "documentation": {}
+    },
+    {
+        "label": "final_time",
+        "kind": 2,
+        "importPath": "2025.2025.12.model_13",
+        "description": "2025.2025.12.model_13",
+        "peekOfCode": "def final_time():\n    \"\"\"\n    The final time for the simulation.\n    \"\"\"\n    return __data[\"time\"].final_time()\n@component.add(\n    name=\"INITIAL TIME\", units=\"Month\", comp_type=\"Constant\", comp_subtype=\"Normal\"\n)\ndef initial_time():\n    \"\"\"",
+        "detail": "2025.2025.12.model_13",
+        "documentation": {}
+    },
+    {
+        "label": "initial_time",
+        "kind": 2,
+        "importPath": "2025.2025.12.model_13",
+        "description": "2025.2025.12.model_13",
+        "peekOfCode": "def initial_time():\n    \"\"\"\n    The initial time for the simulation.\n    \"\"\"\n    return __data[\"time\"].initial_time()\n@component.add(\n    name=\"SAVEPER\",\n    units=\"Month\",\n    limits=(0.0, np.nan),\n    comp_type=\"Auxiliary\",",
+        "detail": "2025.2025.12.model_13",
+        "documentation": {}
+    },
+    {
+        "label": "saveper",
+        "kind": 2,
+        "importPath": "2025.2025.12.model_13",
+        "description": "2025.2025.12.model_13",
+        "peekOfCode": "def saveper():\n    \"\"\"\n    The frequency with which output is stored.\n    \"\"\"\n    return __data[\"time\"].saveper()\n@component.add(\n    name=\"TIME STEP\",\n    units=\"Month\",\n    limits=(0.0, np.nan),\n    comp_type=\"Constant\",",
+        "detail": "2025.2025.12.model_13",
+        "documentation": {}
+    },
+    {
+        "label": "time_step",
+        "kind": 2,
+        "importPath": "2025.2025.12.model_13",
+        "description": "2025.2025.12.model_13",
+        "peekOfCode": "def time_step():\n    \"\"\"\n    The time step for the simulation.\n    \"\"\"\n    return __data[\"time\"].time_step()\n#######################################################################\n#                           MODEL VARIABLES                           #\n#######################################################################\n@component.add(\n    name='\"acc shock in-flow\"',",
+        "detail": "2025.2025.12.model_13",
+        "documentation": {}
+    },
+    {
+        "label": "acc_shock_inflow",
+        "kind": 2,
+        "importPath": "2025.2025.12.model_13",
+        "description": "2025.2025.12.model_13",
+        "peekOfCode": "def acc_shock_inflow():\n    return accidents() * accident_severity()\n@component.add(\n    name=\"shock effect on performance\",\n    subscripts=[\"Goal\"],\n    comp_type=\"Auxiliary\",\n    comp_subtype=\"Normal\",\n    depends_on={\"accident_shock_level\": 1, \"shock_sensitivity\": 1},\n)\ndef shock_effect_on_performance():",
+        "detail": "2025.2025.12.model_13",
+        "documentation": {}
+    },
+    {
+        "label": "shock_effect_on_performance",
+        "kind": 2,
+        "importPath": "2025.2025.12.model_13",
+        "description": "2025.2025.12.model_13",
+        "peekOfCode": "def shock_effect_on_performance():\n    return accident_shock_level() * shock_sensitivity()\n@component.add(\n    name=\"accident rate B\",\n    limits=(0.0, 5.0, 0.1),\n    comp_type=\"Constant\",\n    comp_subtype=\"Normal\",\n)\ndef accident_rate_b():\n    return 1",
+        "detail": "2025.2025.12.model_13",
+        "documentation": {}
+    },
+    {
+        "label": "accident_rate_b",
+        "kind": 2,
+        "importPath": "2025.2025.12.model_13",
+        "description": "2025.2025.12.model_13",
+        "peekOfCode": "def accident_rate_b():\n    return 1\n@component.add(\n    name=\"performance\",\n    units=\"Dmnl\",\n    subscripts=[\"Goal\"],\n    comp_type=\"Auxiliary\",\n    comp_subtype=\"Normal\",\n    depends_on={\n        \"caa\": 1,",
+        "detail": "2025.2025.12.model_13",
+        "documentation": {}
+    },
+    {
+        "label": "performance",
+        "kind": 2,
+        "importPath": "2025.2025.12.model_13",
+        "description": "2025.2025.12.model_13",
+        "peekOfCode": "def performance():\n    \"\"\"\n    add stochasticity potentially generative vs protective generative can be additive with a small stochastic component and for protective with can have a rare event large impact (like safety) combined performance determines endogenous resource inflow of future\n    \"\"\"\n    value = xr.DataArray(np.nan, {\"Goal\": _subscript_dict[\"Goal\"]}, [\"Goal\"])\n    value.loc[[\"A\"]] = (\n        caa() * float(resources().loc[\"A\"])\n        + cba() * float(resources().loc[\"B\"])\n        + (1 - sw_a_to_protective()) * float(resource_generative_outcome().loc[\"A\"])\n        + sw_a_to_protective() * float(shock_effect_on_performance().loc[\"A\"])",
+        "detail": "2025.2025.12.model_13",
+        "documentation": {}
+    },
+    {
+        "label": "accident_shock_level",
+        "kind": 2,
+        "importPath": "2025.2025.12.model_13",
+        "description": "2025.2025.12.model_13",
+        "peekOfCode": "def accident_shock_level():\n    return _integ_accident_shock_level()\n_integ_accident_shock_level = Integ(\n    lambda: acc_shock_inflow() - recovery_rate(),\n    lambda: xr.DataArray(0, {\"Goal\": _subscript_dict[\"Goal\"]}, [\"Goal\"]),\n    \"_integ_accident_shock_level\",\n)\n@component.add(\n    name=\"accidents\",\n    subscripts=[\"Goal\"],",
+        "detail": "2025.2025.12.model_13",
+        "documentation": {}
+    },
+    {
+        "label": "accidents",
+        "kind": 2,
+        "importPath": "2025.2025.12.model_13",
+        "description": "2025.2025.12.model_13",
+        "peekOfCode": "def accidents():\n    value = xr.DataArray(np.nan, {\"Goal\": _subscript_dict[\"Goal\"]}, [\"Goal\"])\n    value.loc[[\"A\"]] = xr.DataArray(\n        np.clip(\n            np.random.poisson(lam=accident_rate_a() * time_step(), size=(1,)) * 1 + 0,\n            0,\n            5,\n        ),\n        {\"Goal\": [\"A\"]},\n        [\"Goal\"],",
+        "detail": "2025.2025.12.model_13",
+        "documentation": {}
+    },
+    {
+        "label": "recovery_time",
+        "kind": 2,
+        "importPath": "2025.2025.12.model_13",
+        "description": "2025.2025.12.model_13",
+        "peekOfCode": "def recovery_time():\n    return np.maximum(0.1, recovery_time_base() / (1 + k_asp() * resources()))\n@component.add(\n    name=\"recovery rate\",\n    subscripts=[\"Goal\"],\n    comp_type=\"Auxiliary\",\n    comp_subtype=\"Normal\",\n    depends_on={\"accident_shock_level\": 1, \"recovery_time\": 1},\n)\ndef recovery_rate():",
+        "detail": "2025.2025.12.model_13",
+        "documentation": {}
+    },
+    {
+        "label": "recovery_rate",
+        "kind": 2,
+        "importPath": "2025.2025.12.model_13",
+        "description": "2025.2025.12.model_13",
+        "peekOfCode": "def recovery_rate():\n    return accident_shock_level() / recovery_time()\n@component.add(\n    name=\"gen stoch range\",\n    limits=(0.0, 50.0, 0.1),\n    comp_type=\"Constant\",\n    comp_subtype=\"Normal\",\n)\ndef gen_stoch_range():\n    return 10",
+        "detail": "2025.2025.12.model_13",
+        "documentation": {}
+    },
+    {
+        "label": "gen_stoch_range",
+        "kind": 2,
+        "importPath": "2025.2025.12.model_13",
+        "description": "2025.2025.12.model_13",
+        "peekOfCode": "def gen_stoch_range():\n    return 10\n@component.add(\n    name=\"resource generative outcome\",\n    subscripts=[\"Goal\"],\n    comp_type=\"Auxiliary\",\n    comp_subtype=\"Normal\",\n    depends_on={\"gen_stoch_range\": 4, \"gstdv\": 2, \"seed\": 2, \"time\": 2},\n)\ndef resource_generative_outcome():",
+        "detail": "2025.2025.12.model_13",
+        "documentation": {}
+    },
+    {
+        "label": "resource_generative_outcome",
+        "kind": 2,
+        "importPath": "2025.2025.12.model_13",
+        "description": "2025.2025.12.model_13",
+        "peekOfCode": "def resource_generative_outcome():\n    value = xr.DataArray(np.nan, {\"Goal\": _subscript_dict[\"Goal\"]}, [\"Goal\"])\n    value.loc[[\"A\"]] = xr.DataArray(\n        stats.truncnorm.rvs(\n            xidz(-gen_stoch_range() - 0, gstdv(), -np.inf),\n            xidz(gen_stoch_range() - 0, gstdv(), np.inf),\n            loc=0,\n            scale=gstdv(),\n            size=(1,),\n        ),",
+        "detail": "2025.2025.12.model_13",
+        "documentation": {}
+    },
+    {
+        "label": "sw_b_to_protective",
+        "kind": 2,
+        "importPath": "2025.2025.12.model_13",
+        "description": "2025.2025.12.model_13",
+        "peekOfCode": "def sw_b_to_protective():\n    return 0\n@component.add(\n    name=\"change in asp\",\n    units=\"1/Month\",\n    subscripts=[\"Goal\"],\n    comp_type=\"Auxiliary\",\n    comp_subtype=\"Normal\",\n    depends_on={\n        \"perceived_perfromance_gap\": 1,",
+        "detail": "2025.2025.12.model_13",
+        "documentation": {}
+    },
+    {
+        "label": "change_in_asp",
+        "kind": 2,
+        "importPath": "2025.2025.12.model_13",
+        "description": "2025.2025.12.model_13",
+        "peekOfCode": "def change_in_asp():\n    \"\"\"\n    there should be some nonlinearity here, if perf gap is zero, change in aspirations should be positive rather than zero. Georgia: adding (1+k asp*Accident shock level), with big accidents, aspiration accelerates. -> crisis reveal aspirations. “Aspirations adjust to the performance gap at a base rate determined by t change asp, but this rate is multiplied by (1 + sensitivity × shock). If shocks are present, managers shorten the time horizon for adjustment — they react faster.”\n    \"\"\"\n    return -perceived_perfromance_gap() * sw_endogen_aspiration() / t_change_asp()\n@component.add(\n    name=\"accident rate A\",\n    units=\"1/Month\",\n    limits=(0.0, 5.0, 0.1),\n    comp_type=\"Constant\",",
+        "detail": "2025.2025.12.model_13",
+        "documentation": {}
+    },
+    {
+        "label": "accident_rate_a",
+        "kind": 2,
+        "importPath": "2025.2025.12.model_13",
+        "description": "2025.2025.12.model_13",
+        "peekOfCode": "def accident_rate_a():\n    return 1\n@component.add(\n    name=\"accident severity\",\n    limits=(0.0, 50.0, 1.0),\n    comp_type=\"Constant\",\n    comp_subtype=\"Normal\",\n)\ndef accident_severity():\n    \"\"\"",
+        "detail": "2025.2025.12.model_13",
+        "documentation": {}
+    },
+    {
+        "label": "accident_severity",
+        "kind": 2,
+        "importPath": "2025.2025.12.model_13",
+        "description": "2025.2025.12.model_13",
+        "peekOfCode": "def accident_severity():\n    \"\"\"\n    Magnitude of performance loss per accident event\n    \"\"\"\n    return 10\n@component.add(\n    name=\"total investments\",\n    comp_type=\"Auxiliary\",\n    comp_subtype=\"Normal\",\n    depends_on={\"resources\": 1},",
+        "detail": "2025.2025.12.model_13",
+        "documentation": {}
+    },
+    {
+        "label": "total_investments",
+        "kind": 2,
+        "importPath": "2025.2025.12.model_13",
+        "description": "2025.2025.12.model_13",
+        "peekOfCode": "def total_investments():\n    return sum(resources().rename({\"Goal\": \"Goal!\"}), dim=[\"Goal!\"])\n@component.add(\n    name=\"k asp\", limits=(0.001, 0.5), comp_type=\"Constant\", comp_subtype=\"Normal\"\n)\ndef k_asp():\n    \"\"\"\n    Sensitivity of aspiration updating to shocks. Higher = aspirations move faster when accidents occur\n    \"\"\"\n    return 0.02",
+        "detail": "2025.2025.12.model_13",
+        "documentation": {}
+    },
+    {
+        "label": "k_asp",
+        "kind": 2,
+        "importPath": "2025.2025.12.model_13",
+        "description": "2025.2025.12.model_13",
+        "peekOfCode": "def k_asp():\n    \"\"\"\n    Sensitivity of aspiration updating to shocks. Higher = aspirations move faster when accidents occur\n    \"\"\"\n    return 0.02\n@component.add(\n    name=\"recovery time base\",\n    units=\"Month\",\n    limits=(5.0, 30.0, 1.0),\n    comp_type=\"Constant\",",
+        "detail": "2025.2025.12.model_13",
+        "documentation": {}
+    },
+    {
+        "label": "recovery_time_base",
+        "kind": 2,
+        "importPath": "2025.2025.12.model_13",
+        "description": "2025.2025.12.model_13",
+        "peekOfCode": "def recovery_time_base():\n    return 12\n@component.add(\n    name=\"shock sensitivity\",\n    units=\"Dmnl\",\n    limits=(0.0, 50.0, 1.0),\n    comp_type=\"Constant\",\n    comp_subtype=\"Normal\",\n)\ndef shock_sensitivity():",
+        "detail": "2025.2025.12.model_13",
+        "documentation": {}
+    },
+    {
+        "label": "shock_sensitivity",
+        "kind": 2,
+        "importPath": "2025.2025.12.model_13",
+        "description": "2025.2025.12.model_13",
+        "peekOfCode": "def shock_sensitivity():\n    return 1\n@component.add(\n    name=\"sw A to protective\",\n    units=\"Dmnl\",\n    limits=(0.0, 1.0, 1.0),\n    comp_type=\"Constant\",\n    comp_subtype=\"Normal\",\n)\ndef sw_a_to_protective():",
+        "detail": "2025.2025.12.model_13",
+        "documentation": {}
+    },
+    {
+        "label": "sw_a_to_protective",
+        "kind": 2,
+        "importPath": "2025.2025.12.model_13",
+        "description": "2025.2025.12.model_13",
+        "peekOfCode": "def sw_a_to_protective():\n    return 0\n@component.add(\n    name=\"aspiration\",\n    units=\"Dmnl\",\n    limits=(0.0, 1000.0, 1.0),\n    subscripts=[\"Goal\"],\n    comp_type=\"Stateful\",\n    comp_subtype=\"Integ\",\n    depends_on={\"_integ_aspiration\": 1},",
+        "detail": "2025.2025.12.model_13",
+        "documentation": {}
+    },
+    {
+        "label": "aspiration",
+        "kind": 2,
+        "importPath": "2025.2025.12.model_13",
+        "description": "2025.2025.12.model_13",
+        "peekOfCode": "def aspiration():\n    \"\"\"\n    if perfromance is consistently falling short, adjust aspiration down if aspirations are consistently met, adjust them up future: market trends, ecosystem dynamics\n    \"\"\"\n    return _integ_aspiration()\n_integ_aspiration = Integ(\n    lambda: change_in_asp(),\n    lambda: xr.DataArray(\n        exogen_aspiration(), {\"Goal\": _subscript_dict[\"Goal\"]}, [\"Goal\"]\n    ),",
+        "detail": "2025.2025.12.model_13",
+        "documentation": {}
+    },
+    {
+        "label": "init_perc_comb_perf",
+        "kind": 2,
+        "importPath": "2025.2025.12.model_13",
+        "description": "2025.2025.12.model_13",
+        "peekOfCode": "def init_perc_comb_perf():\n    return _initial_init_perc_comb_perf()\n_initial_init_perc_comb_perf = Initial(\n    lambda: caa() * init_a() + cba() * init_b() + cab() * init_a() + cbb() * init_b(),\n    \"_initial_init_perc_comb_perf\",\n)\n@component.add(\n    name=\"Perceived comb perf\",\n    units=\"Dmnl\",\n    comp_type=\"Stateful\",",
+        "detail": "2025.2025.12.model_13",
+        "documentation": {}
+    },
+    {
+        "label": "perceived_comb_perf",
+        "kind": 2,
+        "importPath": "2025.2025.12.model_13",
+        "description": "2025.2025.12.model_13",
+        "peekOfCode": "def perceived_comb_perf():\n    return _integ_perceived_comb_perf()\n_integ_perceived_comb_perf = Integ(\n    lambda: change_in_perc_comb_perf(),\n    lambda: init_perc_comb_perf(),\n    \"_integ_perceived_comb_perf\",\n)\n@component.add(\n    name=\"Perceived perfromance gap\",\n    units=\"Dmnl\",",
+        "detail": "2025.2025.12.model_13",
+        "documentation": {}
+    },
+    {
+        "label": "perceived_perfromance_gap",
+        "kind": 2,
+        "importPath": "2025.2025.12.model_13",
+        "description": "2025.2025.12.model_13",
+        "peekOfCode": "def perceived_perfromance_gap():\n    return _smooth_perceived_perfromance_gap()\n_smooth_perceived_perfromance_gap = Smooth(\n    lambda: performance_gap(),\n    lambda: xr.DataArray(\n        t_update_perf_gap(), {\"Goal\": _subscript_dict[\"Goal\"]}, [\"Goal\"]\n    ),\n    lambda: performance_gap(),\n    lambda: 1,\n    \"_smooth_perceived_perfromance_gap\",",
+        "detail": "2025.2025.12.model_13",
+        "documentation": {}
+    },
+    {
+        "label": "change_in_perc_comb_perf",
+        "kind": 2,
+        "importPath": "2025.2025.12.model_13",
+        "description": "2025.2025.12.model_13",
+        "peekOfCode": "def change_in_perc_comb_perf():\n    return (combined_performance() - perceived_comb_perf()) / if_then_else(\n        combined_performance() > perceived_comb_perf(),\n        lambda: t_adj_perc_upwards(),\n        lambda: t_adj_perc_downwards(),\n    )\n@component.add(\n    name=\"t adj perc upwards\",\n    units=\"Month\",\n    limits=(0.01, 50.0, 0.5),",
+        "detail": "2025.2025.12.model_13",
+        "documentation": {}
+    },
+    {
+        "label": "t_adj_perc_upwards",
+        "kind": 2,
+        "importPath": "2025.2025.12.model_13",
+        "description": "2025.2025.12.model_13",
+        "peekOfCode": "def t_adj_perc_upwards():\n    return 20\n@component.add(\n    name=\"resource inflow\",\n    units=\"Dollar/Month\",\n    limits=(0.0, 100.0, 0.1),\n    comp_type=\"Auxiliary\",\n    comp_subtype=\"Normal\",\n    depends_on={\"sw_endog_inflow\": 2, \"endogen_resource_inflow\": 1, \"exogen_inflow\": 1},\n)",
+        "detail": "2025.2025.12.model_13",
+        "documentation": {}
+    },
+    {
+        "label": "resource_inflow",
+        "kind": 2,
+        "importPath": "2025.2025.12.model_13",
+        "description": "2025.2025.12.model_13",
+        "peekOfCode": "def resource_inflow():\n    \"\"\"\n    endogenous inflow: function of performance (combined performance)\n    \"\"\"\n    return (\n        sw_endog_inflow() * endogen_resource_inflow()\n        + (1 - sw_endog_inflow()) * exogen_inflow()\n    )\n@component.add(\n    name=\"endogen resource inflow\",",
+        "detail": "2025.2025.12.model_13",
+        "documentation": {}
+    },
+    {
+        "label": "endogen_resource_inflow",
+        "kind": 2,
+        "importPath": "2025.2025.12.model_13",
+        "description": "2025.2025.12.model_13",
+        "peekOfCode": "def endogen_resource_inflow():\n    \"\"\"\n    https://www.desmos.com/calculator/dnhbwdyqdq\n    \"\"\"\n    return (1 / sens_res_inflow()) * float(\n        np.log(\n            1\n            + float(\n                np.exp(sens_res_inflow() * inflow_per_perf() * perceived_comb_perf())\n            )",
+        "detail": "2025.2025.12.model_13",
+        "documentation": {}
+    },
+    {
+        "label": "seed",
+        "kind": 2,
+        "importPath": "2025.2025.12.model_13",
+        "description": "2025.2025.12.model_13",
+        "peekOfCode": "def seed():\n    return 1\n@component.add(\n    name=\"exogen aspiration\",\n    units=\"Dmnl\",\n    limits=(0.0, 1000.0, 1.0),\n    comp_type=\"Constant\",\n    comp_subtype=\"Normal\",\n)\ndef exogen_aspiration():",
+        "detail": "2025.2025.12.model_13",
+        "documentation": {}
+    },
+    {
+        "label": "exogen_aspiration",
+        "kind": 2,
+        "importPath": "2025.2025.12.model_13",
+        "description": "2025.2025.12.model_13",
+        "peekOfCode": "def exogen_aspiration():\n    \"\"\"\n    if perfromance is consistently falling short, adjust aspiration down if aspirations are consistently met, adjust them up future: market trends, ecosystem dynamics\n    \"\"\"\n    return 100\n@component.add(\n    name=\"sens res inflow\",\n    units=\"Dmnl\",\n    limits=(0.0, 2.0, 0.1),\n    comp_type=\"Constant\",",
+        "detail": "2025.2025.12.model_13",
+        "documentation": {}
+    },
+    {
+        "label": "sens_res_inflow",
+        "kind": 2,
+        "importPath": "2025.2025.12.model_13",
+        "description": "2025.2025.12.model_13",
+        "peekOfCode": "def sens_res_inflow():\n    return 1\n@component.add(\n    name=\"t change asp\",\n    units=\"Month\",\n    limits=(1.0, 50.0, 1.0),\n    comp_type=\"Constant\",\n    comp_subtype=\"Normal\",\n)\ndef t_change_asp():",
+        "detail": "2025.2025.12.model_13",
+        "documentation": {}
+    },
+    {
+        "label": "t_change_asp",
+        "kind": 2,
+        "importPath": "2025.2025.12.model_13",
+        "description": "2025.2025.12.model_13",
+        "peekOfCode": "def t_change_asp():\n    return 40\n@component.add(\n    name=\"gstdv\",\n    units=\"Dmnl\",\n    limits=(0.0, 30.0, 0.5),\n    comp_type=\"Constant\",\n    comp_subtype=\"Normal\",\n)\ndef gstdv():",
+        "detail": "2025.2025.12.model_13",
+        "documentation": {}
+    },
+    {
+        "label": "gstdv",
+        "kind": 2,
+        "importPath": "2025.2025.12.model_13",
+        "description": "2025.2025.12.model_13",
+        "peekOfCode": "def gstdv():\n    return 0\n@component.add(\n    name=\"inflow per perf\",\n    units=\"Dollar/Month\",\n    limits=(0.0, 0.5, 0.001),\n    comp_type=\"Constant\",\n    comp_subtype=\"Normal\",\n)\ndef inflow_per_perf():",
+        "detail": "2025.2025.12.model_13",
+        "documentation": {}
+    },
+    {
+        "label": "inflow_per_perf",
+        "kind": 2,
+        "importPath": "2025.2025.12.model_13",
+        "description": "2025.2025.12.model_13",
+        "peekOfCode": "def inflow_per_perf():\n    \"\"\"\n    0.04 seems to create long term equilibrium\n    \"\"\"\n    return 0.04\n@component.add(\n    name=\"t adj perc downwards\",\n    units=\"Month\",\n    limits=(0.01, 50.0, 0.5),\n    comp_type=\"Constant\",",
+        "detail": "2025.2025.12.model_13",
+        "documentation": {}
+    },
+    {
+        "label": "t_adj_perc_downwards",
+        "kind": 2,
+        "importPath": "2025.2025.12.model_13",
+        "description": "2025.2025.12.model_13",
+        "peekOfCode": "def t_adj_perc_downwards():\n    return 2\n@component.add(\n    name=\"t update perf gap\",\n    units=\"Month\",\n    limits=(1.0, 20.0, 1.0),\n    comp_type=\"Constant\",\n    comp_subtype=\"Normal\",\n)\ndef t_update_perf_gap():",
+        "detail": "2025.2025.12.model_13",
+        "documentation": {}
+    },
+    {
+        "label": "t_update_perf_gap",
+        "kind": 2,
+        "importPath": "2025.2025.12.model_13",
+        "description": "2025.2025.12.model_13",
+        "peekOfCode": "def t_update_perf_gap():\n    return 5\n@component.add(\n    name=\"performance gap\",\n    units=\"Dmnl\",\n    subscripts=[\"Goal\"],\n    comp_type=\"Auxiliary\",\n    comp_subtype=\"Normal\",\n    depends_on={\"aspiration\": 1, \"performance\": 1},\n)",
+        "detail": "2025.2025.12.model_13",
+        "documentation": {}
+    },
+    {
+        "label": "performance_gap",
+        "kind": 2,
+        "importPath": "2025.2025.12.model_13",
+        "description": "2025.2025.12.model_13",
+        "peekOfCode": "def performance_gap():\n    return aspiration() - performance()\n@component.add(\n    name=\"sw endog inflow\",\n    units=\"Dmnl\",\n    limits=(0.0, 1.0, 1.0),\n    comp_type=\"Constant\",\n    comp_subtype=\"Normal\",\n)\ndef sw_endog_inflow():",
+        "detail": "2025.2025.12.model_13",
+        "documentation": {}
+    },
+    {
+        "label": "sw_endog_inflow",
+        "kind": 2,
+        "importPath": "2025.2025.12.model_13",
+        "description": "2025.2025.12.model_13",
+        "peekOfCode": "def sw_endog_inflow():\n    return 0\n@component.add(\n    name=\"sw endogen aspiration\",\n    units=\"Dmnl\",\n    limits=(0.0, 1.0, 1.0),\n    comp_type=\"Constant\",\n    comp_subtype=\"Normal\",\n)\ndef sw_endogen_aspiration():",
+        "detail": "2025.2025.12.model_13",
+        "documentation": {}
+    },
+    {
+        "label": "sw_endogen_aspiration",
+        "kind": 2,
+        "importPath": "2025.2025.12.model_13",
+        "description": "2025.2025.12.model_13",
+        "peekOfCode": "def sw_endogen_aspiration():\n    return 0\n@component.add(\n    name=\"init resource\",\n    units=\"Dollar\",\n    limits=(0.0, 200.0, 1.0),\n    subscripts=[\"Goal\"],\n    comp_type=\"Auxiliary\",\n    comp_subtype=\"Normal\",\n    depends_on={\"init_a\": 1, \"init_b\": 1},",
+        "detail": "2025.2025.12.model_13",
+        "documentation": {}
+    },
+    {
+        "label": "init_resource",
+        "kind": 2,
+        "importPath": "2025.2025.12.model_13",
+        "description": "2025.2025.12.model_13",
+        "peekOfCode": "def init_resource():\n    value = xr.DataArray(np.nan, {\"Goal\": _subscript_dict[\"Goal\"]}, [\"Goal\"])\n    value.loc[[\"A\"]] = init_a()\n    value.loc[[\"B\"]] = init_b()\n    return value\n@component.add(\n    name=\"combined performance\",\n    units=\"Dmnl\",\n    comp_type=\"Auxiliary\",\n    comp_subtype=\"Normal\",",
+        "detail": "2025.2025.12.model_13",
+        "documentation": {}
+    },
+    {
+        "label": "combined_performance",
+        "kind": 2,
+        "importPath": "2025.2025.12.model_13",
+        "description": "2025.2025.12.model_13",
+        "peekOfCode": "def combined_performance():\n    return sum(performance().rename({\"Goal\": \"Goal!\"}), dim=[\"Goal!\"])\n@component.add(\n    name=\"init res\",\n    units=\"Dollar\",\n    subscripts=[\"Goal\"],\n    comp_type=\"Stateful\",\n    comp_subtype=\"Initial\",\n    depends_on={\"_initial_init_res\": 1},\n    other_deps={",
+        "detail": "2025.2025.12.model_13",
+        "documentation": {}
+    },
+    {
+        "label": "init_res",
+        "kind": 2,
+        "importPath": "2025.2025.12.model_13",
+        "description": "2025.2025.12.model_13",
+        "peekOfCode": "def init_res():\n    return _initial_init_res()\n_initial_init_res = Initial(\n    lambda: (1 - eq_init()) * init_resource(), \"_initial_init_res\"\n)\n@component.add(\n    name=\"inv weight\",\n    units=\"Dmnl\",\n    subscripts=[\"Goal\"],\n    comp_type=\"Auxiliary\",",
+        "detail": "2025.2025.12.model_13",
+        "documentation": {}
+    },
+    {
+        "label": "inv_weight",
+        "kind": 2,
+        "importPath": "2025.2025.12.model_13",
+        "description": "2025.2025.12.model_13",
+        "peekOfCode": "def inv_weight():\n    return np.exp(softmax_snstvty() * performance_gap()) / pg_denum()\n@component.add(\n    name=\"deterioration resources\",\n    units=\"Dollar/Month\",\n    subscripts=[\"Goal\"],\n    comp_type=\"Auxiliary\",\n    comp_subtype=\"Normal\",\n    depends_on={\"resources\": 1, \"t_deteriorate\": 1},\n)",
+        "detail": "2025.2025.12.model_13",
+        "documentation": {}
+    },
+    {
+        "label": "deterioration_resources",
+        "kind": 2,
+        "importPath": "2025.2025.12.model_13",
+        "description": "2025.2025.12.model_13",
+        "peekOfCode": "def deterioration_resources():\n    return resources() / t_deteriorate()\n@component.add(\n    name=\"Resources\",\n    units=\"Dollar\",\n    subscripts=[\"Goal\"],\n    comp_type=\"Stateful\",\n    comp_subtype=\"Integ\",\n    depends_on={\"_integ_resources\": 1},\n    other_deps={",
+        "detail": "2025.2025.12.model_13",
+        "documentation": {}
+    },
+    {
+        "label": "resources",
+        "kind": 2,
+        "importPath": "2025.2025.12.model_13",
+        "description": "2025.2025.12.model_13",
+        "peekOfCode": "def resources():\n    return _integ_resources()\n_integ_resources = Integ(\n    lambda: maturing_inv() - deterioration_resources(),\n    lambda: init_res(),\n    \"_integ_resources\",\n)\n@component.add(\n    name=\"init A\",\n    units=\"Dollar\",",
+        "detail": "2025.2025.12.model_13",
+        "documentation": {}
+    },
+    {
+        "label": "init_a",
+        "kind": 2,
+        "importPath": "2025.2025.12.model_13",
+        "description": "2025.2025.12.model_13",
+        "peekOfCode": "def init_a():\n    return 80\n@component.add(\n    name=\"pg denum\",\n    units=\"Dmnl\",\n    comp_type=\"Auxiliary\",\n    comp_subtype=\"Normal\",\n    depends_on={\"softmax_snstvty\": 1, \"performance_gap\": 1},\n)\ndef pg_denum():",
+        "detail": "2025.2025.12.model_13",
+        "documentation": {}
+    },
+    {
+        "label": "pg_denum",
+        "kind": 2,
+        "importPath": "2025.2025.12.model_13",
+        "description": "2025.2025.12.model_13",
+        "peekOfCode": "def pg_denum():\n    \"\"\"\n    (exp(softmax snstvty * performance gap[A]) + exp(softmax snstvty * performance gap[B]))\n    \"\"\"\n    return sum(\n        np.exp(softmax_snstvty() * performance_gap().rename({\"Goal\": \"Goal!\"})),\n        dim=[\"Goal!\"],\n    )\n@component.add(\n    name=\"init B\",",
+        "detail": "2025.2025.12.model_13",
+        "documentation": {}
+    },
+    {
+        "label": "init_b",
+        "kind": 2,
+        "importPath": "2025.2025.12.model_13",
+        "description": "2025.2025.12.model_13",
+        "peekOfCode": "def init_b():\n    return 80\n@component.add(\n    name=\"maturing inv\",\n    units=\"Dollar/Month\",\n    subscripts=[\"Goal\"],\n    comp_type=\"Auxiliary\",\n    comp_subtype=\"Normal\",\n    depends_on={\"undeveloped_resources\": 1, \"t_mature\": 1},\n)",
+        "detail": "2025.2025.12.model_13",
+        "documentation": {}
+    },
+    {
+        "label": "maturing_inv",
+        "kind": 2,
+        "importPath": "2025.2025.12.model_13",
+        "description": "2025.2025.12.model_13",
+        "peekOfCode": "def maturing_inv():\n    return undeveloped_resources() / t_mature()\n@component.add(\n    name=\"init UR\",\n    units=\"Dollar\",\n    subscripts=[\"Goal\"],\n    comp_type=\"Stateful\",\n    comp_subtype=\"Initial\",\n    depends_on={\"_initial_init_ur\": 1},\n    other_deps={",
+        "detail": "2025.2025.12.model_13",
+        "documentation": {}
+    },
+    {
+        "label": "init_ur",
+        "kind": 2,
+        "importPath": "2025.2025.12.model_13",
+        "description": "2025.2025.12.model_13",
+        "peekOfCode": "def init_ur():\n    return _initial_init_ur()\n_initial_init_ur = Initial(\n    lambda: (init_res() / t_deteriorate()) * t_mature(), \"_initial_init_ur\"\n)\n@component.add(\n    name=\"t mature\",\n    units=\"Month\",\n    limits=(1.0, 20.0, 1.0),\n    comp_type=\"Constant\",",
+        "detail": "2025.2025.12.model_13",
+        "documentation": {}
+    },
+    {
+        "label": "t_mature",
+        "kind": 2,
+        "importPath": "2025.2025.12.model_13",
+        "description": "2025.2025.12.model_13",
+        "peekOfCode": "def t_mature():\n    return 5\n@component.add(\n    name=\"Undeveloped Resources\",\n    units=\"Dollar\",\n    subscripts=[\"Goal\"],\n    comp_type=\"Stateful\",\n    comp_subtype=\"Integ\",\n    depends_on={\"_integ_undeveloped_resources\": 1},\n    other_deps={",
+        "detail": "2025.2025.12.model_13",
+        "documentation": {}
+    },
+    {
+        "label": "undeveloped_resources",
+        "kind": 2,
+        "importPath": "2025.2025.12.model_13",
+        "description": "2025.2025.12.model_13",
+        "peekOfCode": "def undeveloped_resources():\n    return _integ_undeveloped_resources()\n_integ_undeveloped_resources = Integ(\n    lambda: investing() - maturing_inv(),\n    lambda: init_ur(),\n    \"_integ_undeveloped_resources\",\n)\n@component.add(\n    name=\"exogen inflow\",\n    units=\"Dollar/Month\",",
+        "detail": "2025.2025.12.model_13",
+        "documentation": {}
+    },
+    {
+        "label": "exogen_inflow",
+        "kind": 2,
+        "importPath": "2025.2025.12.model_13",
+        "description": "2025.2025.12.model_13",
+        "peekOfCode": "def exogen_inflow():\n    return 8\n@component.add(\n    name=\"eq init\",\n    units=\"Dmnl\",\n    limits=(0.0, 1.0, 1.0),\n    comp_type=\"Constant\",\n    comp_subtype=\"Normal\",\n)\ndef eq_init():",
+        "detail": "2025.2025.12.model_13",
+        "documentation": {}
+    },
+    {
+        "label": "eq_init",
+        "kind": 2,
+        "importPath": "2025.2025.12.model_13",
+        "description": "2025.2025.12.model_13",
+        "peekOfCode": "def eq_init():\n    return 0\n@component.add(\n    name=\"softmax snstvty\",\n    units=\"Dmnl\",\n    limits=(0.0, 0.5, 0.001),\n    comp_type=\"Constant\",\n    comp_subtype=\"Normal\",\n)\ndef softmax_snstvty():",
+        "detail": "2025.2025.12.model_13",
+        "documentation": {}
+    },
+    {
+        "label": "softmax_snstvty",
+        "kind": 2,
+        "importPath": "2025.2025.12.model_13",
+        "description": "2025.2025.12.model_13",
+        "peekOfCode": "def softmax_snstvty():\n    return 0.03\n@component.add(\n    name=\"investing\",\n    units=\"Dollar/Month\",\n    subscripts=[\"Goal\"],\n    comp_type=\"Auxiliary\",\n    comp_subtype=\"Normal\",\n    depends_on={\"inv_weight\": 1, \"resource_inflow\": 1},\n)",
+        "detail": "2025.2025.12.model_13",
+        "documentation": {}
+    },
+    {
+        "label": "investing",
+        "kind": 2,
+        "importPath": "2025.2025.12.model_13",
+        "description": "2025.2025.12.model_13",
+        "peekOfCode": "def investing():\n    return inv_weight() * resource_inflow()\n@component.add(\n    name=\"cAB\",\n    units=\"1/Dollar\",\n    limits=(-1.0, 1.0, 0.01),\n    comp_type=\"Constant\",\n    comp_subtype=\"Normal\",\n)\ndef cab():",
+        "detail": "2025.2025.12.model_13",
+        "documentation": {}
+    },
+    {
+        "label": "cab",
+        "kind": 2,
+        "importPath": "2025.2025.12.model_13",
+        "description": "2025.2025.12.model_13",
+        "peekOfCode": "def cab():\n    return 0\n@component.add(\n    name=\"cBA\",\n    units=\"1/Dollar\",\n    limits=(-1.0, 1.0, 0.01),\n    comp_type=\"Constant\",\n    comp_subtype=\"Normal\",\n)\ndef cba():",
+        "detail": "2025.2025.12.model_13",
+        "documentation": {}
+    },
+    {
+        "label": "cba",
+        "kind": 2,
+        "importPath": "2025.2025.12.model_13",
+        "description": "2025.2025.12.model_13",
+        "peekOfCode": "def cba():\n    return 0\n@component.add(\n    name=\"cAA\",\n    units=\"1/Dollar\",\n    limits=(0.0, 1.0, 0.01),\n    comp_type=\"Constant\",\n    comp_subtype=\"Normal\",\n)\ndef caa():",
+        "detail": "2025.2025.12.model_13",
+        "documentation": {}
+    },
+    {
+        "label": "caa",
+        "kind": 2,
+        "importPath": "2025.2025.12.model_13",
+        "description": "2025.2025.12.model_13",
+        "peekOfCode": "def caa():\n    return 1\n@component.add(\n    name=\"cBB\",\n    units=\"1/Dollar\",\n    limits=(0.0, 1.0, 0.01),\n    comp_type=\"Constant\",\n    comp_subtype=\"Normal\",\n)\ndef cbb():",
+        "detail": "2025.2025.12.model_13",
+        "documentation": {}
+    },
+    {
+        "label": "cbb",
+        "kind": 2,
+        "importPath": "2025.2025.12.model_13",
+        "description": "2025.2025.12.model_13",
+        "peekOfCode": "def cbb():\n    return 1\n@component.add(\n    name=\"t deteriorate\",\n    units=\"Month\",\n    limits=(1.0, 50.0, 1.0),\n    comp_type=\"Constant\",\n    comp_subtype=\"Normal\",\n)\ndef t_deteriorate():",
+        "detail": "2025.2025.12.model_13",
+        "documentation": {}
+    },
+    {
+        "label": "t_deteriorate",
+        "kind": 2,
+        "importPath": "2025.2025.12.model_13",
+        "description": "2025.2025.12.model_13",
+        "peekOfCode": "def t_deteriorate():\n    return 25",
+        "detail": "2025.2025.12.model_13",
+        "documentation": {}
+    },
+    {
+        "label": "__pysd_version__",
+        "kind": 5,
+        "importPath": "2025.2025.12.model_13",
+        "description": "2025.2025.12.model_13",
+        "peekOfCode": "__pysd_version__ = \"3.14.3\"\n__data = {\"scope\": None, \"time\": lambda: 0}\n_root = Path(__file__).parent\n_subscript_dict = {\"Goal\": [\"A\", \"B\"]}\ncomponent = Component()\n#######################################################################\n#                          CONTROL VARIABLES                          #\n#######################################################################\n_control_vars = {\n    \"initial_time\": lambda: 0,",
+        "detail": "2025.2025.12.model_13",
+        "documentation": {}
+    },
+    {
+        "label": "__data",
+        "kind": 5,
+        "importPath": "2025.2025.12.model_13",
+        "description": "2025.2025.12.model_13",
+        "peekOfCode": "__data = {\"scope\": None, \"time\": lambda: 0}\n_root = Path(__file__).parent\n_subscript_dict = {\"Goal\": [\"A\", \"B\"]}\ncomponent = Component()\n#######################################################################\n#                          CONTROL VARIABLES                          #\n#######################################################################\n_control_vars = {\n    \"initial_time\": lambda: 0,\n    \"final_time\": lambda: 100,",
+        "detail": "2025.2025.12.model_13",
+        "documentation": {}
+    },
+    {
+        "label": "_root",
+        "kind": 5,
+        "importPath": "2025.2025.12.model_13",
+        "description": "2025.2025.12.model_13",
+        "peekOfCode": "_root = Path(__file__).parent\n_subscript_dict = {\"Goal\": [\"A\", \"B\"]}\ncomponent = Component()\n#######################################################################\n#                          CONTROL VARIABLES                          #\n#######################################################################\n_control_vars = {\n    \"initial_time\": lambda: 0,\n    \"final_time\": lambda: 100,\n    \"time_step\": lambda: 0.0625,",
+        "detail": "2025.2025.12.model_13",
+        "documentation": {}
+    },
+    {
+        "label": "_subscript_dict",
+        "kind": 5,
+        "importPath": "2025.2025.12.model_13",
+        "description": "2025.2025.12.model_13",
+        "peekOfCode": "_subscript_dict = {\"Goal\": [\"A\", \"B\"]}\ncomponent = Component()\n#######################################################################\n#                          CONTROL VARIABLES                          #\n#######################################################################\n_control_vars = {\n    \"initial_time\": lambda: 0,\n    \"final_time\": lambda: 100,\n    \"time_step\": lambda: 0.0625,\n    \"saveper\": lambda: time_step(),",
+        "detail": "2025.2025.12.model_13",
+        "documentation": {}
+    },
+    {
+        "label": "component",
+        "kind": 5,
+        "importPath": "2025.2025.12.model_13",
+        "description": "2025.2025.12.model_13",
+        "peekOfCode": "component = Component()\n#######################################################################\n#                          CONTROL VARIABLES                          #\n#######################################################################\n_control_vars = {\n    \"initial_time\": lambda: 0,\n    \"final_time\": lambda: 100,\n    \"time_step\": lambda: 0.0625,\n    \"saveper\": lambda: time_step(),\n}",
+        "detail": "2025.2025.12.model_13",
+        "documentation": {}
+    },
+    {
+        "label": "_control_vars",
+        "kind": 5,
+        "importPath": "2025.2025.12.model_13",
+        "description": "2025.2025.12.model_13",
+        "peekOfCode": "_control_vars = {\n    \"initial_time\": lambda: 0,\n    \"final_time\": lambda: 100,\n    \"time_step\": lambda: 0.0625,\n    \"saveper\": lambda: time_step(),\n}\ndef _init_outer_references(data):\n    for key in data:\n        __data[key] = data[key]\n@component.add(name=\"Time\")",
+        "detail": "2025.2025.12.model_13",
+        "documentation": {}
+    },
+    {
+        "label": "_integ_accident_shock_level",
+        "kind": 5,
+        "importPath": "2025.2025.12.model_13",
+        "description": "2025.2025.12.model_13",
+        "peekOfCode": "_integ_accident_shock_level = Integ(\n    lambda: acc_shock_inflow() - recovery_rate(),\n    lambda: xr.DataArray(0, {\"Goal\": _subscript_dict[\"Goal\"]}, [\"Goal\"]),\n    \"_integ_accident_shock_level\",\n)\n@component.add(\n    name=\"accidents\",\n    subscripts=[\"Goal\"],\n    comp_type=\"Auxiliary\",\n    comp_subtype=\"Normal\",",
+        "detail": "2025.2025.12.model_13",
+        "documentation": {}
+    },
+    {
+        "label": "_integ_aspiration",
+        "kind": 5,
+        "importPath": "2025.2025.12.model_13",
+        "description": "2025.2025.12.model_13",
+        "peekOfCode": "_integ_aspiration = Integ(\n    lambda: change_in_asp(),\n    lambda: xr.DataArray(\n        exogen_aspiration(), {\"Goal\": _subscript_dict[\"Goal\"]}, [\"Goal\"]\n    ),\n    \"_integ_aspiration\",\n)\n@component.add(\n    name=\"init perc comb perf\",\n    units=\"Dmnl\",",
+        "detail": "2025.2025.12.model_13",
+        "documentation": {}
+    },
+    {
+        "label": "_initial_init_perc_comb_perf",
+        "kind": 5,
+        "importPath": "2025.2025.12.model_13",
+        "description": "2025.2025.12.model_13",
+        "peekOfCode": "_initial_init_perc_comb_perf = Initial(\n    lambda: caa() * init_a() + cba() * init_b() + cab() * init_a() + cbb() * init_b(),\n    \"_initial_init_perc_comb_perf\",\n)\n@component.add(\n    name=\"Perceived comb perf\",\n    units=\"Dmnl\",\n    comp_type=\"Stateful\",\n    comp_subtype=\"Integ\",\n    depends_on={\"_integ_perceived_comb_perf\": 1},",
+        "detail": "2025.2025.12.model_13",
+        "documentation": {}
+    },
+    {
+        "label": "_integ_perceived_comb_perf",
+        "kind": 5,
+        "importPath": "2025.2025.12.model_13",
+        "description": "2025.2025.12.model_13",
+        "peekOfCode": "_integ_perceived_comb_perf = Integ(\n    lambda: change_in_perc_comb_perf(),\n    lambda: init_perc_comb_perf(),\n    \"_integ_perceived_comb_perf\",\n)\n@component.add(\n    name=\"Perceived perfromance gap\",\n    units=\"Dmnl\",\n    subscripts=[\"Goal\"],\n    comp_type=\"Stateful\",",
+        "detail": "2025.2025.12.model_13",
+        "documentation": {}
+    },
+    {
+        "label": "_smooth_perceived_perfromance_gap",
+        "kind": 5,
+        "importPath": "2025.2025.12.model_13",
+        "description": "2025.2025.12.model_13",
+        "peekOfCode": "_smooth_perceived_perfromance_gap = Smooth(\n    lambda: performance_gap(),\n    lambda: xr.DataArray(\n        t_update_perf_gap(), {\"Goal\": _subscript_dict[\"Goal\"]}, [\"Goal\"]\n    ),\n    lambda: performance_gap(),\n    lambda: 1,\n    \"_smooth_perceived_perfromance_gap\",\n)\n@component.add(",
+        "detail": "2025.2025.12.model_13",
+        "documentation": {}
+    },
+    {
+        "label": "_initial_init_res",
+        "kind": 5,
+        "importPath": "2025.2025.12.model_13",
+        "description": "2025.2025.12.model_13",
+        "peekOfCode": "_initial_init_res = Initial(\n    lambda: (1 - eq_init()) * init_resource(), \"_initial_init_res\"\n)\n@component.add(\n    name=\"inv weight\",\n    units=\"Dmnl\",\n    subscripts=[\"Goal\"],\n    comp_type=\"Auxiliary\",\n    comp_subtype=\"Normal\",\n    depends_on={\"softmax_snstvty\": 1, \"performance_gap\": 1, \"pg_denum\": 1},",
+        "detail": "2025.2025.12.model_13",
+        "documentation": {}
+    },
+    {
+        "label": "_integ_resources",
+        "kind": 5,
+        "importPath": "2025.2025.12.model_13",
+        "description": "2025.2025.12.model_13",
+        "peekOfCode": "_integ_resources = Integ(\n    lambda: maturing_inv() - deterioration_resources(),\n    lambda: init_res(),\n    \"_integ_resources\",\n)\n@component.add(\n    name=\"init A\",\n    units=\"Dollar\",\n    limits=(0.0, 200.0, 1.0),\n    comp_type=\"Constant\",",
+        "detail": "2025.2025.12.model_13",
+        "documentation": {}
+    },
+    {
+        "label": "_initial_init_ur",
+        "kind": 5,
+        "importPath": "2025.2025.12.model_13",
+        "description": "2025.2025.12.model_13",
+        "peekOfCode": "_initial_init_ur = Initial(\n    lambda: (init_res() / t_deteriorate()) * t_mature(), \"_initial_init_ur\"\n)\n@component.add(\n    name=\"t mature\",\n    units=\"Month\",\n    limits=(1.0, 20.0, 1.0),\n    comp_type=\"Constant\",\n    comp_subtype=\"Normal\",\n)",
+        "detail": "2025.2025.12.model_13",
+        "documentation": {}
+    },
+    {
+        "label": "_integ_undeveloped_resources",
+        "kind": 5,
+        "importPath": "2025.2025.12.model_13",
+        "description": "2025.2025.12.model_13",
+        "peekOfCode": "_integ_undeveloped_resources = Integ(\n    lambda: investing() - maturing_inv(),\n    lambda: init_ur(),\n    \"_integ_undeveloped_resources\",\n)\n@component.add(\n    name=\"exogen inflow\",\n    units=\"Dollar/Month\",\n    limits=(0.0, 20.0, 0.1),\n    comp_type=\"Constant\",",
+        "detail": "2025.2025.12.model_13",
+        "documentation": {}
+    },
+    {
+        "label": "model",
+        "kind": 5,
+        "importPath": "2025.2025.12.working_solution",
+        "description": "2025.2025.12.working_solution",
+        "peekOfCode": "model = pysd.read_vensim(\"model_13.mdl\")\nprint(\"✅ Model loaded successfully!\")\n# Step 4: Test the model\nprint(\"🚀 STEP 4: Running model to test random_poisson functionality...\")\nresult = model.run()\nprint(\"✅ Model ran successfully!\")\n# Step 5: Verify results\nprint(\"\\n📈 STEP 5: Verifying accident simulation results...\")\naccidents_a = result['accidents[A]']\naccidents_b = result['accidents[B]']",
+        "detail": "2025.2025.12.working_solution",
+        "documentation": {}
+    },
+    {
+        "label": "result",
+        "kind": 5,
+        "importPath": "2025.2025.12.working_solution",
+        "description": "2025.2025.12.working_solution",
+        "peekOfCode": "result = model.run()\nprint(\"✅ Model ran successfully!\")\n# Step 5: Verify results\nprint(\"\\n📈 STEP 5: Verifying accident simulation results...\")\naccidents_a = result['accidents[A]']\naccidents_b = result['accidents[B]']\nprint(f\"Accidents[A]: Mean={accidents_a.mean():.4f}, Non-zero events={len(accidents_a[accidents_a != 0])}\")\nprint(f\"Accidents[B]: Mean={accidents_b.mean():.4f}, Non-zero events={len(accidents_b[accidents_b != 0])}\")\nprint(f\"\\n🎯 SUCCESS! The model now correctly simulates random Poisson accidents!\")\nprint(f\"Total data points: {len(result)}\")",
+        "detail": "2025.2025.12.working_solution",
+        "documentation": {}
+    },
+    {
+        "label": "accidents_a",
+        "kind": 5,
+        "importPath": "2025.2025.12.working_solution",
+        "description": "2025.2025.12.working_solution",
+        "peekOfCode": "accidents_a = result['accidents[A]']\naccidents_b = result['accidents[B]']\nprint(f\"Accidents[A]: Mean={accidents_a.mean():.4f}, Non-zero events={len(accidents_a[accidents_a != 0])}\")\nprint(f\"Accidents[B]: Mean={accidents_b.mean():.4f}, Non-zero events={len(accidents_b[accidents_b != 0])}\")\nprint(f\"\\n🎯 SUCCESS! The model now correctly simulates random Poisson accidents!\")\nprint(f\"Total data points: {len(result)}\")\nprint(f\"Simulation time range: {result.index.min():.2f} to {result.index.max():.2f}\")\nprint(f\"Available variables: {len(result.columns)} columns\")\n# Show some sample results\nprint(f\"\\n📊 Sample time series (first 10 time steps):\")",
+        "detail": "2025.2025.12.working_solution",
+        "documentation": {}
+    },
+    {
+        "label": "accidents_b",
+        "kind": 5,
+        "importPath": "2025.2025.12.working_solution",
+        "description": "2025.2025.12.working_solution",
+        "peekOfCode": "accidents_b = result['accidents[B]']\nprint(f\"Accidents[A]: Mean={accidents_a.mean():.4f}, Non-zero events={len(accidents_a[accidents_a != 0])}\")\nprint(f\"Accidents[B]: Mean={accidents_b.mean():.4f}, Non-zero events={len(accidents_b[accidents_b != 0])}\")\nprint(f\"\\n🎯 SUCCESS! The model now correctly simulates random Poisson accidents!\")\nprint(f\"Total data points: {len(result)}\")\nprint(f\"Simulation time range: {result.index.min():.2f} to {result.index.max():.2f}\")\nprint(f\"Available variables: {len(result.columns)} columns\")\n# Show some sample results\nprint(f\"\\n📊 Sample time series (first 10 time steps):\")\nsample_data = result[['accidents[A]', 'accidents[B]', 'performance[A]', 'performance[B]']].head(10)",
+        "detail": "2025.2025.12.working_solution",
+        "documentation": {}
+    },
+    {
+        "label": "sample_data",
+        "kind": 5,
+        "importPath": "2025.2025.12.working_solution",
+        "description": "2025.2025.12.working_solution",
+        "peekOfCode": "sample_data = result[['accidents[A]', 'accidents[B]', 'performance[A]', 'performance[B]']].head(10)\nfor i, (time, row) in enumerate(sample_data.iterrows()):\n    print(f\"  t={time:5.2f}: accidents_A={row['accidents[A]']:3.0f}, accidents_B={row['accidents[B]']:3.0f}, perf_A={row['performance[A]']:6.2f}, perf_B={row['performance[B]']:6.2f}\")",
+        "detail": "2025.2025.12.working_solution",
         "documentation": {}
     },
     {
@@ -693,6 +1739,699 @@
         "description": "2025.fix_pysd_poisson",
         "peekOfCode": "def create_corrected_model():\n    \"\"\"Create a corrected model using the proper PySD approach\"\"\"\n    print(f\"\\n🔧 CREATING CORRECTED MODEL:\")\n    print(\"=\" * 50)\n    # First, add random_poisson to PySD\n    add_random_poisson_to_pysd()\n    # Now try to translate the model again\n    try:\n        print(\"Translating model with random_poisson support...\")\n        model = pysd.read_vensim('2025/model_13.mdl')",
         "detail": "2025.fix_pysd_poisson",
+        "documentation": {}
+    },
+    {
+        "label": "time",
+        "kind": 2,
+        "importPath": "2025.model_13",
+        "description": "2025.model_13",
+        "peekOfCode": "def time():\n    \"\"\"\n    Current time of the model.\n    \"\"\"\n    return __data[\"time\"]()\n@component.add(\n    name=\"FINAL TIME\", units=\"Month\", comp_type=\"Constant\", comp_subtype=\"Normal\"\n)\ndef final_time():\n    \"\"\"",
+        "detail": "2025.model_13",
+        "documentation": {}
+    },
+    {
+        "label": "final_time",
+        "kind": 2,
+        "importPath": "2025.model_13",
+        "description": "2025.model_13",
+        "peekOfCode": "def final_time():\n    \"\"\"\n    The final time for the simulation.\n    \"\"\"\n    return __data[\"time\"].final_time()\n@component.add(\n    name=\"INITIAL TIME\", units=\"Month\", comp_type=\"Constant\", comp_subtype=\"Normal\"\n)\ndef initial_time():\n    \"\"\"",
+        "detail": "2025.model_13",
+        "documentation": {}
+    },
+    {
+        "label": "initial_time",
+        "kind": 2,
+        "importPath": "2025.model_13",
+        "description": "2025.model_13",
+        "peekOfCode": "def initial_time():\n    \"\"\"\n    The initial time for the simulation.\n    \"\"\"\n    return __data[\"time\"].initial_time()\n@component.add(\n    name=\"SAVEPER\",\n    units=\"Month\",\n    limits=(0.0, np.nan),\n    comp_type=\"Auxiliary\",",
+        "detail": "2025.model_13",
+        "documentation": {}
+    },
+    {
+        "label": "saveper",
+        "kind": 2,
+        "importPath": "2025.model_13",
+        "description": "2025.model_13",
+        "peekOfCode": "def saveper():\n    \"\"\"\n    The frequency with which output is stored.\n    \"\"\"\n    return __data[\"time\"].saveper()\n@component.add(\n    name=\"TIME STEP\",\n    units=\"Month\",\n    limits=(0.0, np.nan),\n    comp_type=\"Constant\",",
+        "detail": "2025.model_13",
+        "documentation": {}
+    },
+    {
+        "label": "time_step",
+        "kind": 2,
+        "importPath": "2025.model_13",
+        "description": "2025.model_13",
+        "peekOfCode": "def time_step():\n    \"\"\"\n    The time step for the simulation.\n    \"\"\"\n    return __data[\"time\"].time_step()\n#######################################################################\n#                           MODEL VARIABLES                           #\n#######################################################################\n@component.add(\n    name=\"performance\",",
+        "detail": "2025.model_13",
+        "documentation": {}
+    },
+    {
+        "label": "performance",
+        "kind": 2,
+        "importPath": "2025.model_13",
+        "description": "2025.model_13",
+        "peekOfCode": "def performance():\n    \"\"\"\n    add stochasticity potentially generative vs protective generative can be additive with a small stochastic component and for protective with can have a rare event large impact (like safety) combined performance determines endogenous resource inflow of future\n    \"\"\"\n    value = xr.DataArray(np.nan, {\"Goal\": _subscript_dict[\"Goal\"]}, [\"Goal\"])\n    value.loc[[\"A\"]] = (\n        caa() * float(resources().loc[\"A\"])\n        + cba() * float(resources().loc[\"B\"])\n        + (1 - sw_a_to_protective()) * resource_generative_outcome()\n        + sw_a_to_protective() * shock_effect_on_performance()",
+        "detail": "2025.model_13",
+        "documentation": {}
+    },
+    {
+        "label": "sw_b_to_protective",
+        "kind": 2,
+        "importPath": "2025.model_13",
+        "description": "2025.model_13",
+        "peekOfCode": "def sw_b_to_protective():\n    return 1\n@component.add(\n    name=\"change in asp\",\n    units=\"1/Month\",\n    subscripts=[\"Goal\"],\n    comp_type=\"Auxiliary\",\n    comp_subtype=\"Normal\",\n    depends_on={\n        \"perceived_perfromance_gap\": 1,",
+        "detail": "2025.model_13",
+        "documentation": {}
+    },
+    {
+        "label": "change_in_asp",
+        "kind": 2,
+        "importPath": "2025.model_13",
+        "description": "2025.model_13",
+        "peekOfCode": "def change_in_asp():\n    \"\"\"\n    there should be some nonlinearity here, if perf gap is zero, change in aspirations should be positive rather than zero. Georgia: adding (1+k asp*Accident shock level), with big accidents, aspiration accelerates. -> crisis reveal aspirations. “Aspirations adjust to the performance gap at a base rate determined by t change asp, but this rate is multiplied by (1 + sensitivity × shock). If shocks are present, managers shorten the time horizon for adjustment — they react faster.”\n    \"\"\"\n    return (\n        -perceived_perfromance_gap()\n        * sw_endogen_aspiration()\n        * (1 + k_asp() * accident_shock_level())\n        / t_change_asp()\n    )",
+        "detail": "2025.model_13",
+        "documentation": {}
+    },
+    {
+        "label": "accident_rate",
+        "kind": 2,
+        "importPath": "2025.model_13",
+        "description": "2025.model_13",
+        "peekOfCode": "def accident_rate():\n    return 1\n@component.add(name=\"accident severity\", comp_type=\"Constant\", comp_subtype=\"Normal\")\ndef accident_severity():\n    \"\"\"\n    Magnitude of performance loss per accident event\n    \"\"\"\n    return 10\n@component.add(\n    name=\"Accident shock level\",",
+        "detail": "2025.model_13",
+        "documentation": {}
+    },
+    {
+        "label": "accident_severity",
+        "kind": 2,
+        "importPath": "2025.model_13",
+        "description": "2025.model_13",
+        "peekOfCode": "def accident_severity():\n    \"\"\"\n    Magnitude of performance loss per accident event\n    \"\"\"\n    return 10\n@component.add(\n    name=\"Accident shock level\",\n    comp_type=\"Stateful\",\n    comp_subtype=\"Integ\",\n    depends_on={\"_integ_accident_shock_level\": 1},",
+        "detail": "2025.model_13",
+        "documentation": {}
+    },
+    {
+        "label": "accident_shock_level",
+        "kind": 2,
+        "importPath": "2025.model_13",
+        "description": "2025.model_13",
+        "peekOfCode": "def accident_shock_level():\n    return _integ_accident_shock_level()\n_integ_accident_shock_level = Integ(\n    lambda: accidents() - recovery_rate(), lambda: 0, \"_integ_accident_shock_level\"\n)\n@component.add(\n    name=\"accidents\",\n    comp_type=\"Auxiliary\",\n    comp_subtype=\"Normal\",\n    depends_on={",
+        "detail": "2025.model_13",
+        "documentation": {}
+    },
+    {
+        "label": "accidents",
+        "kind": 2,
+        "importPath": "2025.model_13",
+        "description": "2025.model_13",
+        "peekOfCode": "def accidents():\n    return (\n        -float(\n            np.clip(\n                np.random.poisson(lam=accident_rate() * time_step(), size=()) * 1 + 0,\n                0,\n                5,\n            )\n        )\n        * accident_severity()",
+        "detail": "2025.model_13",
+        "documentation": {}
+    },
+    {
+        "label": "recovery_time",
+        "kind": 2,
+        "importPath": "2025.model_13",
+        "description": "2025.model_13",
+        "peekOfCode": "def recovery_time():\n    return float(\n        np.maximum(0.1, recovery_time_base() / (1 + k_asp() * total_investments()))\n    )\n@component.add(\n    name=\"total investments\",\n    comp_type=\"Auxiliary\",\n    comp_subtype=\"Normal\",\n    depends_on={\"resources\": 1},\n)",
+        "detail": "2025.model_13",
+        "documentation": {}
+    },
+    {
+        "label": "total_investments",
+        "kind": 2,
+        "importPath": "2025.model_13",
+        "description": "2025.model_13",
+        "peekOfCode": "def total_investments():\n    return sum(resources().rename({\"Goal\": \"Goal!\"}), dim=[\"Goal!\"])\n@component.add(\n    name=\"recovery rate\",\n    comp_type=\"Auxiliary\",\n    comp_subtype=\"Normal\",\n    depends_on={\"accident_shock_level\": 1, \"recovery_time\": 1},\n)\ndef recovery_rate():\n    return accident_shock_level() / recovery_time()",
+        "detail": "2025.model_13",
+        "documentation": {}
+    },
+    {
+        "label": "recovery_rate",
+        "kind": 2,
+        "importPath": "2025.model_13",
+        "description": "2025.model_13",
+        "peekOfCode": "def recovery_rate():\n    return accident_shock_level() / recovery_time()\n@component.add(\n    name=\"k asp\", limits=(0.001, 0.5), comp_type=\"Constant\", comp_subtype=\"Normal\"\n)\ndef k_asp():\n    \"\"\"\n    Sensitivity of aspiration updating to shocks. Higher = aspirations move faster when accidents occur\n    \"\"\"\n    return 0.02",
+        "detail": "2025.model_13",
+        "documentation": {}
+    },
+    {
+        "label": "k_asp",
+        "kind": 2,
+        "importPath": "2025.model_13",
+        "description": "2025.model_13",
+        "peekOfCode": "def k_asp():\n    \"\"\"\n    Sensitivity of aspiration updating to shocks. Higher = aspirations move faster when accidents occur\n    \"\"\"\n    return 0.02\n@component.add(\n    name=\"recovery time base\",\n    units=\"Month\",\n    limits=(5.0, 30.0, 1.0),\n    comp_type=\"Constant\",",
+        "detail": "2025.model_13",
+        "documentation": {}
+    },
+    {
+        "label": "recovery_time_base",
+        "kind": 2,
+        "importPath": "2025.model_13",
+        "description": "2025.model_13",
+        "peekOfCode": "def recovery_time_base():\n    return 12\n@component.add(\n    name=\"shock sensitivity\", units=\"Dmnl\", comp_type=\"Constant\", comp_subtype=\"Normal\"\n)\ndef shock_sensitivity():\n    return 1\n@component.add(\n    name=\"shock effect on performance\",\n    comp_type=\"Auxiliary\",",
+        "detail": "2025.model_13",
+        "documentation": {}
+    },
+    {
+        "label": "shock_sensitivity",
+        "kind": 2,
+        "importPath": "2025.model_13",
+        "description": "2025.model_13",
+        "peekOfCode": "def shock_sensitivity():\n    return 1\n@component.add(\n    name=\"shock effect on performance\",\n    comp_type=\"Auxiliary\",\n    comp_subtype=\"Normal\",\n    depends_on={\"accident_shock_level\": 1, \"shock_sensitivity\": 1},\n)\ndef shock_effect_on_performance():\n    return accident_shock_level() * shock_sensitivity()",
+        "detail": "2025.model_13",
+        "documentation": {}
+    },
+    {
+        "label": "shock_effect_on_performance",
+        "kind": 2,
+        "importPath": "2025.model_13",
+        "description": "2025.model_13",
+        "peekOfCode": "def shock_effect_on_performance():\n    return accident_shock_level() * shock_sensitivity()\n@component.add(\n    name=\"sw A to protective\",\n    limits=(0.0, 1.0, 1.0),\n    comp_type=\"Constant\",\n    comp_subtype=\"Normal\",\n)\ndef sw_a_to_protective():\n    return 1",
+        "detail": "2025.model_13",
+        "documentation": {}
+    },
+    {
+        "label": "sw_a_to_protective",
+        "kind": 2,
+        "importPath": "2025.model_13",
+        "description": "2025.model_13",
+        "peekOfCode": "def sw_a_to_protective():\n    return 1\n@component.add(\n    name=\"resource generative outcome\",\n    comp_type=\"Auxiliary\",\n    comp_subtype=\"Normal\",\n    depends_on={\"gstdv\": 1, \"seed\": 1, \"time\": 1},\n)\ndef resource_generative_outcome():\n    return float(",
+        "detail": "2025.model_13",
+        "documentation": {}
+    },
+    {
+        "label": "resource_generative_outcome",
+        "kind": 2,
+        "importPath": "2025.model_13",
+        "description": "2025.model_13",
+        "peekOfCode": "def resource_generative_outcome():\n    return float(\n        stats.truncnorm.rvs(\n            xidz(-10 - 0, gstdv(), -np.inf),\n            xidz(10 - 0, gstdv(), np.inf),\n            loc=0,\n            scale=gstdv(),\n            size=(),\n        )\n    )",
+        "detail": "2025.model_13",
+        "documentation": {}
+    },
+    {
+        "label": "aspiration",
+        "kind": 2,
+        "importPath": "2025.model_13",
+        "description": "2025.model_13",
+        "peekOfCode": "def aspiration():\n    \"\"\"\n    if perfromance is consistently falling short, adjust aspiration down if aspirations are consistently met, adjust them up future: market trends, ecosystem dynamics\n    \"\"\"\n    return _integ_aspiration()\n_integ_aspiration = Integ(\n    lambda: change_in_asp(),\n    lambda: xr.DataArray(\n        exogen_aspiration(), {\"Goal\": _subscript_dict[\"Goal\"]}, [\"Goal\"]\n    ),",
+        "detail": "2025.model_13",
+        "documentation": {}
+    },
+    {
+        "label": "init_perc_comb_perf",
+        "kind": 2,
+        "importPath": "2025.model_13",
+        "description": "2025.model_13",
+        "peekOfCode": "def init_perc_comb_perf():\n    return _initial_init_perc_comb_perf()\n_initial_init_perc_comb_perf = Initial(\n    lambda: caa() * init_a() + cba() * init_b() + cab() * init_a() + cbb() * init_b(),\n    \"_initial_init_perc_comb_perf\",\n)\n@component.add(\n    name=\"Perceived comb perf\",\n    units=\"Dmnl\",\n    comp_type=\"Stateful\",",
+        "detail": "2025.model_13",
+        "documentation": {}
+    },
+    {
+        "label": "perceived_comb_perf",
+        "kind": 2,
+        "importPath": "2025.model_13",
+        "description": "2025.model_13",
+        "peekOfCode": "def perceived_comb_perf():\n    return _integ_perceived_comb_perf()\n_integ_perceived_comb_perf = Integ(\n    lambda: change_in_perc_comb_perf(),\n    lambda: init_perc_comb_perf(),\n    \"_integ_perceived_comb_perf\",\n)\n@component.add(\n    name=\"Perceived perfromance gap\",\n    units=\"Dmnl\",",
+        "detail": "2025.model_13",
+        "documentation": {}
+    },
+    {
+        "label": "perceived_perfromance_gap",
+        "kind": 2,
+        "importPath": "2025.model_13",
+        "description": "2025.model_13",
+        "peekOfCode": "def perceived_perfromance_gap():\n    return _smooth_perceived_perfromance_gap()\n_smooth_perceived_perfromance_gap = Smooth(\n    lambda: performance_gap(),\n    lambda: xr.DataArray(\n        t_update_perf_gap(), {\"Goal\": _subscript_dict[\"Goal\"]}, [\"Goal\"]\n    ),\n    lambda: performance_gap(),\n    lambda: 1,\n    \"_smooth_perceived_perfromance_gap\",",
+        "detail": "2025.model_13",
+        "documentation": {}
+    },
+    {
+        "label": "change_in_perc_comb_perf",
+        "kind": 2,
+        "importPath": "2025.model_13",
+        "description": "2025.model_13",
+        "peekOfCode": "def change_in_perc_comb_perf():\n    return (combined_performance() - perceived_comb_perf()) / if_then_else(\n        combined_performance() > perceived_comb_perf(),\n        lambda: t_adj_perc_upwards(),\n        lambda: t_adj_perc_downwards(),\n    )\n@component.add(\n    name=\"t adj perc upwards\",\n    units=\"Month\",\n    limits=(0.01, 50.0, 0.5),",
+        "detail": "2025.model_13",
+        "documentation": {}
+    },
+    {
+        "label": "t_adj_perc_upwards",
+        "kind": 2,
+        "importPath": "2025.model_13",
+        "description": "2025.model_13",
+        "peekOfCode": "def t_adj_perc_upwards():\n    return 20\n@component.add(\n    name=\"resource inflow\",\n    units=\"Dollar/Month\",\n    limits=(0.0, 100.0, 0.1),\n    comp_type=\"Auxiliary\",\n    comp_subtype=\"Normal\",\n    depends_on={\"sw_endog_inflow\": 2, \"endogen_resource_inflow\": 1, \"exogen_inflow\": 1},\n)",
+        "detail": "2025.model_13",
+        "documentation": {}
+    },
+    {
+        "label": "resource_inflow",
+        "kind": 2,
+        "importPath": "2025.model_13",
+        "description": "2025.model_13",
+        "peekOfCode": "def resource_inflow():\n    \"\"\"\n    endogenous inflow: function of performance (combined performance)\n    \"\"\"\n    return (\n        sw_endog_inflow() * endogen_resource_inflow()\n        + (1 - sw_endog_inflow()) * exogen_inflow()\n    )\n@component.add(\n    name=\"endogen resource inflow\",",
+        "detail": "2025.model_13",
+        "documentation": {}
+    },
+    {
+        "label": "endogen_resource_inflow",
+        "kind": 2,
+        "importPath": "2025.model_13",
+        "description": "2025.model_13",
+        "peekOfCode": "def endogen_resource_inflow():\n    \"\"\"\n    https://www.desmos.com/calculator/dnhbwdyqdq\n    \"\"\"\n    return (1 / sens_res_inflow()) * float(\n        np.log(\n            1\n            + float(\n                np.exp(sens_res_inflow() * inflow_per_perf() * perceived_comb_perf())\n            )",
+        "detail": "2025.model_13",
+        "documentation": {}
+    },
+    {
+        "label": "seed",
+        "kind": 2,
+        "importPath": "2025.model_13",
+        "description": "2025.model_13",
+        "peekOfCode": "def seed():\n    return 1\n@component.add(\n    name=\"exogen aspiration\",\n    units=\"Dmnl\",\n    limits=(0.0, 1000.0, 1.0),\n    comp_type=\"Constant\",\n    comp_subtype=\"Normal\",\n)\ndef exogen_aspiration():",
+        "detail": "2025.model_13",
+        "documentation": {}
+    },
+    {
+        "label": "exogen_aspiration",
+        "kind": 2,
+        "importPath": "2025.model_13",
+        "description": "2025.model_13",
+        "peekOfCode": "def exogen_aspiration():\n    \"\"\"\n    if perfromance is consistently falling short, adjust aspiration down if aspirations are consistently met, adjust them up future: market trends, ecosystem dynamics\n    \"\"\"\n    return 100\n@component.add(\n    name=\"sens res inflow\",\n    units=\"Dmnl\",\n    limits=(0.0, 2.0, 0.1),\n    comp_type=\"Constant\",",
+        "detail": "2025.model_13",
+        "documentation": {}
+    },
+    {
+        "label": "sens_res_inflow",
+        "kind": 2,
+        "importPath": "2025.model_13",
+        "description": "2025.model_13",
+        "peekOfCode": "def sens_res_inflow():\n    return 1\n@component.add(\n    name=\"t change asp\",\n    units=\"Month\",\n    limits=(1.0, 50.0, 1.0),\n    comp_type=\"Constant\",\n    comp_subtype=\"Normal\",\n)\ndef t_change_asp():",
+        "detail": "2025.model_13",
+        "documentation": {}
+    },
+    {
+        "label": "t_change_asp",
+        "kind": 2,
+        "importPath": "2025.model_13",
+        "description": "2025.model_13",
+        "peekOfCode": "def t_change_asp():\n    return 40\n@component.add(\n    name=\"gstdv\",\n    units=\"Dmnl\",\n    limits=(0.0, 30.0, 0.5),\n    comp_type=\"Constant\",\n    comp_subtype=\"Normal\",\n)\ndef gstdv():",
+        "detail": "2025.model_13",
+        "documentation": {}
+    },
+    {
+        "label": "gstdv",
+        "kind": 2,
+        "importPath": "2025.model_13",
+        "description": "2025.model_13",
+        "peekOfCode": "def gstdv():\n    return 0\n@component.add(\n    name=\"inflow per perf\",\n    units=\"Dollar/Month\",\n    limits=(0.0, 0.5, 0.001),\n    comp_type=\"Constant\",\n    comp_subtype=\"Normal\",\n)\ndef inflow_per_perf():",
+        "detail": "2025.model_13",
+        "documentation": {}
+    },
+    {
+        "label": "inflow_per_perf",
+        "kind": 2,
+        "importPath": "2025.model_13",
+        "description": "2025.model_13",
+        "peekOfCode": "def inflow_per_perf():\n    return 0.05\n@component.add(\n    name=\"t adj perc downwards\",\n    units=\"Month\",\n    limits=(0.01, 50.0, 0.5),\n    comp_type=\"Constant\",\n    comp_subtype=\"Normal\",\n)\ndef t_adj_perc_downwards():",
+        "detail": "2025.model_13",
+        "documentation": {}
+    },
+    {
+        "label": "t_adj_perc_downwards",
+        "kind": 2,
+        "importPath": "2025.model_13",
+        "description": "2025.model_13",
+        "peekOfCode": "def t_adj_perc_downwards():\n    return 2\n@component.add(\n    name=\"t update perf gap\",\n    units=\"Month\",\n    limits=(1.0, 20.0, 1.0),\n    comp_type=\"Constant\",\n    comp_subtype=\"Normal\",\n)\ndef t_update_perf_gap():",
+        "detail": "2025.model_13",
+        "documentation": {}
+    },
+    {
+        "label": "t_update_perf_gap",
+        "kind": 2,
+        "importPath": "2025.model_13",
+        "description": "2025.model_13",
+        "peekOfCode": "def t_update_perf_gap():\n    return 5\n@component.add(\n    name=\"performance gap\",\n    units=\"Dmnl\",\n    subscripts=[\"Goal\"],\n    comp_type=\"Auxiliary\",\n    comp_subtype=\"Normal\",\n    depends_on={\"aspiration\": 1, \"performance\": 1},\n)",
+        "detail": "2025.model_13",
+        "documentation": {}
+    },
+    {
+        "label": "performance_gap",
+        "kind": 2,
+        "importPath": "2025.model_13",
+        "description": "2025.model_13",
+        "peekOfCode": "def performance_gap():\n    return aspiration() - performance()\n@component.add(\n    name=\"sw endog inflow\",\n    units=\"Dmnl\",\n    limits=(0.0, 1.0, 1.0),\n    comp_type=\"Constant\",\n    comp_subtype=\"Normal\",\n)\ndef sw_endog_inflow():",
+        "detail": "2025.model_13",
+        "documentation": {}
+    },
+    {
+        "label": "sw_endog_inflow",
+        "kind": 2,
+        "importPath": "2025.model_13",
+        "description": "2025.model_13",
+        "peekOfCode": "def sw_endog_inflow():\n    return 0\n@component.add(\n    name=\"sw endogen aspiration\",\n    units=\"Dmnl\",\n    limits=(0.0, 1.0, 1.0),\n    comp_type=\"Constant\",\n    comp_subtype=\"Normal\",\n)\ndef sw_endogen_aspiration():",
+        "detail": "2025.model_13",
+        "documentation": {}
+    },
+    {
+        "label": "sw_endogen_aspiration",
+        "kind": 2,
+        "importPath": "2025.model_13",
+        "description": "2025.model_13",
+        "peekOfCode": "def sw_endogen_aspiration():\n    return 0\n@component.add(\n    name=\"init resource\",\n    units=\"Dollar\",\n    limits=(0.0, 200.0, 1.0),\n    subscripts=[\"Goal\"],\n    comp_type=\"Auxiliary\",\n    comp_subtype=\"Normal\",\n    depends_on={\"init_a\": 1, \"init_b\": 1},",
+        "detail": "2025.model_13",
+        "documentation": {}
+    },
+    {
+        "label": "init_resource",
+        "kind": 2,
+        "importPath": "2025.model_13",
+        "description": "2025.model_13",
+        "peekOfCode": "def init_resource():\n    value = xr.DataArray(np.nan, {\"Goal\": _subscript_dict[\"Goal\"]}, [\"Goal\"])\n    value.loc[[\"A\"]] = init_a()\n    value.loc[[\"B\"]] = init_b()\n    return value\n@component.add(\n    name=\"combined performance\",\n    units=\"Dmnl\",\n    comp_type=\"Auxiliary\",\n    comp_subtype=\"Normal\",",
+        "detail": "2025.model_13",
+        "documentation": {}
+    },
+    {
+        "label": "combined_performance",
+        "kind": 2,
+        "importPath": "2025.model_13",
+        "description": "2025.model_13",
+        "peekOfCode": "def combined_performance():\n    return sum(performance().rename({\"Goal\": \"Goal!\"}), dim=[\"Goal!\"])\n@component.add(\n    name=\"init res\",\n    units=\"Dollar\",\n    subscripts=[\"Goal\"],\n    comp_type=\"Stateful\",\n    comp_subtype=\"Initial\",\n    depends_on={\"_initial_init_res\": 1},\n    other_deps={",
+        "detail": "2025.model_13",
+        "documentation": {}
+    },
+    {
+        "label": "init_res",
+        "kind": 2,
+        "importPath": "2025.model_13",
+        "description": "2025.model_13",
+        "peekOfCode": "def init_res():\n    return _initial_init_res()\n_initial_init_res = Initial(\n    lambda: (1 - eq_init()) * init_resource(), \"_initial_init_res\"\n)\n@component.add(\n    name=\"inv weight\",\n    units=\"Dmnl\",\n    subscripts=[\"Goal\"],\n    comp_type=\"Auxiliary\",",
+        "detail": "2025.model_13",
+        "documentation": {}
+    },
+    {
+        "label": "inv_weight",
+        "kind": 2,
+        "importPath": "2025.model_13",
+        "description": "2025.model_13",
+        "peekOfCode": "def inv_weight():\n    return np.exp(softmax_snstvty() * performance_gap()) / pg_denum()\n@component.add(\n    name=\"deterioration resources\",\n    units=\"Dollar/Month\",\n    subscripts=[\"Goal\"],\n    comp_type=\"Auxiliary\",\n    comp_subtype=\"Normal\",\n    depends_on={\"resources\": 1, \"t_deteriorate\": 1},\n)",
+        "detail": "2025.model_13",
+        "documentation": {}
+    },
+    {
+        "label": "deterioration_resources",
+        "kind": 2,
+        "importPath": "2025.model_13",
+        "description": "2025.model_13",
+        "peekOfCode": "def deterioration_resources():\n    return resources() / t_deteriorate()\n@component.add(\n    name=\"Resources\",\n    units=\"Dollar\",\n    subscripts=[\"Goal\"],\n    comp_type=\"Stateful\",\n    comp_subtype=\"Integ\",\n    depends_on={\"_integ_resources\": 1},\n    other_deps={",
+        "detail": "2025.model_13",
+        "documentation": {}
+    },
+    {
+        "label": "resources",
+        "kind": 2,
+        "importPath": "2025.model_13",
+        "description": "2025.model_13",
+        "peekOfCode": "def resources():\n    return _integ_resources()\n_integ_resources = Integ(\n    lambda: maturing_inv() - deterioration_resources(),\n    lambda: init_res(),\n    \"_integ_resources\",\n)\n@component.add(\n    name=\"init A\",\n    units=\"Dollar\",",
+        "detail": "2025.model_13",
+        "documentation": {}
+    },
+    {
+        "label": "init_a",
+        "kind": 2,
+        "importPath": "2025.model_13",
+        "description": "2025.model_13",
+        "peekOfCode": "def init_a():\n    return 80\n@component.add(\n    name=\"pg denum\",\n    units=\"Dmnl\",\n    comp_type=\"Auxiliary\",\n    comp_subtype=\"Normal\",\n    depends_on={\"softmax_snstvty\": 1, \"performance_gap\": 1},\n)\ndef pg_denum():",
+        "detail": "2025.model_13",
+        "documentation": {}
+    },
+    {
+        "label": "pg_denum",
+        "kind": 2,
+        "importPath": "2025.model_13",
+        "description": "2025.model_13",
+        "peekOfCode": "def pg_denum():\n    \"\"\"\n    (exp(softmax snstvty * performance gap[A]) + exp(softmax snstvty * performance gap[B]))\n    \"\"\"\n    return sum(\n        np.exp(softmax_snstvty() * performance_gap().rename({\"Goal\": \"Goal!\"})),\n        dim=[\"Goal!\"],\n    )\n@component.add(\n    name=\"init B\",",
+        "detail": "2025.model_13",
+        "documentation": {}
+    },
+    {
+        "label": "init_b",
+        "kind": 2,
+        "importPath": "2025.model_13",
+        "description": "2025.model_13",
+        "peekOfCode": "def init_b():\n    return 80\n@component.add(\n    name=\"maturing inv\",\n    units=\"Dollar/Month\",\n    subscripts=[\"Goal\"],\n    comp_type=\"Auxiliary\",\n    comp_subtype=\"Normal\",\n    depends_on={\"undeveloped_resources\": 1, \"t_mature\": 1},\n)",
+        "detail": "2025.model_13",
+        "documentation": {}
+    },
+    {
+        "label": "maturing_inv",
+        "kind": 2,
+        "importPath": "2025.model_13",
+        "description": "2025.model_13",
+        "peekOfCode": "def maturing_inv():\n    return undeveloped_resources() / t_mature()\n@component.add(\n    name=\"init UR\",\n    units=\"Dollar\",\n    subscripts=[\"Goal\"],\n    comp_type=\"Stateful\",\n    comp_subtype=\"Initial\",\n    depends_on={\"_initial_init_ur\": 1},\n    other_deps={",
+        "detail": "2025.model_13",
+        "documentation": {}
+    },
+    {
+        "label": "init_ur",
+        "kind": 2,
+        "importPath": "2025.model_13",
+        "description": "2025.model_13",
+        "peekOfCode": "def init_ur():\n    return _initial_init_ur()\n_initial_init_ur = Initial(\n    lambda: (init_res() / t_deteriorate()) * t_mature(), \"_initial_init_ur\"\n)\n@component.add(\n    name=\"t mature\",\n    units=\"Month\",\n    limits=(1.0, 20.0, 1.0),\n    comp_type=\"Constant\",",
+        "detail": "2025.model_13",
+        "documentation": {}
+    },
+    {
+        "label": "t_mature",
+        "kind": 2,
+        "importPath": "2025.model_13",
+        "description": "2025.model_13",
+        "peekOfCode": "def t_mature():\n    return 5\n@component.add(\n    name=\"Undeveloped Resources\",\n    units=\"Dollar\",\n    subscripts=[\"Goal\"],\n    comp_type=\"Stateful\",\n    comp_subtype=\"Integ\",\n    depends_on={\"_integ_undeveloped_resources\": 1},\n    other_deps={",
+        "detail": "2025.model_13",
+        "documentation": {}
+    },
+    {
+        "label": "undeveloped_resources",
+        "kind": 2,
+        "importPath": "2025.model_13",
+        "description": "2025.model_13",
+        "peekOfCode": "def undeveloped_resources():\n    return _integ_undeveloped_resources()\n_integ_undeveloped_resources = Integ(\n    lambda: investing() - maturing_inv(),\n    lambda: init_ur(),\n    \"_integ_undeveloped_resources\",\n)\n@component.add(\n    name=\"exogen inflow\",\n    units=\"Dollar/Month\",",
+        "detail": "2025.model_13",
+        "documentation": {}
+    },
+    {
+        "label": "exogen_inflow",
+        "kind": 2,
+        "importPath": "2025.model_13",
+        "description": "2025.model_13",
+        "peekOfCode": "def exogen_inflow():\n    return 8\n@component.add(\n    name=\"eq init\",\n    units=\"Dmnl\",\n    limits=(0.0, 1.0, 1.0),\n    comp_type=\"Constant\",\n    comp_subtype=\"Normal\",\n)\ndef eq_init():",
+        "detail": "2025.model_13",
+        "documentation": {}
+    },
+    {
+        "label": "eq_init",
+        "kind": 2,
+        "importPath": "2025.model_13",
+        "description": "2025.model_13",
+        "peekOfCode": "def eq_init():\n    return 0\n@component.add(\n    name=\"softmax snstvty\",\n    units=\"Dmnl\",\n    limits=(0.0, 0.5, 0.001),\n    comp_type=\"Constant\",\n    comp_subtype=\"Normal\",\n)\ndef softmax_snstvty():",
+        "detail": "2025.model_13",
+        "documentation": {}
+    },
+    {
+        "label": "softmax_snstvty",
+        "kind": 2,
+        "importPath": "2025.model_13",
+        "description": "2025.model_13",
+        "peekOfCode": "def softmax_snstvty():\n    return 0.03\n@component.add(\n    name=\"investing\",\n    units=\"Dollar/Month\",\n    subscripts=[\"Goal\"],\n    comp_type=\"Auxiliary\",\n    comp_subtype=\"Normal\",\n    depends_on={\"inv_weight\": 1, \"resource_inflow\": 1},\n)",
+        "detail": "2025.model_13",
+        "documentation": {}
+    },
+    {
+        "label": "investing",
+        "kind": 2,
+        "importPath": "2025.model_13",
+        "description": "2025.model_13",
+        "peekOfCode": "def investing():\n    return inv_weight() * resource_inflow()\n@component.add(\n    name=\"cAB\",\n    units=\"1/Dollar\",\n    limits=(-1.0, 1.0, 0.01),\n    comp_type=\"Constant\",\n    comp_subtype=\"Normal\",\n)\ndef cab():",
+        "detail": "2025.model_13",
+        "documentation": {}
+    },
+    {
+        "label": "cab",
+        "kind": 2,
+        "importPath": "2025.model_13",
+        "description": "2025.model_13",
+        "peekOfCode": "def cab():\n    return 0\n@component.add(\n    name=\"cBA\",\n    units=\"1/Dollar\",\n    limits=(-1.0, 1.0, 0.01),\n    comp_type=\"Constant\",\n    comp_subtype=\"Normal\",\n)\ndef cba():",
+        "detail": "2025.model_13",
+        "documentation": {}
+    },
+    {
+        "label": "cba",
+        "kind": 2,
+        "importPath": "2025.model_13",
+        "description": "2025.model_13",
+        "peekOfCode": "def cba():\n    return 0\n@component.add(\n    name=\"cAA\",\n    units=\"1/Dollar\",\n    limits=(0.0, 1.0, 0.01),\n    comp_type=\"Constant\",\n    comp_subtype=\"Normal\",\n)\ndef caa():",
+        "detail": "2025.model_13",
+        "documentation": {}
+    },
+    {
+        "label": "caa",
+        "kind": 2,
+        "importPath": "2025.model_13",
+        "description": "2025.model_13",
+        "peekOfCode": "def caa():\n    return 1\n@component.add(\n    name=\"cBB\",\n    units=\"1/Dollar\",\n    limits=(0.0, 1.0, 0.01),\n    comp_type=\"Constant\",\n    comp_subtype=\"Normal\",\n)\ndef cbb():",
+        "detail": "2025.model_13",
+        "documentation": {}
+    },
+    {
+        "label": "cbb",
+        "kind": 2,
+        "importPath": "2025.model_13",
+        "description": "2025.model_13",
+        "peekOfCode": "def cbb():\n    return 1\n@component.add(\n    name=\"t deteriorate\",\n    units=\"Month\",\n    limits=(1.0, 50.0, 1.0),\n    comp_type=\"Constant\",\n    comp_subtype=\"Normal\",\n)\ndef t_deteriorate():",
+        "detail": "2025.model_13",
+        "documentation": {}
+    },
+    {
+        "label": "t_deteriorate",
+        "kind": 2,
+        "importPath": "2025.model_13",
+        "description": "2025.model_13",
+        "peekOfCode": "def t_deteriorate():\n    return 25",
+        "detail": "2025.model_13",
+        "documentation": {}
+    },
+    {
+        "label": "__pysd_version__",
+        "kind": 5,
+        "importPath": "2025.model_13",
+        "description": "2025.model_13",
+        "peekOfCode": "__pysd_version__ = \"3.14.3\"\n__data = {\"scope\": None, \"time\": lambda: 0}\n_root = Path(__file__).parent\n_subscript_dict = {\"Goal\": [\"A\", \"B\"]}\ncomponent = Component()\n#######################################################################\n#                          CONTROL VARIABLES                          #\n#######################################################################\n_control_vars = {\n    \"initial_time\": lambda: 0,",
+        "detail": "2025.model_13",
+        "documentation": {}
+    },
+    {
+        "label": "__data",
+        "kind": 5,
+        "importPath": "2025.model_13",
+        "description": "2025.model_13",
+        "peekOfCode": "__data = {\"scope\": None, \"time\": lambda: 0}\n_root = Path(__file__).parent\n_subscript_dict = {\"Goal\": [\"A\", \"B\"]}\ncomponent = Component()\n#######################################################################\n#                          CONTROL VARIABLES                          #\n#######################################################################\n_control_vars = {\n    \"initial_time\": lambda: 0,\n    \"final_time\": lambda: 100,",
+        "detail": "2025.model_13",
+        "documentation": {}
+    },
+    {
+        "label": "_root",
+        "kind": 5,
+        "importPath": "2025.model_13",
+        "description": "2025.model_13",
+        "peekOfCode": "_root = Path(__file__).parent\n_subscript_dict = {\"Goal\": [\"A\", \"B\"]}\ncomponent = Component()\n#######################################################################\n#                          CONTROL VARIABLES                          #\n#######################################################################\n_control_vars = {\n    \"initial_time\": lambda: 0,\n    \"final_time\": lambda: 100,\n    \"time_step\": lambda: 0.0625,",
+        "detail": "2025.model_13",
+        "documentation": {}
+    },
+    {
+        "label": "_subscript_dict",
+        "kind": 5,
+        "importPath": "2025.model_13",
+        "description": "2025.model_13",
+        "peekOfCode": "_subscript_dict = {\"Goal\": [\"A\", \"B\"]}\ncomponent = Component()\n#######################################################################\n#                          CONTROL VARIABLES                          #\n#######################################################################\n_control_vars = {\n    \"initial_time\": lambda: 0,\n    \"final_time\": lambda: 100,\n    \"time_step\": lambda: 0.0625,\n    \"saveper\": lambda: time_step(),",
+        "detail": "2025.model_13",
+        "documentation": {}
+    },
+    {
+        "label": "component",
+        "kind": 5,
+        "importPath": "2025.model_13",
+        "description": "2025.model_13",
+        "peekOfCode": "component = Component()\n#######################################################################\n#                          CONTROL VARIABLES                          #\n#######################################################################\n_control_vars = {\n    \"initial_time\": lambda: 0,\n    \"final_time\": lambda: 100,\n    \"time_step\": lambda: 0.0625,\n    \"saveper\": lambda: time_step(),\n}",
+        "detail": "2025.model_13",
+        "documentation": {}
+    },
+    {
+        "label": "_control_vars",
+        "kind": 5,
+        "importPath": "2025.model_13",
+        "description": "2025.model_13",
+        "peekOfCode": "_control_vars = {\n    \"initial_time\": lambda: 0,\n    \"final_time\": lambda: 100,\n    \"time_step\": lambda: 0.0625,\n    \"saveper\": lambda: time_step(),\n}\ndef _init_outer_references(data):\n    for key in data:\n        __data[key] = data[key]\n@component.add(name=\"Time\")",
+        "detail": "2025.model_13",
+        "documentation": {}
+    },
+    {
+        "label": "_integ_accident_shock_level",
+        "kind": 5,
+        "importPath": "2025.model_13",
+        "description": "2025.model_13",
+        "peekOfCode": "_integ_accident_shock_level = Integ(\n    lambda: accidents() - recovery_rate(), lambda: 0, \"_integ_accident_shock_level\"\n)\n@component.add(\n    name=\"accidents\",\n    comp_type=\"Auxiliary\",\n    comp_subtype=\"Normal\",\n    depends_on={\n        \"accident_rate\": 1,\n        \"time_step\": 1,",
+        "detail": "2025.model_13",
+        "documentation": {}
+    },
+    {
+        "label": "_integ_aspiration",
+        "kind": 5,
+        "importPath": "2025.model_13",
+        "description": "2025.model_13",
+        "peekOfCode": "_integ_aspiration = Integ(\n    lambda: change_in_asp(),\n    lambda: xr.DataArray(\n        exogen_aspiration(), {\"Goal\": _subscript_dict[\"Goal\"]}, [\"Goal\"]\n    ),\n    \"_integ_aspiration\",\n)\n@component.add(\n    name=\"init perc comb perf\",\n    units=\"Dmnl\",",
+        "detail": "2025.model_13",
+        "documentation": {}
+    },
+    {
+        "label": "_initial_init_perc_comb_perf",
+        "kind": 5,
+        "importPath": "2025.model_13",
+        "description": "2025.model_13",
+        "peekOfCode": "_initial_init_perc_comb_perf = Initial(\n    lambda: caa() * init_a() + cba() * init_b() + cab() * init_a() + cbb() * init_b(),\n    \"_initial_init_perc_comb_perf\",\n)\n@component.add(\n    name=\"Perceived comb perf\",\n    units=\"Dmnl\",\n    comp_type=\"Stateful\",\n    comp_subtype=\"Integ\",\n    depends_on={\"_integ_perceived_comb_perf\": 1},",
+        "detail": "2025.model_13",
+        "documentation": {}
+    },
+    {
+        "label": "_integ_perceived_comb_perf",
+        "kind": 5,
+        "importPath": "2025.model_13",
+        "description": "2025.model_13",
+        "peekOfCode": "_integ_perceived_comb_perf = Integ(\n    lambda: change_in_perc_comb_perf(),\n    lambda: init_perc_comb_perf(),\n    \"_integ_perceived_comb_perf\",\n)\n@component.add(\n    name=\"Perceived perfromance gap\",\n    units=\"Dmnl\",\n    subscripts=[\"Goal\"],\n    comp_type=\"Stateful\",",
+        "detail": "2025.model_13",
+        "documentation": {}
+    },
+    {
+        "label": "_smooth_perceived_perfromance_gap",
+        "kind": 5,
+        "importPath": "2025.model_13",
+        "description": "2025.model_13",
+        "peekOfCode": "_smooth_perceived_perfromance_gap = Smooth(\n    lambda: performance_gap(),\n    lambda: xr.DataArray(\n        t_update_perf_gap(), {\"Goal\": _subscript_dict[\"Goal\"]}, [\"Goal\"]\n    ),\n    lambda: performance_gap(),\n    lambda: 1,\n    \"_smooth_perceived_perfromance_gap\",\n)\n@component.add(",
+        "detail": "2025.model_13",
+        "documentation": {}
+    },
+    {
+        "label": "_initial_init_res",
+        "kind": 5,
+        "importPath": "2025.model_13",
+        "description": "2025.model_13",
+        "peekOfCode": "_initial_init_res = Initial(\n    lambda: (1 - eq_init()) * init_resource(), \"_initial_init_res\"\n)\n@component.add(\n    name=\"inv weight\",\n    units=\"Dmnl\",\n    subscripts=[\"Goal\"],\n    comp_type=\"Auxiliary\",\n    comp_subtype=\"Normal\",\n    depends_on={\"softmax_snstvty\": 1, \"performance_gap\": 1, \"pg_denum\": 1},",
+        "detail": "2025.model_13",
+        "documentation": {}
+    },
+    {
+        "label": "_integ_resources",
+        "kind": 5,
+        "importPath": "2025.model_13",
+        "description": "2025.model_13",
+        "peekOfCode": "_integ_resources = Integ(\n    lambda: maturing_inv() - deterioration_resources(),\n    lambda: init_res(),\n    \"_integ_resources\",\n)\n@component.add(\n    name=\"init A\",\n    units=\"Dollar\",\n    limits=(0.0, 200.0, 1.0),\n    comp_type=\"Constant\",",
+        "detail": "2025.model_13",
+        "documentation": {}
+    },
+    {
+        "label": "_initial_init_ur",
+        "kind": 5,
+        "importPath": "2025.model_13",
+        "description": "2025.model_13",
+        "peekOfCode": "_initial_init_ur = Initial(\n    lambda: (init_res() / t_deteriorate()) * t_mature(), \"_initial_init_ur\"\n)\n@component.add(\n    name=\"t mature\",\n    units=\"Month\",\n    limits=(1.0, 20.0, 1.0),\n    comp_type=\"Constant\",\n    comp_subtype=\"Normal\",\n)",
+        "detail": "2025.model_13",
+        "documentation": {}
+    },
+    {
+        "label": "_integ_undeveloped_resources",
+        "kind": 5,
+        "importPath": "2025.model_13",
+        "description": "2025.model_13",
+        "peekOfCode": "_integ_undeveloped_resources = Integ(\n    lambda: investing() - maturing_inv(),\n    lambda: init_ur(),\n    \"_integ_undeveloped_resources\",\n)\n@component.add(\n    name=\"exogen inflow\",\n    units=\"Dollar/Month\",\n    limits=(0.0, 20.0, 0.1),\n    comp_type=\"Constant\",",
+        "detail": "2025.model_13",
         "documentation": {}
     },
     {
@@ -799,16 +2538,7 @@
         "kind": 2,
         "importPath": "2025.model_13_gl",
         "description": "2025.model_13_gl",
-        "peekOfCode": "def accidents():\n    \"\"\"\n    Uses PySD functionspace random_poisson function\n    Implements Vensim RANDOM POISSON(0, 5, accident_rate*TIME_STEP, 0, 1, seed)\n    This will use the PySD functionspace random_poisson when the model is loaded\n    \"\"\"\n    # Use the PySD functionspace random_poisson function\n    # This will be handled by PySD's functionspace when the model is loaded\n    # with the fix_pysd_poisson.py applied\n    # The functionspace approach uses this pattern:",
-        "detail": "2025.model_13_gl",
-        "documentation": {}
-    },
-    {
-        "label": "random_poisson",
-        "kind": 2,
-        "importPath": "2025.model_13_gl",
-        "description": "2025.model_13_gl",
-        "peekOfCode": "def random_poisson(min_val, max_val, mean, shift, stretch, seed_val):\n    \"\"\"\n    Proper implementation of Vensim RANDOM POISSON function\n    Following PySD's pattern for random functions\n    \"\"\"\n    # Use time-based seed for variation during simulation\n    # This ensures accidents vary over time, not just based on fixed seed\n    time_based_seed = (int(seed_val) + int(time() * 1000)) % 10000\n    # Set random seed\n    np.random.seed(time_based_seed)",
+        "peekOfCode": "def accidents():\n    \"\"\"\n    Uses PySD functionspace random_poisson function from fix_pysd_poisson.py\n    Implements Vensim RANDOM POISSON(0, 5, accident_rate*TIME_STEP, 0, 1, seed)\n    This function uses the proper PySD functionspace approach where random_poisson\n    is added to PySD's functionspace by fix_pysd_poisson.py.\n    \"\"\"\n    # Call the PySD functionspace random_poisson function\n    # Parameters: (min, max, mean, shift, stretch, seed)\n    # This matches Vensim: RANDOM POISSON(0, 5, accident_rate*TIME_STEP, 0, 1, seed)",
         "detail": "2025.model_13_gl",
         "documentation": {}
     },
@@ -1395,6 +3125,834 @@
         "description": "2025.model_13_gl",
         "peekOfCode": "_integ_undeveloped_resources = Integ(\n    lambda: investing() - maturing_inv(),\n    lambda: init_ur(),\n    \"_integ_undeveloped_resources\",\n)\n@component.add(\n    name=\"exogen inflow\",\n    units=\"Dollar/Month\",\n    limits=(0.0, 20.0, 0.1),\n    comp_type=\"Constant\",",
         "detail": "2025.model_13_gl",
+        "documentation": {}
+    },
+    {
+        "label": "setup_functionspace_and_retranslate",
+        "kind": 2,
+        "importPath": "2025.retranslate_with_functionspace",
+        "description": "2025.retranslate_with_functionspace",
+        "peekOfCode": "def setup_functionspace_and_retranslate():\n    \"\"\"Set up functionspace and retranslate the model\"\"\"\n    print(\"🔧 SETTING UP FUNCTIONSPACE AND RETRANSLATING MODEL:\")\n    print(\"=\" * 60)\n    try:\n        # First, set up the functionspace\n        print(\"Setting up functionspace...\")\n        from fix_pysd_poisson import add_random_poisson_to_pysd\n        add_random_poisson_to_pysd()\n        print(\"✅ Functionspace set up\")",
+        "detail": "2025.retranslate_with_functionspace",
+        "documentation": {}
+    },
+    {
+        "label": "setup_random_poisson_functionspace",
+        "kind": 2,
+        "importPath": "2025.run_accidents",
+        "description": "2025.run_accidents",
+        "peekOfCode": "def setup_random_poisson_functionspace():\n    \"\"\"Set up PySD functionspace with random_poisson from fix_pysd_poisson.py\"\"\"\n    print(\"🔧 SETTING UP fix_pysd_poisson.py:\")\n    print(\"=\" * 50)\n    try:\n        # Import from current directory (2025)\n        sys.path.insert(0, os.getcwd())\n        from fix_pysd_poisson import add_random_poisson_to_pysd\n        print(\"✅ Successfully imported fix_pysd_poisson.py\")\n        add_random_poisson_to_pysd()",
+        "detail": "2025.run_accidents",
+        "documentation": {}
+    },
+    {
+        "label": "load_model",
+        "kind": 2,
+        "importPath": "2025.run_accidents",
+        "description": "2025.run_accidents",
+        "peekOfCode": "def load_model():\n    \"\"\"Load the PySD model after functionspace setup\"\"\"\n    print(\"🔧 LOADING MODEL:\")\n    print(\"=\" * 40)\n    # Set up functionspace first\n    functionspace_success = setup_random_poisson_functionspace()\n    if not functionspace_success:\n        print(\"❌ Cannot load model - functionspace setup failed\")\n        return None\n    print(\"\\n🎯 PySD functionspace is ready - model can now use random_poisson!\")",
+        "detail": "2025.run_accidents",
+        "documentation": {}
+    },
+    {
+        "label": "test_model_functionality",
+        "kind": 2,
+        "importPath": "2025.run_accidents",
+        "description": "2025.run_accidents",
+        "peekOfCode": "def test_model_functionality(model):\n    \"\"\"Test model with PySD functionspace random_poisson\"\"\"\n    print(\"\\n🧪 TESTING MODEL WITH PYSD FUNCTIONSPACE:\")\n    print(\"=\" * 60)\n    try:\n        print(\"Running simulation...\")\n        result = model.run()\n        print(\"✅ Simulation completed successfully\")\n        if 'accidents' in result.columns:\n            accidents_data = result['accidents']",
+        "detail": "2025.run_accidents",
+        "documentation": {}
+    },
+    {
+        "label": "run_scenario_analysis",
+        "kind": 2,
+        "importPath": "2025.run_accidents",
+        "description": "2025.run_accidents",
+        "peekOfCode": "def run_scenario_analysis(model):\n    \"\"\"Run scenario analysis for (G,G), (P,P), (G,P)\"\"\"\n    print(\"\\n🚀 SCENARIO ANALYSIS:\")\n    print(\"=\" * 50)\n    scenarios = {\n        'G,G': {'sw_a_to_protective': 0, 'sw_b_to_protective': 0},\n        'P,P': {'sw_a_to_protective': 1, 'sw_b_to_protective': 1},\n        'G,P': {'sw_a_to_protective': 0, 'sw_b_to_protective': 1}\n    }\n    scenario_results = {}",
+        "detail": "2025.run_accidents",
+        "documentation": {}
+    },
+    {
+        "label": "plot_scenario_comparison",
+        "kind": 2,
+        "importPath": "2025.run_accidents",
+        "description": "2025.run_accidents",
+        "peekOfCode": "def plot_scenario_comparison(scenario_results):\n    \"\"\"Plot comparison of multiple scenarios\"\"\"\n    if not scenario_results:\n        print(\"❌ No scenario results to plot\")\n        return\n    print(\"\\n📊 CREATING SCENARIO COMPARISON PLOTS:\")\n    print(\"=\" * 50)\n    fig, axes = plt.subplots(2, 2, figsize=(15, 10))\n    fig.suptitle('Scenario Analysis: (G,G), (P,P), (G,P)', fontsize=16)\n    # Performance A & B",
+        "detail": "2025.run_accidents",
+        "documentation": {}
+    },
+    {
+        "label": "parameter_sensitivity_analysis",
+        "kind": 2,
+        "importPath": "2025.run_accidents",
+        "description": "2025.run_accidents",
+        "peekOfCode": "def parameter_sensitivity_analysis(model):\n    \"\"\"Perform parameter sensitivity analysis on accident_rate\"\"\"\n    print(\"\\n🔬 PARAMETER SENSITIVITY ANALYSIS: ACCIDENT RATE\")\n    print(\"=\" * 60)\n    accident_rates = [0.5, 1.0, 2.0, 5.0, 10.0, 20.0]\n    results_dict = {}\n    accident_stats = {}\n    print(f\"Testing accident rates: {accident_rates}\")\n    for rate in accident_rates:\n        print(f\"\\n📊 Testing accident_rate = {rate}\")",
+        "detail": "2025.run_accidents",
+        "documentation": {}
+    },
+    {
+        "label": "plot_sensitivity_analysis",
+        "kind": 2,
+        "importPath": "2025.run_accidents",
+        "description": "2025.run_accidents",
+        "peekOfCode": "def plot_sensitivity_analysis(results_dict, accident_rates):\n    \"\"\"Plot parameter sensitivity analysis results\"\"\"\n    if not results_dict:\n        print(\"❌ No sensitivity results to plot\")\n        return\n    print(\"\\n📊 CREATING PARAMETER SENSITIVITY PLOTS:\")\n    print(\"=\" * 50)\n    colors = ['blue', 'orange', 'green', 'red', 'purple', 'brown']\n    # Create subplot layout\n    fig, axes = plt.subplots(2, 3, figsize=(18, 12))",
+        "detail": "2025.run_accidents",
+        "documentation": {}
+    },
+    {
+        "label": "create_summary_table",
+        "kind": 2,
+        "importPath": "2025.run_accidents",
+        "description": "2025.run_accidents",
+        "peekOfCode": "def create_summary_table(accident_stats, accident_rates):\n    \"\"\"Create summary statistics table\"\"\"\n    print(\"\\n📊 PARAMETER SENSITIVITY SUMMARY:\")\n    print(\"=\" * 80)\n    summary_data = []\n    for rate in accident_rates:\n        if rate in accident_stats and accident_stats[rate] is not None:\n            stats = accident_stats[rate]\n            summary_data.append({\n                'Accident Rate': rate,",
+        "detail": "2025.run_accidents",
+        "documentation": {}
+    },
+    {
+        "label": "case_study_analysis",
+        "kind": 2,
+        "importPath": "2025.run_accidents",
+        "description": "2025.run_accidents",
+        "peekOfCode": "def case_study_analysis(model):\n    \"\"\"Run case study analysis for Safety Focus\"\"\"\n    print(\"\\n📊 CASE STUDY: SAFETY FOCUS ANALYSIS\")\n    print(\"=\" * 50)\n    sns.set_theme(style=\"ticks\")\n    fig, ax = plt.subplots(figsize=(8, 4))\n    initial_condition = {\n        'Pulse start time': 0,\n        'Pulse end time': 10,\n        'Pulse Quantity 1': 5,",
+        "detail": "2025.run_accidents",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "2025.run_accidents",
+        "description": "2025.run_accidents",
+        "peekOfCode": "def main():\n    \"\"\"Main execution function\"\"\"\n    print(\"🎯 ACCIDENT MODEL ANALYSIS\")\n    print(\"=\" * 50)\n    # Set seaborn theme\n    sns.set_theme(style=\"ticks\")\n    try:\n        # Load model with functionspace setup\n        model = load_model()\n        if model is None:",
+        "detail": "2025.run_accidents",
+        "documentation": {}
+    },
+    {
+        "label": "PROJECT_DIR",
+        "kind": 5,
+        "importPath": "2025.run_accidents",
+        "description": "2025.run_accidents",
+        "peekOfCode": "PROJECT_DIR = '/Users/georgia/Documents/GitHub/OrganizationOscillation/'\nCURRENT_DIR = '/Users/georgia/Documents/GitHub/OrganizationOscillation/2025/'\nMODEL_FILE = 'model_13_gl.py'\n# Add both directories to path\n# sys.path.append(PROJECT_DIR)\n# sys.path.append(CURRENT_DIR)\n# Set pandas display options\npd.set_option('display.max_rows', None)\ndef setup_random_poisson_functionspace():\n    \"\"\"Set up PySD functionspace with random_poisson from fix_pysd_poisson.py\"\"\"",
+        "detail": "2025.run_accidents",
+        "documentation": {}
+    },
+    {
+        "label": "CURRENT_DIR",
+        "kind": 5,
+        "importPath": "2025.run_accidents",
+        "description": "2025.run_accidents",
+        "peekOfCode": "CURRENT_DIR = '/Users/georgia/Documents/GitHub/OrganizationOscillation/2025/'\nMODEL_FILE = 'model_13_gl.py'\n# Add both directories to path\n# sys.path.append(PROJECT_DIR)\n# sys.path.append(CURRENT_DIR)\n# Set pandas display options\npd.set_option('display.max_rows', None)\ndef setup_random_poisson_functionspace():\n    \"\"\"Set up PySD functionspace with random_poisson from fix_pysd_poisson.py\"\"\"\n    print(\"🔧 SETTING UP fix_pysd_poisson.py:\")",
+        "detail": "2025.run_accidents",
+        "documentation": {}
+    },
+    {
+        "label": "MODEL_FILE",
+        "kind": 5,
+        "importPath": "2025.run_accidents",
+        "description": "2025.run_accidents",
+        "peekOfCode": "MODEL_FILE = 'model_13_gl.py'\n# Add both directories to path\n# sys.path.append(PROJECT_DIR)\n# sys.path.append(CURRENT_DIR)\n# Set pandas display options\npd.set_option('display.max_rows', None)\ndef setup_random_poisson_functionspace():\n    \"\"\"Set up PySD functionspace with random_poisson from fix_pysd_poisson.py\"\"\"\n    print(\"🔧 SETTING UP fix_pysd_poisson.py:\")\n    print(\"=\" * 50)",
+        "detail": "2025.run_accidents",
+        "documentation": {}
+    },
+    {
+        "label": "setup_random_poisson_functionspace",
+        "kind": 2,
+        "importPath": "2025.run_accidents_backup",
+        "description": "2025.run_accidents_backup",
+        "peekOfCode": "def setup_random_poisson_functionspace():\n    \"\"\"Set up PySD functionspace with random_poisson from fix_pysd_poisson.py\"\"\"\n    print(\"🔧 SETTING UP fix_pysd_poisson.py:\")\n    print(\"=\" * 50)\n    try:\n        # Import the fix_pysd_poisson module\n        from fix_pysd_poisson import add_random_poisson_to_pysd\n        print(\"✅ Successfully imported fix_pysd_poisson.py\")\n        # Use the function from fix_pysd_poisson.py\n        add_random_poisson_to_pysd()",
+        "detail": "2025.run_accidents_backup",
+        "documentation": {}
+    },
+    {
+        "label": "setup_pysd_functionspace",
+        "kind": 2,
+        "importPath": "2025.run_accidents_backup",
+        "description": "2025.run_accidents_backup",
+        "peekOfCode": "def setup_pysd_functionspace():\n    \"\"\"Set up PySD functionspace with random_poisson function\"\"\"\n    print(\"🔧 SETTING UP PYSD FUNCTIONSPACE WITH RANDOM POISSON:\")\n    print(\"=\" * 70)\n    # Import the functionspace\n    from pysd.builders.python.python_expressions_builder import functionspace\n    # Define the random_poisson function following PySD's pattern\n    # This matches exactly what's in fix_pysd_poisson.py\n    random_poisson_expression = \"\"\"\n    np.clip(",
+        "detail": "2025.run_accidents_backup",
+        "documentation": {}
+    },
+    {
+        "label": "test_model_with_pysd_poisson",
+        "kind": 2,
+        "importPath": "2025.run_accidents_backup",
+        "description": "2025.run_accidents_backup",
+        "peekOfCode": "def test_model_with_pysd_poisson():\n    \"\"\"Test model with the PySD functionspace random_poisson\"\"\"\n    print(f\"\\n🧪 TESTING MODEL WITH PYSD FUNCTIONSPACE:\")\n    print(\"=\" * 60)\n    try:\n        # Run simulation\n        print(\"Running simulation...\")\n        result = model.run()\n        print(\"✅ Simulation completed successfully\")\n        # Check accidents",
+        "detail": "2025.run_accidents_backup",
+        "documentation": {}
+    },
+    {
+        "label": "parameter_sensitivity_analysis_accident_rate",
+        "kind": 2,
+        "importPath": "2025.run_accidents_backup",
+        "description": "2025.run_accidents_backup",
+        "peekOfCode": "def parameter_sensitivity_analysis_accident_rate():\n    \"\"\"Perform parameter sensitivity analysis on accident_rate\"\"\"\n    print(\"🔬 PARAMETER SENSITIVITY ANALYSIS: ACCIDENT RATE\")\n    print(\"=\" * 60)\n    # Define different accident rates to test\n    accident_rates = [0.5, 1.0, 2.0, 5.0, 10.0, 20.0]\n    # Store results for each accident rate\n    results_dict = {}\n    accident_stats = {}\n    print(f\"Testing accident rates: {accident_rates}\")",
+        "detail": "2025.run_accidents_backup",
+        "documentation": {}
+    },
+    {
+        "label": "setup_pysd_functionspace_properly",
+        "kind": 2,
+        "importPath": "2025.run_accidents_backup",
+        "description": "2025.run_accidents_backup",
+        "peekOfCode": "def setup_pysd_functionspace_properly():\n    \"\"\"Set up PySD functionspace using the proper fix_pysd_poisson.py approach\"\"\"\n    print(\"🔧 PROPER PYSD FUNCTIONSPACE SETUP:\")\n    print(\"=\" * 60)\n    print(\"Using fix_pysd_poisson.py - the RIGHT way to add random_poisson\")\n    print(\"=\" * 60)\n    try:\n        # Import and use the proper fix_pysd_poisson.py approach\n        from fix_pysd_poisson import add_random_poisson_to_pysd\n        print(\"✅ Imported fix_pysd_poisson.py\")",
+        "detail": "2025.run_accidents_backup",
+        "documentation": {}
+    },
+    {
+        "label": "load_model_with_functionspace",
+        "kind": 2,
+        "importPath": "2025.run_accidents_backup",
+        "description": "2025.run_accidents_backup",
+        "peekOfCode": "def load_model_with_functionspace():\n    \"\"\"Load model only if functionspace is properly set up\"\"\"\n    print(\"🔍 LOADING MODEL WITH FUNCTIONSPACE VERIFICATION:\")\n    print(\"=\" * 60)\n    # Check if functionspace was set up\n    if 'functionspace_success' not in globals() or not functionspace_success:\n        print(\"❌ Functionspace not set up properly\")\n        print(\"Please run Cell 19 first to set up PySD functionspace\")\n        return None\n    # Verify functionspace has random_poisson",
+        "detail": "2025.run_accidents_backup",
+        "documentation": {}
+    },
+    {
+        "label": "test_functionspace_setup",
+        "kind": 2,
+        "importPath": "2025.run_accidents_backup",
+        "description": "2025.run_accidents_backup",
+        "peekOfCode": "def test_functionspace_setup():\n    \"\"\"Test if the functionspace setup is working correctly\"\"\"\n    print(\"🧪 TESTING FUNCTIONSPACE SETUP:\")\n    print(\"=\" * 50)\n    try:\n        # Check functionspace\n        from pysd.builders.python.python_expressions_builder import functionspace\n        print(\"1. Checking functionspace:\")\n        if 'random_poisson' in functionspace:\n            print(\"   ✅ random_poisson found in functionspace\")",
+        "detail": "2025.run_accidents_backup",
+        "documentation": {}
+    },
+    {
+        "label": "test_multiple_runs",
+        "kind": 2,
+        "importPath": "2025.run_accidents_backup",
+        "description": "2025.run_accidents_backup",
+        "peekOfCode": "def test_multiple_runs():\n    \"\"\"Test multiple runs to see variation\"\"\"\n    print(f\"\\n🧪 TESTING MULTIPLE RUNS FOR VARIATION:\")\n    print(\"=\" * 50)\n    try:\n        # Run multiple simulations with different seeds\n        all_accidents = []\n        for i in range(5):\n            np.random.seed(i)\n            result = model.run()",
+        "detail": "2025.run_accidents_backup",
+        "documentation": {}
+    },
+    {
+        "label": "create_vensim_style_single_run",
+        "kind": 2,
+        "importPath": "2025.run_accidents_backup",
+        "description": "2025.run_accidents_backup",
+        "peekOfCode": "def create_vensim_style_single_run():\n    \"\"\"Create a single run visualization that mimics Vensim's discrete event plotting\"\"\"\n    print(f\"\\n🎯 CREATING VENSIM-STYLE SINGLE RUN VISUALIZATION:\")\n    print(\"=\" * 60)\n    try:\n        # Set seed for reproducible single run\n        np.random.seed(42)\n        # Run the model once\n        result = model.run()\n        accidents_data = result['accidents']",
+        "detail": "2025.run_accidents_backup",
+        "documentation": {}
+    },
+    {
+        "label": "create_comprehensive_6_panel_visualization",
+        "kind": 2,
+        "importPath": "2025.run_accidents_backup",
+        "description": "2025.run_accidents_backup",
+        "peekOfCode": "def create_comprehensive_6_panel_visualization():\n    \"\"\"Create the comprehensive 6-panel visualization shown in your image\"\"\"\n    print(f\"\\n📊 CREATING COMPREHENSIVE 6-PANEL VISUALIZATION:\")\n    print(\"=\" * 60)\n    try:\n        # Run multiple simulations for comparison\n        all_accidents = []\n        all_results = []\n        # Single run for first panel\n        np.random.seed(42)",
+        "detail": "2025.run_accidents_backup",
+        "documentation": {}
+    },
+    {
+        "label": "create_individual_accident_rate_stem_plots",
+        "kind": 2,
+        "importPath": "2025.run_accidents_backup",
+        "description": "2025.run_accidents_backup",
+        "peekOfCode": "def create_individual_accident_rate_stem_plots():\n    \"\"\"Create individual stem plots for each accident rate - matching your image\"\"\"\n    print(f\"\\n📊 CREATING INDIVIDUAL ACCIDENT RATE STEM PLOTS:\")\n    print(\"=\" * 60)\n    try:\n        # Define accident rates to test (matching your image)\n        accident_rates = [0.5, 1.0, 2.0, 5.0, 10.0]\n        colors = ['blue', 'orange', 'green', 'red', 'purple']\n        # Store results for each accident rate\n        results_dict = {}",
+        "detail": "2025.run_accidents_backup",
+        "documentation": {}
+    },
+    {
+        "label": "quick_model_test",
+        "kind": 2,
+        "importPath": "2025.run_accidents_backup",
+        "description": "2025.run_accidents_backup",
+        "peekOfCode": "def quick_model_test():\n    \"\"\"Quick test to verify the model works with the local random_poisson function\"\"\"\n    print(\"🧪 QUICK MODEL TEST:\")\n    print(\"=\" * 40)\n    try:\n        # Load the model (should work now with local random_poisson)\n        print(\"Loading model...\")\n        test_model = pysd.load(\"model_13_gl.py\")\n        print(\"✅ Model loaded successfully\")\n        # Run a quick test",
+        "detail": "2025.run_accidents_backup",
+        "documentation": {}
+    },
+    {
+        "label": "test_random_poisson_function",
+        "kind": 2,
+        "importPath": "2025.run_accidents_backup",
+        "description": "2025.run_accidents_backup",
+        "peekOfCode": "def test_random_poisson_function():\n    \"\"\"Test the random_poisson function that's now in model_13_gl.py\"\"\"\n    print(\"🧪 TESTING RANDOM_POISSON FUNCTION:\")\n    print(\"=\" * 50)\n    # Import the model to access the random_poisson function\n    import importlib.util\n    import sys\n    # Load the model module\n    spec = importlib.util.spec_from_file_location(\"model_13_gl\", \"model_13_gl.py\")\n    model_module = importlib.util.module_from_spec(spec)",
+        "detail": "2025.run_accidents_backup",
+        "documentation": {}
+    },
+    {
+        "label": "test_model_13_gl_integration",
+        "kind": 2,
+        "importPath": "2025.run_accidents_backup",
+        "description": "2025.run_accidents_backup",
+        "peekOfCode": "def test_model_13_gl_integration():\n    \"\"\"Test if model_13_gl.py is properly integrated with PySD functionspace\"\"\"\n    print(f\"\\n🔍 TESTING MODEL_13_GL.PY INTEGRATION:\")\n    print(\"=\" * 60)\n    try:\n        # Check if PySD functionspace has random_poisson\n        from pysd.builders.python.python_expressions_builder import functionspace\n        print(f\"1. Checking PySD functionspace:\")\n        if 'random_poisson' in functionspace:\n            print(f\"   ✅ random_poisson found in PySD functionspace\")",
+        "detail": "2025.run_accidents_backup",
+        "documentation": {}
+    },
+    {
+        "label": "functionspace_setup_success",
+        "kind": 5,
+        "importPath": "2025.run_accidents_backup",
+        "description": "2025.run_accidents_backup",
+        "peekOfCode": "functionspace_setup_success = setup_random_poisson_functionspace()\nif functionspace_setup_success:\n    print(\"\\n🎯 PySD functionspace is ready - model can now use random_poisson!\")\nelse:\n    print(\"\\n❌ Functionspace setup failed - model will not work!\")\n# Set pandas display options\npd.set_option('display.max_rows', None)      # Show all rows\n# %%\n# Load the model AFTER functionspace setup (Cell 2)\nif 'functionspace_setup_success' in globals() and functionspace_setup_success:",
+        "detail": "2025.run_accidents_backup",
+        "documentation": {}
+    },
+    {
+        "label": "condition",
+        "kind": 5,
+        "importPath": "2025.run_accidents_backup",
+        "description": "2025.run_accidents_backup",
+        "peekOfCode": "condition = {\n    'sw A to protective': 0, \n    'sw B to protective': 0, \n}\nm1 = model.run(params = condition)\n# %%\nplt.figure(figsize=(5, 3))\nm1['performance[A]'].plot()\nm1['performance[B]'].plot()\nplt.title(\"Performance of A and B\") ",
+        "detail": "2025.run_accidents_backup",
+        "documentation": {}
+    },
+    {
+        "label": "m1",
+        "kind": 5,
+        "importPath": "2025.run_accidents_backup",
+        "description": "2025.run_accidents_backup",
+        "peekOfCode": "m1 = model.run(params = condition)\n# %%\nplt.figure(figsize=(5, 3))\nm1['performance[A]'].plot()\nm1['performance[B]'].plot()\nplt.title(\"Performance of A and B\") \nplt.ylabel(\"mdl\")\nplt.xlabel(\"Time\")\nplt.legend()\nplt.grid()",
+        "detail": "2025.run_accidents_backup",
+        "documentation": {}
+    },
+    {
+        "label": "model",
+        "kind": 5,
+        "importPath": "2025.run_accidents_backup",
+        "description": "2025.run_accidents_backup",
+        "peekOfCode": "model = pysd.load(\"model_13_gl.py\")\nprint(\"✅ Model loaded successfully with PySD functionspace random_poisson\")\n# %% [markdown]\n# # Test Model with PySD Random Poisson Function\n# \n# %%\ndef test_model_with_pysd_poisson():\n    \"\"\"Test model with the PySD functionspace random_poisson\"\"\"\n    print(f\"\\n🧪 TESTING MODEL WITH PYSD FUNCTIONSPACE:\")\n    print(\"=\" * 60)",
+        "detail": "2025.run_accidents_backup",
+        "documentation": {}
+    },
+    {
+        "label": "functionspace_success",
+        "kind": 5,
+        "importPath": "2025.run_accidents_backup",
+        "description": "2025.run_accidents_backup",
+        "peekOfCode": "functionspace_success = setup_pysd_functionspace_properly()\n# %%\n# Create comprehensive parameter sensitivity visualization\nfig, axes = plt.subplots(3, 2, figsize=(15, 18))\n# Plot 1: Accidents over time for different accident rates\nax1 = axes[0, 0]\nfor rate in [0.5, 1.0, 2.0, 5.0, 10.0, 20.0]:\n    if rate in sensitivity_results:\n        sensitivity_results[rate]['accidents'].plot(label=f'Rate={rate}', alpha=0.7, ax=ax1)\nax1.set_title('Accidents Over Time by Accident Rate')",
+        "detail": "2025.run_accidents_backup",
+        "documentation": {}
+    },
+    {
+        "label": "ax1",
+        "kind": 5,
+        "importPath": "2025.run_accidents_backup",
+        "description": "2025.run_accidents_backup",
+        "peekOfCode": "ax1 = axes[0, 0]\nfor rate in [0.5, 1.0, 2.0, 5.0, 10.0, 20.0]:\n    if rate in sensitivity_results:\n        sensitivity_results[rate]['accidents'].plot(label=f'Rate={rate}', alpha=0.7, ax=ax1)\nax1.set_title('Accidents Over Time by Accident Rate')\nax1.set_xlabel('Time (Month)')\nax1.set_ylabel('Accidents')\nax1.legend()\nax1.grid(True)\n# Plot 2: Accident shock level for different accident rates",
+        "detail": "2025.run_accidents_backup",
+        "documentation": {}
+    },
+    {
+        "label": "ax2",
+        "kind": 5,
+        "importPath": "2025.run_accidents_backup",
+        "description": "2025.run_accidents_backup",
+        "peekOfCode": "ax2 = axes[0, 1]\nfor rate in [0.5, 1.0, 2.0, 5.0, 10.0, 20.0]:\n    if rate in sensitivity_results:\n        sensitivity_results[rate]['Accident shock level'].plot(label=f'Rate={rate}', alpha=0.7, ax=ax2)\nax2.set_title('Accident Shock Level by Accident Rate')\nax2.set_xlabel('Time (Month)')\nax2.set_ylabel('Shock Level')\nax2.legend()\nax2.grid(True)\n# Plot 3: Performance A for different accident rates",
+        "detail": "2025.run_accidents_backup",
+        "documentation": {}
+    },
+    {
+        "label": "ax3",
+        "kind": 5,
+        "importPath": "2025.run_accidents_backup",
+        "description": "2025.run_accidents_backup",
+        "peekOfCode": "ax3 = axes[1, 0]\nfor rate in [0.5, 1.0, 2.0, 5.0, 10.0, 20.0]:\n    if rate in sensitivity_results:\n        sensitivity_results[rate]['performance[A]'].plot(label=f'Rate={rate}', alpha=0.7, ax=ax3)\nax3.set_title('Performance A by Accident Rate')\nax3.set_xlabel('Time (Month)')\nax3.set_ylabel('Performance A')\nax3.legend()\nax3.grid(True)\n# Plot 4: Performance B for different accident rates",
+        "detail": "2025.run_accidents_backup",
+        "documentation": {}
+    },
+    {
+        "label": "ax4",
+        "kind": 5,
+        "importPath": "2025.run_accidents_backup",
+        "description": "2025.run_accidents_backup",
+        "peekOfCode": "ax4 = axes[1, 1]\nfor rate in [0.5, 1.0, 2.0, 5.0, 10.0, 20.0]:\n    if rate in sensitivity_results:\n        sensitivity_results[rate]['performance[B]'].plot(label=f'Rate={rate}', alpha=0.7, ax=ax4)\nax4.set_title('Performance B by Accident Rate')\nax4.set_xlabel('Time (Month)')\nax4.set_ylabel('Performance B')\nax4.legend()\nax4.grid(True)\n# Plot 5: Combined performance for different accident rates",
+        "detail": "2025.run_accidents_backup",
+        "documentation": {}
+    },
+    {
+        "label": "ax5",
+        "kind": 5,
+        "importPath": "2025.run_accidents_backup",
+        "description": "2025.run_accidents_backup",
+        "peekOfCode": "ax5 = axes[2, 0]\nfor rate in [0.5, 1.0, 2.0, 5.0, 10.0, 20.0]:\n    if rate in sensitivity_results:\n        sensitivity_results[rate]['combined performance'].plot(label=f'Rate={rate}', alpha=0.7, ax=ax5)\nax5.set_title('Combined Performance by Accident Rate')\nax5.set_xlabel('Time (Month)')\nax5.set_ylabel('Combined Performance')\nax5.legend()\nax5.grid(True)\n# Plot 6: Accident statistics summary",
+        "detail": "2025.run_accidents_backup",
+        "documentation": {}
+    },
+    {
+        "label": "ax6",
+        "kind": 5,
+        "importPath": "2025.run_accidents_backup",
+        "description": "2025.run_accidents_backup",
+        "peekOfCode": "ax6 = axes[2, 1]\nrates = []\nnon_zero_percentages = []\nmeans = []\nfor rate in [0.5, 1.0, 2.0, 5.0, 10.0, 20.0]:\n    if rate in accident_stats and accident_stats[rate] is not None:\n        rates.append(rate)\n        non_zero_percentages.append(accident_stats[rate]['non_zero_percentage'])\n        means.append(abs(accident_stats[rate]['mean']))  # Use absolute value for plotting\nax6.bar(rates, non_zero_percentages, alpha=0.7, color='blue', label='Non-zero Accidents %')",
+        "detail": "2025.run_accidents_backup",
+        "documentation": {}
+    },
+    {
+        "label": "rates",
+        "kind": 5,
+        "importPath": "2025.run_accidents_backup",
+        "description": "2025.run_accidents_backup",
+        "peekOfCode": "rates = []\nnon_zero_percentages = []\nmeans = []\nfor rate in [0.5, 1.0, 2.0, 5.0, 10.0, 20.0]:\n    if rate in accident_stats and accident_stats[rate] is not None:\n        rates.append(rate)\n        non_zero_percentages.append(accident_stats[rate]['non_zero_percentage'])\n        means.append(abs(accident_stats[rate]['mean']))  # Use absolute value for plotting\nax6.bar(rates, non_zero_percentages, alpha=0.7, color='blue', label='Non-zero Accidents %')\nax6_twin = ax6.twinx()",
+        "detail": "2025.run_accidents_backup",
+        "documentation": {}
+    },
+    {
+        "label": "non_zero_percentages",
+        "kind": 5,
+        "importPath": "2025.run_accidents_backup",
+        "description": "2025.run_accidents_backup",
+        "peekOfCode": "non_zero_percentages = []\nmeans = []\nfor rate in [0.5, 1.0, 2.0, 5.0, 10.0, 20.0]:\n    if rate in accident_stats and accident_stats[rate] is not None:\n        rates.append(rate)\n        non_zero_percentages.append(accident_stats[rate]['non_zero_percentage'])\n        means.append(abs(accident_stats[rate]['mean']))  # Use absolute value for plotting\nax6.bar(rates, non_zero_percentages, alpha=0.7, color='blue', label='Non-zero Accidents %')\nax6_twin = ax6.twinx()\nax6_twin.plot(rates, means, 'ro-', label='Mean Accident Magnitude')",
+        "detail": "2025.run_accidents_backup",
+        "documentation": {}
+    },
+    {
+        "label": "means",
+        "kind": 5,
+        "importPath": "2025.run_accidents_backup",
+        "description": "2025.run_accidents_backup",
+        "peekOfCode": "means = []\nfor rate in [0.5, 1.0, 2.0, 5.0, 10.0, 20.0]:\n    if rate in accident_stats and accident_stats[rate] is not None:\n        rates.append(rate)\n        non_zero_percentages.append(accident_stats[rate]['non_zero_percentage'])\n        means.append(abs(accident_stats[rate]['mean']))  # Use absolute value for plotting\nax6.bar(rates, non_zero_percentages, alpha=0.7, color='blue', label='Non-zero Accidents %')\nax6_twin = ax6.twinx()\nax6_twin.plot(rates, means, 'ro-', label='Mean Accident Magnitude')\nax6.set_title('Accident Statistics by Accident Rate')",
+        "detail": "2025.run_accidents_backup",
+        "documentation": {}
+    },
+    {
+        "label": "ax6_twin",
+        "kind": 5,
+        "importPath": "2025.run_accidents_backup",
+        "description": "2025.run_accidents_backup",
+        "peekOfCode": "ax6_twin = ax6.twinx()\nax6_twin.plot(rates, means, 'ro-', label='Mean Accident Magnitude')\nax6.set_title('Accident Statistics by Accident Rate')\nax6.set_xlabel('Accident Rate')\nax6.set_ylabel('Non-zero Accidents (%)', color='blue')\nax6_twin.set_ylabel('Mean Accident Magnitude', color='red')\nax6.grid(True)\nplt.tight_layout()\nplt.show()\nprint(\"📊 Parameter sensitivity visualization completed!\")",
+        "detail": "2025.run_accidents_backup",
+        "documentation": {}
+    },
+    {
+        "label": "model",
+        "kind": 5,
+        "importPath": "2025.run_accidents_backup",
+        "description": "2025.run_accidents_backup",
+        "peekOfCode": "model = load_model_with_functionspace()\n# %%\n# Test Functionspace Setup\ndef test_functionspace_setup():\n    \"\"\"Test if the functionspace setup is working correctly\"\"\"\n    print(\"🧪 TESTING FUNCTIONSPACE SETUP:\")\n    print(\"=\" * 50)\n    try:\n        # Check functionspace\n        from pysd.builders.python.python_expressions_builder import functionspace",
+        "detail": "2025.run_accidents_backup",
+        "documentation": {}
+    },
+    {
+        "label": "functionspace_test_success",
+        "kind": 5,
+        "importPath": "2025.run_accidents_backup",
+        "description": "2025.run_accidents_backup",
+        "peekOfCode": "functionspace_test_success = test_functionspace_setup()\n# %%\n# %%\n# Create summary statistics table\nsummary_data = []\nfor rate in [0.5, 1.0, 2.0, 5.0, 10.0, 20.0]:\n    if rate in accident_stats and accident_stats[rate] is not None:\n        stats = accident_stats[rate]\n        summary_data.append({\n            'Accident Rate': rate,",
+        "detail": "2025.run_accidents_backup",
+        "documentation": {}
+    },
+    {
+        "label": "summary_data",
+        "kind": 5,
+        "importPath": "2025.run_accidents_backup",
+        "description": "2025.run_accidents_backup",
+        "peekOfCode": "summary_data = []\nfor rate in [0.5, 1.0, 2.0, 5.0, 10.0, 20.0]:\n    if rate in accident_stats and accident_stats[rate] is not None:\n        stats = accident_stats[rate]\n        summary_data.append({\n            'Accident Rate': rate,\n            'Min Accident': stats['min'],\n            'Max Accident': stats['max'],\n            'Mean Accident': stats['mean'],\n            'Std Accident': stats['std'],",
+        "detail": "2025.run_accidents_backup",
+        "documentation": {}
+    },
+    {
+        "label": "summary_df",
+        "kind": 5,
+        "importPath": "2025.run_accidents_backup",
+        "description": "2025.run_accidents_backup",
+        "peekOfCode": "summary_df = pd.DataFrame(summary_data)\nprint(\"📊 PARAMETER SENSITIVITY SUMMARY:\")\nprint(\"=\" * 80)\nprint(summary_df.to_string(index=False))\n# Display the dataframe in a nice format\nsummary_df\n# %%\n# Display model documentation (after model is loaded with functionspace)\nprint(\"📋 MODEL DOCUMENTATION:\")\nprint(\"=\" * 50)",
+        "detail": "2025.run_accidents_backup",
+        "documentation": {}
+    },
+    {
+        "label": "doc_df",
+        "kind": 5,
+        "importPath": "2025.run_accidents_backup",
+        "description": "2025.run_accidents_backup",
+        "peekOfCode": "doc_df = pd.DataFrame(model.doc)\nprint(f\"Model has {len(doc_df)} components\")\nprint(\"\\nFirst 10 components:\")\nprint(doc_df.head(10).to_string())\nprint(f\"\\nModel components summary:\")\nprint(f\"- Parameters: {len(model.components.parameters)}\")\nprint(f\"- Variables: {len(model.components.variables)}\")\nprint(f\"- Constants: {len(model.components.constants)}\")\nprint(f\"- Functions: {len(model.components.functions)}\")\nprint(f\"- Statefuls: {len(model.components.statefuls)}\")",
+        "detail": "2025.run_accidents_backup",
+        "documentation": {}
+    },
+    {
+        "label": "accidents_doc",
+        "kind": 5,
+        "importPath": "2025.run_accidents_backup",
+        "description": "2025.run_accidents_backup",
+        "peekOfCode": "accidents_doc = doc_df[doc_df['Name'] == 'accidents']\nif not accidents_doc.empty:\n    print(f\"\\n✅ Accidents component found:\")\n    print(accidents_doc.to_string(index=False))\nelse:\n    print(f\"\\n❌ Accidents component not found in documentation\")\n# %% [markdown]\n# # Multiple Runs Test for Variation\n# \n# %%",
+        "detail": "2025.run_accidents_backup",
+        "documentation": {}
+    },
+    {
+        "label": "comprehensive_success",
+        "kind": 5,
+        "importPath": "2025.run_accidents_backup",
+        "description": "2025.run_accidents_backup",
+        "peekOfCode": "comprehensive_success = create_comprehensive_6_panel_visualization()\n# %%\n# Individual Accident Rate Stem Plots (matching your parameter_sensitivity_test.png image)\ndef create_individual_accident_rate_stem_plots():\n    \"\"\"Create individual stem plots for each accident rate - matching your image\"\"\"\n    print(f\"\\n📊 CREATING INDIVIDUAL ACCIDENT RATE STEM PLOTS:\")\n    print(\"=\" * 60)\n    try:\n        # Define accident rates to test (matching your image)\n        accident_rates = [0.5, 1.0, 2.0, 5.0, 10.0]",
+        "detail": "2025.run_accidents_backup",
+        "documentation": {}
+    },
+    {
+        "label": "integration_success",
+        "kind": 5,
+        "importPath": "2025.run_accidents_backup",
+        "description": "2025.run_accidents_backup",
+        "peekOfCode": "integration_success = test_model_13_gl_integration()\n# %%\nprint(\"🎉 ANALYSIS COMPLETE!\")\nprint(\"=\" * 60)\nprint(\"\\n✅ SUCCESSFULLY COMPLETED:\")\nprint(\"1. ✅ PySD functionspace random_poisson function setup\")\nprint(\"2. ✅ Model loading and testing with PySD random_poisson\")\nprint(\"3. ✅ Comprehensive model visualization\")\nprint(\"4. ✅ Parameter sensitivity analysis on accident_rate\")\nprint(\"5. ✅ Multiple runs variation testing\")",
+        "detail": "2025.run_accidents_backup",
+        "documentation": {}
+    },
+    {
+        "label": "condition",
+        "kind": 5,
+        "importPath": "2025.run_accidents_backup",
+        "description": "2025.run_accidents_backup",
+        "peekOfCode": "condition = {\n    'sw_a_to_protective': 1, \n    'sw_b_to_protective': 1, \n    'seed': 50, \n    'time_step': 0.0625, \n    'accident_rate': 100, \n}\nm2 = model.run(params = condition)\nplt.figure(figsize=(5, 3))\nm2['performance[A]'].plot()",
+        "detail": "2025.run_accidents_backup",
+        "documentation": {}
+    },
+    {
+        "label": "m2",
+        "kind": 5,
+        "importPath": "2025.run_accidents_backup",
+        "description": "2025.run_accidents_backup",
+        "peekOfCode": "m2 = model.run(params = condition)\nplt.figure(figsize=(5, 3))\nm2['performance[A]'].plot()\nm2['performance[B]'].plot()\nplt.title(\"Performance of A and B\") \nplt.xlabel(\"Time\")\nplt.legend()\nplt.grid()\nplt.show()\nplt.figure(figsize=(5, 3))",
+        "detail": "2025.run_accidents_backup",
+        "documentation": {}
+    },
+    {
+        "label": "condition",
+        "kind": 5,
+        "importPath": "2025.run_accidents_backup",
+        "description": "2025.run_accidents_backup",
+        "peekOfCode": "condition = {\n    'sw_a_to_protective': 0, \n    'sw_b_to_protective': 1, \n}\nm3 = model.run(params = condition)\nplt.figure(figsize=(5, 3))\nm3['performance[A]'].plot()\nm3['performance[B]'].plot()\nplt.title(\"Performance of A and B\") \nplt.xlabel(\"Time\")",
+        "detail": "2025.run_accidents_backup",
+        "documentation": {}
+    },
+    {
+        "label": "m3",
+        "kind": 5,
+        "importPath": "2025.run_accidents_backup",
+        "description": "2025.run_accidents_backup",
+        "peekOfCode": "m3 = model.run(params = condition)\nplt.figure(figsize=(5, 3))\nm3['performance[A]'].plot()\nm3['performance[B]'].plot()\nplt.title(\"Performance of A and B\") \nplt.xlabel(\"Time\")\nplt.legend()\nplt.grid()\nplt.show()\nplt.figure(figsize=(5, 3))",
+        "detail": "2025.run_accidents_backup",
+        "documentation": {}
+    },
+    {
+        "label": "initial_condition",
+        "kind": 5,
+        "importPath": "2025.run_accidents_backup",
+        "description": "2025.run_accidents_backup",
+        "peekOfCode": "initial_condition = {\n    'Pulse start time': 0, \n    'Pulse end time': 10, \n    'Pulse Quantity 1': 5, \n    'Pulse duration': 1, \n    'Pulse Time': 5,  \n    'Pulse Quantity': 0, \n    'Switch': 0, \n    'Accident': 0, \n    'Time to adjust focus': 3",
+        "detail": "2025.run_accidents_backup",
+        "documentation": {}
+    },
+    {
+        "label": "m1",
+        "kind": 5,
+        "importPath": "2025.run_accidents_backup",
+        "description": "2025.run_accidents_backup",
+        "peekOfCode": "m1 = model.run(params= initial_condition)\nm1['Safety Focus'].plot(label = '3 month')\ncondition = {'Time to adjust focus': 5}\ninitial_condition.update(condition)\nm2 = model.run(params= initial_condition)\nm2['Safety Focus'].plot(label = '5 month')\ncondition = {'Time to adjust focus': 10}\ninitial_condition.update(condition)\nm3 = model.run(params= condition)\nm3['Safety Focus'].plot(label = '10 month')",
+        "detail": "2025.run_accidents_backup",
+        "documentation": {}
+    },
+    {
+        "label": "condition",
+        "kind": 5,
+        "importPath": "2025.run_accidents_backup",
+        "description": "2025.run_accidents_backup",
+        "peekOfCode": "condition = {'Time to adjust focus': 5}\ninitial_condition.update(condition)\nm2 = model.run(params= initial_condition)\nm2['Safety Focus'].plot(label = '5 month')\ncondition = {'Time to adjust focus': 10}\ninitial_condition.update(condition)\nm3 = model.run(params= condition)\nm3['Safety Focus'].plot(label = '10 month')\nplt.title(\"The Impact of the Time to Adjust Focus (due to Accident) on Safety Focus\") \nplt.ylabel(\"Level of Safety Focus\")",
+        "detail": "2025.run_accidents_backup",
+        "documentation": {}
+    },
+    {
+        "label": "m2",
+        "kind": 5,
+        "importPath": "2025.run_accidents_backup",
+        "description": "2025.run_accidents_backup",
+        "peekOfCode": "m2 = model.run(params= initial_condition)\nm2['Safety Focus'].plot(label = '5 month')\ncondition = {'Time to adjust focus': 10}\ninitial_condition.update(condition)\nm3 = model.run(params= condition)\nm3['Safety Focus'].plot(label = '10 month')\nplt.title(\"The Impact of the Time to Adjust Focus (due to Accident) on Safety Focus\") \nplt.ylabel(\"Level of Safety Focus\")\nplt.xlabel(\"Time\")\nplt.legend(title= 'Time to adjust focus')",
+        "detail": "2025.run_accidents_backup",
+        "documentation": {}
+    },
+    {
+        "label": "condition",
+        "kind": 5,
+        "importPath": "2025.run_accidents_backup",
+        "description": "2025.run_accidents_backup",
+        "peekOfCode": "condition = {'Time to adjust focus': 10}\ninitial_condition.update(condition)\nm3 = model.run(params= condition)\nm3['Safety Focus'].plot(label = '10 month')\nplt.title(\"The Impact of the Time to Adjust Focus (due to Accident) on Safety Focus\") \nplt.ylabel(\"Level of Safety Focus\")\nplt.xlabel(\"Time\")\nplt.legend(title= 'Time to adjust focus')\n# Add a footnote below and to the right side of the chart\nax.annotate('Pulse duration =1, Pulse Time = 5',",
+        "detail": "2025.run_accidents_backup",
+        "documentation": {}
+    },
+    {
+        "label": "m3",
+        "kind": 5,
+        "importPath": "2025.run_accidents_backup",
+        "description": "2025.run_accidents_backup",
+        "peekOfCode": "m3 = model.run(params= condition)\nm3['Safety Focus'].plot(label = '10 month')\nplt.title(\"The Impact of the Time to Adjust Focus (due to Accident) on Safety Focus\") \nplt.ylabel(\"Level of Safety Focus\")\nplt.xlabel(\"Time\")\nplt.legend(title= 'Time to adjust focus')\n# Add a footnote below and to the right side of the chart\nax.annotate('Pulse duration =1, Pulse Time = 5',\n            xy = (1.0, -0.2),\n            xycoords='axes fraction',",
+        "detail": "2025.run_accidents_backup",
+        "documentation": {}
+    },
+    {
+        "label": "plt.axvline(x",
+        "kind": 5,
+        "importPath": "2025.run_accidents_backup",
+        "description": "2025.run_accidents_backup",
+        "peekOfCode": "plt.axvline(x = 5, linestyle = 'dashed', \n           color = 'red')\n# Add an arrow\n# plt.arrow(2, 5, 0.5, 0.5, head_width=0.05, head_length=0.1, fc='red', ec='red')\n# Add text \"GFG\" at the end of the arrow\nplt.text(11, 18, \"accident occurs\", color='red', fontsize=12, ha='center', va='center')\nplt.legend(title = 'Time to adjust focus', loc='lower right')\nplt.show()",
+        "detail": "2025.run_accidents_backup",
+        "documentation": {}
+    },
+    {
+        "label": "plt.legend(title",
+        "kind": 5,
+        "importPath": "2025.run_accidents_backup",
+        "description": "2025.run_accidents_backup",
+        "peekOfCode": "plt.legend(title = 'Time to adjust focus', loc='lower right')\nplt.show()",
+        "detail": "2025.run_accidents_backup",
+        "documentation": {}
+    },
+    {
+        "label": "load_model",
+        "kind": 2,
+        "importPath": "2025.run_accidents_fast",
+        "description": "2025.run_accidents_fast",
+        "peekOfCode": "def load_model():\n    \"\"\"Load the PySD model after functionspace setup\"\"\"\n    print(\"\\n🔧 LOADING MODEL:\")\n    print(\"=\" * 40)\n    start_time = time.time()\n    # Verify functionspace is set up (should already be done at module level)\n    from pysd.builders.python.python_expressions_builder import functionspace\n    if 'random_poisson' not in functionspace:\n        print(\"⚠️  Functionspace not set, setting it up now...\")\n        from fix_pysd_poisson import add_random_poisson_to_pysd",
+        "detail": "2025.run_accidents_fast",
+        "documentation": {}
+    },
+    {
+        "label": "run_quick_analysis",
+        "kind": 2,
+        "importPath": "2025.run_accidents_fast",
+        "description": "2025.run_accidents_fast",
+        "peekOfCode": "def run_quick_analysis(model):\n    \"\"\"Run a quick analysis with fewer scenarios for faster results\"\"\"\n    print(\"\\n🚀 QUICK ANALYSIS:\")\n    print(\"=\" * 50)\n    results = {}\n    # Test just 2 scenarios instead of 3\n    scenarios = {\n        'G,G': {'sw_a_to_protective': 0, 'sw_b_to_protective': 0},\n        'P,P': {'sw_a_to_protective': 1, 'sw_b_to_protective': 1}\n    }",
+        "detail": "2025.run_accidents_fast",
+        "documentation": {}
+    },
+    {
+        "label": "run_limited_sensitivity",
+        "kind": 2,
+        "importPath": "2025.run_accidents_fast",
+        "description": "2025.run_accidents_fast",
+        "peekOfCode": "def run_limited_sensitivity(model):\n    \"\"\"Run parameter sensitivity with fewer values for faster results\"\"\"\n    print(\"\\n🔬 LIMITED PARAMETER SENSITIVITY:\")\n    print(\"=\" * 50)\n    # Test fewer accident rates for speed\n    accident_rates = [1.0, 5.0, 10.0]  # Only 3 instead of 6\n    results_dict = {}\n    for i, rate in enumerate(accident_rates):\n        print(f\"\\n📊 Testing {i+1}/3: accident_rate = {rate}\")\n        start_time = time.time()",
+        "detail": "2025.run_accidents_fast",
+        "documentation": {}
+    },
+    {
+        "label": "create_accident_plot",
+        "kind": 2,
+        "importPath": "2025.run_accidents_fast",
+        "description": "2025.run_accidents_fast",
+        "peekOfCode": "def create_accident_plot(model):\n    \"\"\"Create a dedicated accident plot like in test_functionspace_model.py\"\"\"\n    print(\"📈 Creating dedicated accident plot...\")\n    try:\n        # Run model with fixed seed for consistent results\n        np.random.seed(42)\n        result = model.run()\n        # Get accidents data\n        accidents_data = result['accidents']\n        print(f\"Accidents statistics:\")",
+        "detail": "2025.run_accidents_fast",
+        "documentation": {}
+    },
+    {
+        "label": "create_quick_visualizations",
+        "kind": 2,
+        "importPath": "2025.run_accidents_fast",
+        "description": "2025.run_accidents_fast",
+        "peekOfCode": "def create_quick_visualizations(scenario_results, sensitivity_results):\n    \"\"\"Create essential visualizations quickly\"\"\"\n    print(\"\\n📊 CREATING VISUALIZATIONS:\")\n    print(\"=\" * 40)\n    if scenario_results:\n        print(\"📈 Creating scenario comparison plot...\")\n        fig, axes = plt.subplots(1, 2, figsize=(12, 5))\n        fig.suptitle('Quick Analysis: Scenarios & Accidents', fontsize=14)\n        # Plot 1: Performance comparison\n        ax1 = axes[0]",
+        "detail": "2025.run_accidents_fast",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "2025.run_accidents_fast",
+        "description": "2025.run_accidents_fast",
+        "peekOfCode": "def main():\n    \"\"\"Main execution function - faster version\"\"\"\n    print(\"🎯 FAST ACCIDENT MODEL ANALYSIS\")\n    print(\"=\" * 50)\n    total_start = time.time()\n    try:\n        # Load model\n        model = load_model()\n        if model is None:\n            print(\"❌ Cannot proceed without model\")",
+        "detail": "2025.run_accidents_fast",
+        "documentation": {}
+    },
+    {
+        "label": "PROJECT_DIR",
+        "kind": 5,
+        "importPath": "2025.run_accidents_fast",
+        "description": "2025.run_accidents_fast",
+        "peekOfCode": "PROJECT_DIR = '/Users/georgia/Documents/GitHub/OrganizationOscillation/'\nCURRENT_DIR = '/Users/georgia/Documents/GitHub/OrganizationOscillation/2025/'\nMODEL_FILE = 'model_13_gl.py'\n# Set pandas display options\npd.set_option('display.max_rows', None)\n# CRITICAL: Set up functionspace at module level BEFORE any PySD operations\n# This ensures random_poisson is available during model translation AND runtime\nimport sys\nsys.path.insert(0, '/Users/georgia/Documents/GitHub/OrganizationOscillation/2025')\ntry:",
+        "detail": "2025.run_accidents_fast",
+        "documentation": {}
+    },
+    {
+        "label": "CURRENT_DIR",
+        "kind": 5,
+        "importPath": "2025.run_accidents_fast",
+        "description": "2025.run_accidents_fast",
+        "peekOfCode": "CURRENT_DIR = '/Users/georgia/Documents/GitHub/OrganizationOscillation/2025/'\nMODEL_FILE = 'model_13_gl.py'\n# Set pandas display options\npd.set_option('display.max_rows', None)\n# CRITICAL: Set up functionspace at module level BEFORE any PySD operations\n# This ensures random_poisson is available during model translation AND runtime\nimport sys\nsys.path.insert(0, '/Users/georgia/Documents/GitHub/OrganizationOscillation/2025')\ntry:\n    from fix_pysd_poisson import add_random_poisson_to_pysd",
+        "detail": "2025.run_accidents_fast",
+        "documentation": {}
+    },
+    {
+        "label": "MODEL_FILE",
+        "kind": 5,
+        "importPath": "2025.run_accidents_fast",
+        "description": "2025.run_accidents_fast",
+        "peekOfCode": "MODEL_FILE = 'model_13_gl.py'\n# Set pandas display options\npd.set_option('display.max_rows', None)\n# CRITICAL: Set up functionspace at module level BEFORE any PySD operations\n# This ensures random_poisson is available during model translation AND runtime\nimport sys\nsys.path.insert(0, '/Users/georgia/Documents/GitHub/OrganizationOscillation/2025')\ntry:\n    from fix_pysd_poisson import add_random_poisson_to_pysd\n    add_random_poisson_to_pysd()",
+        "detail": "2025.run_accidents_fast",
+        "documentation": {}
+    },
+    {
+        "label": "TimeoutError",
+        "kind": 6,
+        "importPath": "2025.run_accidents_safe",
+        "description": "2025.run_accidents_safe",
+        "peekOfCode": "class TimeoutError(Exception):\n    pass\ndef timeout_handler(signum, frame):\n    raise TimeoutError(\"Operation timed out\")\ndef setup_random_poisson_functionspace():\n    \"\"\"Set up PySD functionspace with random_poisson from fix_pysd_poisson.py\"\"\"\n    print(\"🔧 SETTING UP fix_pysd_poisson.py:\")\n    print(\"=\" * 50)\n    try:\n        # Import from current directory",
+        "detail": "2025.run_accidents_safe",
+        "documentation": {}
+    },
+    {
+        "label": "timeout_handler",
+        "kind": 2,
+        "importPath": "2025.run_accidents_safe",
+        "description": "2025.run_accidents_safe",
+        "peekOfCode": "def timeout_handler(signum, frame):\n    raise TimeoutError(\"Operation timed out\")\ndef setup_random_poisson_functionspace():\n    \"\"\"Set up PySD functionspace with random_poisson from fix_pysd_poisson.py\"\"\"\n    print(\"🔧 SETTING UP fix_pysd_poisson.py:\")\n    print(\"=\" * 50)\n    try:\n        # Import from current directory\n        sys.path.insert(0, os.getcwd())\n        from fix_pysd_poisson import add_random_poisson_to_pysd",
+        "detail": "2025.run_accidents_safe",
+        "documentation": {}
+    },
+    {
+        "label": "setup_random_poisson_functionspace",
+        "kind": 2,
+        "importPath": "2025.run_accidents_safe",
+        "description": "2025.run_accidents_safe",
+        "peekOfCode": "def setup_random_poisson_functionspace():\n    \"\"\"Set up PySD functionspace with random_poisson from fix_pysd_poisson.py\"\"\"\n    print(\"🔧 SETTING UP fix_pysd_poisson.py:\")\n    print(\"=\" * 50)\n    try:\n        # Import from current directory\n        sys.path.insert(0, os.getcwd())\n        from fix_pysd_poisson import add_random_poisson_to_pysd\n        print(\"✅ Successfully imported fix_pysd_poisson.py\")\n        add_random_poisson_to_pysd()",
+        "detail": "2025.run_accidents_safe",
+        "documentation": {}
+    },
+    {
+        "label": "load_model_safely",
+        "kind": 2,
+        "importPath": "2025.run_accidents_safe",
+        "description": "2025.run_accidents_safe",
+        "peekOfCode": "def load_model_safely():\n    \"\"\"Load the PySD model with timeout protection\"\"\"\n    print(\"\\n🔧 LOADING MODEL SAFELY:\")\n    print(\"=\" * 40)\n    start_time = time.time()\n    # Set up functionspace first\n    functionspace_success = setup_random_poisson_functionspace()\n    if not functionspace_success:\n        print(\"❌ Cannot load model - functionspace setup failed\")\n        return None",
+        "detail": "2025.run_accidents_safe",
+        "documentation": {}
+    },
+    {
+        "label": "run_single_scenario_safely",
+        "kind": 2,
+        "importPath": "2025.run_accidents_safe",
+        "description": "2025.run_accidents_safe",
+        "peekOfCode": "def run_single_scenario_safely(model, name, params, timeout=MAX_MODEL_RUNTIME):\n    \"\"\"Run a single scenario with timeout protection\"\"\"\n    print(f\"📊 Running scenario: {name}\")\n    start_time = time.time()\n    try:\n        # Set timeout\n        signal.signal(signal.SIGALRM, timeout_handler)\n        signal.alarm(timeout)\n        result = model.run(params=params)\n        signal.alarm(0)  # Cancel timeout",
+        "detail": "2025.run_accidents_safe",
+        "documentation": {}
+    },
+    {
+        "label": "run_safe_analysis",
+        "kind": 2,
+        "importPath": "2025.run_accidents_safe",
+        "description": "2025.run_accidents_safe",
+        "peekOfCode": "def run_safe_analysis(model):\n    \"\"\"Run analysis with timeouts and error handling\"\"\"\n    print(\"\\n🚀 SAFE ANALYSIS:\")\n    print(\"=\" * 50)\n    results = {}\n    # Test only 2 simple scenarios\n    scenarios = {\n        'G,G': {'sw_a_to_protective': 0, 'sw_b_to_protective': 0},\n        'P,P': {'sw_a_to_protective': 1, 'sw_b_to_protective': 1}\n    }",
+        "detail": "2025.run_accidents_safe",
+        "documentation": {}
+    },
+    {
+        "label": "run_safe_sensitivity",
+        "kind": 2,
+        "importPath": "2025.run_accidents_safe",
+        "description": "2025.run_accidents_safe",
+        "peekOfCode": "def run_safe_sensitivity(model):\n    \"\"\"Run parameter sensitivity with timeouts\"\"\"\n    print(\"\\n🔬 SAFE PARAMETER SENSITIVITY:\")\n    print(\"=\" * 50)\n    # Test only 2 accident rates for safety\n    accident_rates = [1.0, 5.0]\n    results_dict = {}\n    for i, rate in enumerate(accident_rates):\n        print(f\"\\n📊 Testing {i+1}/2: accident_rate = {rate}\")\n        params = {'accident_rate': rate}",
+        "detail": "2025.run_accidents_safe",
+        "documentation": {}
+    },
+    {
+        "label": "create_simple_plots",
+        "kind": 2,
+        "importPath": "2025.run_accidents_safe",
+        "description": "2025.run_accidents_safe",
+        "peekOfCode": "def create_simple_plots(scenario_results, sensitivity_results):\n    \"\"\"Create simple plots without complex operations\"\"\"\n    print(\"\\n📊 CREATING SIMPLE PLOTS:\")\n    print(\"=\" * 40)\n    try:\n        # Simple scenario plot\n        if scenario_results:\n            print(\"📈 Creating scenario plot...\")\n            plt.figure(figsize=(10, 4))\n            plt.subplot(1, 2, 1)",
+        "detail": "2025.run_accidents_safe",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "2025.run_accidents_safe",
+        "description": "2025.run_accidents_safe",
+        "peekOfCode": "def main():\n    \"\"\"Main execution function with comprehensive safety measures\"\"\"\n    print(\"🎯 SAFE ACCIDENT MODEL ANALYSIS\")\n    print(\"=\" * 50)\n    # Set overall timeout\n    start_time = time.time()\n    try:\n        # Load model\n        model = load_model_safely()\n        if model is None:",
+        "detail": "2025.run_accidents_safe",
+        "documentation": {}
+    },
+    {
+        "label": "CURRENT_DIR",
+        "kind": 5,
+        "importPath": "2025.run_accidents_safe",
+        "description": "2025.run_accidents_safe",
+        "peekOfCode": "CURRENT_DIR = '/Users/georgia/Documents/GitHub/OrganizationOscillation/2025/'\nMODEL_FILE = 'model_13_gl.py'\nMAX_RUNTIME = 300  # 5 minutes max total runtime\nMAX_MODEL_RUNTIME = 60  # 1 minute max per model run\n# Set pandas display options\npd.set_option('display.max_rows', None)\nclass TimeoutError(Exception):\n    pass\ndef timeout_handler(signum, frame):\n    raise TimeoutError(\"Operation timed out\")",
+        "detail": "2025.run_accidents_safe",
+        "documentation": {}
+    },
+    {
+        "label": "MODEL_FILE",
+        "kind": 5,
+        "importPath": "2025.run_accidents_safe",
+        "description": "2025.run_accidents_safe",
+        "peekOfCode": "MODEL_FILE = 'model_13_gl.py'\nMAX_RUNTIME = 300  # 5 minutes max total runtime\nMAX_MODEL_RUNTIME = 60  # 1 minute max per model run\n# Set pandas display options\npd.set_option('display.max_rows', None)\nclass TimeoutError(Exception):\n    pass\ndef timeout_handler(signum, frame):\n    raise TimeoutError(\"Operation timed out\")\ndef setup_random_poisson_functionspace():",
+        "detail": "2025.run_accidents_safe",
+        "documentation": {}
+    },
+    {
+        "label": "MAX_RUNTIME",
+        "kind": 5,
+        "importPath": "2025.run_accidents_safe",
+        "description": "2025.run_accidents_safe",
+        "peekOfCode": "MAX_RUNTIME = 300  # 5 minutes max total runtime\nMAX_MODEL_RUNTIME = 60  # 1 minute max per model run\n# Set pandas display options\npd.set_option('display.max_rows', None)\nclass TimeoutError(Exception):\n    pass\ndef timeout_handler(signum, frame):\n    raise TimeoutError(\"Operation timed out\")\ndef setup_random_poisson_functionspace():\n    \"\"\"Set up PySD functionspace with random_poisson from fix_pysd_poisson.py\"\"\"",
+        "detail": "2025.run_accidents_safe",
+        "documentation": {}
+    },
+    {
+        "label": "MAX_MODEL_RUNTIME",
+        "kind": 5,
+        "importPath": "2025.run_accidents_safe",
+        "description": "2025.run_accidents_safe",
+        "peekOfCode": "MAX_MODEL_RUNTIME = 60  # 1 minute max per model run\n# Set pandas display options\npd.set_option('display.max_rows', None)\nclass TimeoutError(Exception):\n    pass\ndef timeout_handler(signum, frame):\n    raise TimeoutError(\"Operation timed out\")\ndef setup_random_poisson_functionspace():\n    \"\"\"Set up PySD functionspace with random_poisson from fix_pysd_poisson.py\"\"\"\n    print(\"🔧 SETTING UP fix_pysd_poisson.py:\")",
+        "detail": "2025.run_accidents_safe",
+        "documentation": {}
+    },
+    {
+        "label": "create_working_poisson_model",
+        "kind": 2,
+        "importPath": "2025.simple_poisson_test",
+        "description": "2025.simple_poisson_test",
+        "peekOfCode": "def create_working_poisson_model():\n    \"\"\"Create a working version by adding the function directly to the model\"\"\"\n    print(\"🔧 CREATING WORKING POISSON MODEL:\")\n    print(\"=\" * 50)\n    try:\n        # Load the model\n        print(\"Loading model...\")\n        model = pysd.load(\"model_13_gl.py\")\n        print(\"✅ Model loaded successfully\")\n        # Add the random_poisson function to the model's namespace",
+        "detail": "2025.simple_poisson_test",
+        "documentation": {}
+    },
+    {
+        "label": "setup_random_poisson_functionspace",
+        "kind": 2,
+        "importPath": "2025.test_accidents_poisson",
+        "description": "2025.test_accidents_poisson",
+        "peekOfCode": "def setup_random_poisson_functionspace():\n    \"\"\"Set up PySD functionspace with random_poisson from fix_pysd_poisson.py\"\"\"\n    print(\"🔧 SETTING UP PYSD FUNCTIONSPACE:\")\n    print(\"=\" * 50)\n    try:\n        # Import the fix_pysd_poisson module\n        from fix_pysd_poisson import add_random_poisson_to_pysd\n        print(\"✅ Successfully imported fix_pysd_poisson.py\")\n        # Use the function from fix_pysd_poisson.py\n        add_random_poisson_to_pysd()",
+        "detail": "2025.test_accidents_poisson",
+        "documentation": {}
+    },
+    {
+        "label": "test_model_and_plot_accidents",
+        "kind": 2,
+        "importPath": "2025.test_accidents_poisson",
+        "description": "2025.test_accidents_poisson",
+        "peekOfCode": "def test_model_and_plot_accidents():\n    \"\"\"Test the model and plot accidents to verify random Poisson is working\"\"\"\n    print(\"\\n🎯 TESTING MODEL WITH RANDOM POISSON:\")\n    print(\"=\" * 50)\n    try:\n        # Load the model (functionspace should already be set up)\n        print(\"Loading model...\")\n        model = pysd.load(\"model_13_gl.py\")\n        print(\"✅ Model loaded successfully\")\n        # Run the model with a fixed seed for reproducibility",
+        "detail": "2025.test_accidents_poisson",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "2025.test_accidents_poisson",
+        "description": "2025.test_accidents_poisson",
+        "peekOfCode": "def main():\n    \"\"\"Main function to run the test\"\"\"\n    print(\"🧪 TESTING RANDOM POISSON FUNCTION IN MODEL_13_GL.PY\")\n    print(\"=\" * 60)\n    # CRITICAL: Set up the functionspace FIRST, before any model loading\n    functionspace_success = setup_random_poisson_functionspace()\n    if functionspace_success:\n        print(\"\\n🎯 PySD functionspace is ready - testing full model...\")\n        test_model_and_plot_accidents()\n    else:",
+        "detail": "2025.test_accidents_poisson",
+        "documentation": {}
+    },
+    {
+        "label": "test_functionspace_model_and_plot",
+        "kind": 2,
+        "importPath": "2025.test_functionspace_model",
+        "description": "2025.test_functionspace_model",
+        "peekOfCode": "def test_functionspace_model_and_plot():\n    \"\"\"Test the retranslated model and plot accidents\"\"\"\n    print(\"🧪 TESTING RETRANSLATED MODEL WITH FUNCTIONSPACE:\")\n    print(\"=\" * 60)\n    try:\n        # CRITICAL: Set up functionspace BEFORE translation\n        print(\"Setting up functionspace...\")\n        from fix_pysd_poisson import add_random_poisson_to_pysd\n        add_random_poisson_to_pysd()\n        print(\"✅ Functionspace set up\")",
+        "detail": "2025.test_functionspace_model",
+        "documentation": {}
+    },
+    {
+        "label": "test_model_columns",
+        "kind": 2,
+        "importPath": "2025.test_scenario_columns",
+        "description": "2025.test_scenario_columns",
+        "peekOfCode": "def test_model_columns():\n    \"\"\"Test what columns are available in the model results\"\"\"\n    print(\"🔍 TESTING MODEL COLUMNS:\")\n    print(\"=\" * 50)\n    try:\n        # Set up functionspace\n        print(\"Setting up functionspace...\")\n        from fix_pysd_poisson import add_random_poisson_to_pysd\n        add_random_poisson_to_pysd()\n        print(\"✅ Functionspace set up\")",
+        "detail": "2025.test_scenario_columns",
+        "documentation": {}
+    },
+    {
+        "label": "test_model_and_plot_accidents",
+        "kind": 2,
+        "importPath": "2025.test_simple_poisson",
+        "description": "2025.test_simple_poisson",
+        "peekOfCode": "def test_model_and_plot_accidents():\n    \"\"\"Test the model and plot accidents to verify random Poisson is working\"\"\"\n    print(\"🧪 TESTING MODEL WITH RANDOM POISSON:\")\n    print(\"=\" * 50)\n    try:\n        # Load the model\n        print(\"Loading model...\")\n        model = pysd.load(\"model_13_gl.py\")\n        print(\"✅ Model loaded successfully\")\n        # Run the model with a fixed seed for reproducibility",
+        "detail": "2025.test_simple_poisson",
         "documentation": {}
     },
     {

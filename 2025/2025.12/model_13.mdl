@@ -1,0 +1,632 @@
+{UTF-8}
+"acc shock in-flow"[Goal]=
+	accidents[Goal]*accident severity
+	~	
+	~		|
+
+shock effect on performance[Goal]=
+	Accident shock level[Goal]*shock sensitivity
+	~	
+	~		|
+
+accident rate B=
+	1
+	~	 [0,5,0.1]
+	~		|
+
+performance[A]=
+	cAA*Resources[A] + cBA*Resources[B]+ (1-sw A to protective)* resource generative outcome\
+		[A] + sw A to protective*shock effect on performance[A] ~~|
+performance[B]=
+	cAB*Resources[A] + cBB*Resources[B] + (1-sw B to protective)* resource generative outcome\
+		[B] + sw B to protective*shock effect on performance[B]
+	~	Dmnl
+	~	add stochasticity
+		potentially generative vs protective
+		generative can be additive with a small stochastic component and for protective with \
+		can have a rare event large impact (like safety)
+		combined performance determines endogenous resource inflow of future
+	|
+
+Accident shock level[Goal]= INTEG (
+	"acc shock in-flow"[Goal]-recovery rate[Goal],
+		0)
+	~	
+	~		|
+
+accidents[A]=
+	RANDOM POISSON( 0 , 5 , accident rate A* TIME STEP, 0 , 1 , seed ) ~~|
+accidents[B]=
+	RANDOM POISSON( 0 , 5 , accident rate B* TIME STEP, 0 , 1 , 2*seed )
+	~	
+	~		|
+
+recovery time[Goal]=
+	MAX(0.1, recovery time base/(1+k asp*Resources[Goal]))
+	~	Month
+	~		|
+
+recovery rate[Goal]=
+	Accident shock level[Goal]/recovery time[Goal]
+	~	
+	~		|
+
+gen stoch range=
+	10
+	~	 [0,50,0.1]
+	~		|
+
+resource generative outcome[A]=
+	RANDOM NORMAL( -gen stoch range , gen stoch range , 0 , gstdv , seed ) ~~|
+resource generative outcome[B]=
+	RANDOM NORMAL( -gen stoch range , gen stoch range , 0 , gstdv , 2*seed )
+	~	
+	~		|
+
+sw B to protective=
+	0
+	~	Dmnl [0,1,1]
+	~		|
+
+change in asp[Goal]=
+	-Perceived perfromance gap[Goal]*sw endogen aspiration/t change asp
+	~	1/Month
+	~	there should be some nonlinearity here, if perf gap is zero, change in aspirations \
+		should be positive rather than zero.
+		
+		Georgia: adding (1+k asp*Accident shock level), with big accidents, aspiration \
+		accelerates. -> crisis reveal aspirations.
+		“Aspirations adjust to the performance gap at a base rate determined by \
+		t change asp, but this rate is multiplied by (1 + sensitivity × shock). \
+		If shocks are present, managers shorten the time horizon for adjustment \
+		— they react faster.”
+	|
+
+accident rate A=
+	1
+	~	1/Month [0,5,0.1]
+	~		|
+
+accident severity=
+	10
+	~	 [0,50,1]
+	~	Magnitude of performance loss per accident event
+	|
+
+total investments=
+	SUM(Resources[Goal!])
+	~	
+	~		|
+
+k asp=
+	0.02
+	~	 [0.001,0.5]
+	~	Sensitivity of aspiration updating to shocks.
+		   Higher = aspirations move faster when accidents occur
+	|
+
+recovery time base=
+	12
+	~	Month [5,30,1]
+	~		|
+
+shock sensitivity=
+	1
+	~	Dmnl [0,50,1]
+	~		|
+
+sw A to protective=
+	0
+	~	Dmnl [0,1,1]
+	~		|
+
+aspiration[Goal]= INTEG (
+	change in asp[Goal],
+		exogen aspiration)
+	~	Dmnl [0,1000,1]
+	~	if perfromance is consistently falling short, adjust aspiration down
+		if aspirations are consistently met, adjust them up
+		
+		future: market trends, ecosystem dynamics
+	|
+
+init perc comb perf= INITIAL(
+	cAA*init A+cBA*init B
+	+
+	cAB*init A+cBB*init B)
+	~	Dmnl
+	~		|
+
+Perceived comb perf= INTEG (
+	change in perc comb perf,
+		init perc comb perf)
+	~	Dmnl
+	~		|
+
+Perceived perfromance gap[Goal]=
+	SMOOTH( performance gap[Goal] , t update perf gap )
+	~	Dmnl
+	~		|
+
+change in perc comb perf=
+	(combined performance-Perceived comb perf)/IF THEN ELSE( combined performance>Perceived comb perf\
+		 , t adj perc upwards , t adj perc downwards )
+	~	1/Month
+	~		|
+
+t adj perc upwards=
+	20
+	~	Month [0.01,50,0.5]
+	~		|
+
+resource inflow=
+	sw endog inflow*endogen resource inflow
+	+
+	(1-sw endog inflow)*exogen inflow
+	~	Dollar/Month [0,100,0.1]
+	~	endogenous inflow: function of performance (combined performance)
+	|
+
+endogen resource inflow=
+	(1/sens res inflow) * LN(1+exp(sens res inflow*inflow per perf*Perceived comb perf))
+	~	Dollar/Month
+	~	https://www.desmos.com/calculator/dnhbwdyqdq
+	|
+
+seed=
+	1
+	~	 [1,5000,1]
+	~		|
+
+exogen aspiration=
+	100
+	~	Dmnl [0,1000,1]
+	~	if perfromance is consistently falling short, adjust aspiration down
+		if aspirations are consistently met, adjust them up
+		
+		future: market trends, ecosystem dynamics
+	|
+
+sens res inflow=
+	1
+	~	Dmnl [0,2,0.1]
+	~		|
+
+t change asp=
+	40
+	~	Month [1,50,1]
+	~		|
+
+gstdv=
+	0
+	~	Dmnl [0,30,0.5]
+	~		|
+
+inflow per perf=
+	0.04
+	~	Dollar/Month [0,0.5,0.001]
+	~	0.04 seems to create long term equilibrium
+	|
+
+t adj perc downwards=
+	2
+	~	Month [0.01,50,0.5]
+	~		|
+
+t update perf gap=
+	5
+	~	Month [1,20,1]
+	~		|
+
+performance gap[Goal]=
+	aspiration[Goal] - performance[Goal]
+	~	Dmnl
+	~		|
+
+sw endog inflow=
+	0
+	~	Dmnl [0,1,1]
+	~		|
+
+sw endogen aspiration=
+	0
+	~	Dmnl [0,1,1]
+	~		|
+
+init resource[A]=
+	init A ~~|
+init resource[B]=
+	init B
+	~	Dollar [0,200,1]
+	~		|
+
+combined performance=
+	SUM(performance[Goal!])
+	~	Dmnl
+	~		|
+
+init res[Goal]= INITIAL(
+	(1-eq init)*init resource[Goal])
+	~	Dollar
+	~		|
+
+inv weight[Goal]=
+	exp(softmax snstvty * performance gap[Goal]) / pg denum
+	~	Dmnl
+	~		|
+
+Goal:
+	A, B
+	~	Dmnl
+	~	lets move back to two goals (p,p), (g,g), (g,p)
+	|
+
+deterioration resources[Goal]=
+	Resources[Goal]/t deteriorate
+	~	Dollar/Month
+	~		|
+
+Resources[Goal]= INTEG (
+	maturing inv[Goal]-deterioration resources[Goal],
+		init res[Goal])
+	~	Dollar
+	~		|
+
+init A=
+	80
+	~	Dollar [0,200,1]
+	~		|
+
+pg denum=
+	SUM(exp(softmax snstvty * performance gap[Goal!]))
+	~	Dmnl
+	~	(exp(softmax snstvty * performance gap[A]) + exp(softmax snstvty * \
+		performance gap[B]))
+	|
+
+init B=
+	80
+	~	Dollar [0,200,1]
+	~		|
+
+maturing inv[Goal]=
+	Undeveloped Resources[Goal]/t mature
+	~	Dollar/Month
+	~		|
+
+init UR[Goal]= INITIAL(
+	(init res[Goal]/t deteriorate)*t mature)
+	~	Dollar
+	~		|
+
+t mature=
+	5
+	~	Month [1,20,1]
+	~		|
+
+Undeveloped Resources[Goal]= INTEG (
+	investing[Goal]-maturing inv[Goal],
+		init UR[Goal])
+	~	Dollar
+	~		|
+
+exogen inflow=
+	8
+	~	Dollar/Month [0,20,0.1]
+	~		|
+
+eq init=
+	0
+	~	Dmnl [0,1,1]
+	~		|
+
+softmax snstvty=
+	0.03
+	~	Dmnl [0,0.5,0.001]
+	~		|
+
+investing[Goal]=
+	inv weight[Goal] * resource inflow
+	~	Dollar/Month
+	~		|
+
+cAB=
+	0
+	~	1/Dollar [-1,1,0.01]
+	~		|
+
+cBA=
+	0
+	~	1/Dollar [-1,1,0.01]
+	~		|
+
+cAA=
+	1
+	~	1/Dollar [0,1,0.01]
+	~		|
+
+cBB=
+	1
+	~	1/Dollar [0,1,0.01]
+	~		|
+
+t deteriorate=
+	25
+	~	Month [1,50,1]
+	~		|
+
+********************************************************
+	.Control
+********************************************************~
+		Simulation Control Parameters
+	|
+
+FINAL TIME  = 100
+	~	Month
+	~	The final time for the simulation.
+	|
+
+INITIAL TIME  = 0
+	~	Month
+	~	The initial time for the simulation.
+	|
+
+SAVEPER  = 
+        TIME STEP
+	~	Month [0,?]
+	~	The frequency with which output is stored.
+	|
+
+TIME STEP  = 0.0625
+	~	Month [0,?]
+	~	The time step for the simulation.
+	|
+
+\\\---/// Sketch information - do not modify anything except names
+V300  Do not put anything below this section - it will be ignored
+*View 1
+$-1--1--1,0,|12||-1--1--1|-1--1--1|-1--1--1|-1--1--1|-1--1--1|96,96,90,0
+10,1,Resources,431,371,42,22,3,3,0,0,-1,0,0,0,0,0,0,0,0,0
+12,2,48,657,371,10,8,0,3,0,0,-1,0,0,0,0,0,0,0,0,0
+1,3,5,1,100,0,0,22,0,192,0,-1--1--1,,1|(510,371)|
+1,4,5,2,4,0,0,22,0,192,0,-1--1--1,,1|(603,371)|
+11,5,0,554,371,6,8,34,3,0,0,1,0,0,0,0,0,0,0,0,0
+10,6,deterioration resources,554,396,37,17,40,3,0,0,-1,0,0,0,0,0,0,0,0,0
+12,7,48,42,371,10,8,0,3,0,0,-1,0,0,0,0,0,0,0,0,0
+1,8,10,7,100,0,0,22,0,192,0,-1--1--1,,1|(78,371)|
+1,9,10,50,4,0,0,22,0,192,0,-1--1--1,,1|(148,371)|
+11,10,0,111,371,6,8,34,3,0,0,1,0,0,0,0,0,0,0,0,0
+10,11,investing,111,390,32,11,40,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,12,t deteriorate,598,322,35,15,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,13,performance,753,361,39,13,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+1,14,1,5,1,0,0,0,0,192,0,-1--1--1,,1|(485,325)|
+1,15,12,5,1,0,0,0,0,192,0,-1--1--1,,1|(590,352)|
+1,16,1,13,1,0,0,0,0,192,0,-1--1--1,,1|(585,429)|
+10,17,cBB,835,290,18,11,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,18,cAA,738,283,19,10,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+1,19,18,13,1,0,0,0,0,192,0,-1--1--1,,1|(745,310)|
+10,20,aspiration,632,144,40,22,3,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,21,performance gap,431,194,39,15,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+1,22,13,21,1,0,0,0,0,192,0,-1--1--1,,1|(701,294)|
+1,23,20,21,1,0,0,0,0,192,0,-1--1--1,,1|(544,176)|
+10,24,inv weight,171,248,22,15,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+1,25,21,24,1,0,0,0,0,192,0,-1--1--1,,1|(281,206)|
+1,26,24,10,1,0,0,0,0,192,0,-1--1--1,,1|(107,306)|
+10,27,cBA,757,261,17,9,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,28,cAB,806,306,18,8,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+1,29,27,13,1,0,0,0,0,192,0,-1--1--1,,1|(761,308)|
+12,30,0,1198,187,200,155,8,15,0,0,1,0,0,0,0,0,0,0,0,0
+Performance
+10,31,resource inflow,106,480,26,17,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+1,32,31,11,1,0,0,0,0,192,0,-1--1--1,,1|(93,442)|
+12,33,0,1502,610,201,140,8,15,0,0,1,0,0,0,0,0,0,0,0,0
+Resources
+12,34,0,1602,188,199,157,8,15,0,0,1,0,0,0,0,0,0,0,0,0
+Attention
+10,35,softmax snstvty,116,165,24,17,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+1,36,35,24,1,0,0,0,0,64,0,-1--1--1,,1|(116,204)|
+10,37,eq init,61,19,21,9,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,38,exogen inflow,87,544,23,14,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+1,39,38,31,1,0,0,0,0,192,0,-1--1--1,,1|(85,516)|
+10,40,init res,367,328,17,12,8,2,0,3,-1,0,0,0,128-128-128,0-0-0,|||128-128-128,0,0,0,0,0,0
+1,41,40,1,1,0,0,0,0,192,1,-1--1--1,,1|(408,346)|
+1,42,28,13,1,0,0,0,0,192,0,-1--1--1,,1|(786,334)|
+1,43,17,13,1,0,0,0,0,192,0,-1--1--1,,1|(816,318)|
+10,44,init A,382,276,22,9,8,2,0,3,-1,0,0,0,128-128-128,0-0-0,|||128-128-128,0,0,0,0,0,0
+10,45,init B,461,266,26,8,8,2,0,3,-1,0,0,0,128-128-128,0-0-0,|||128-128-128,0,0,0,0,0,0
+10,46,pg denum,268,126,42,22,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+1,47,21,46,1,0,0,0,0,192,0,-1--1--1,,1|(374,149)|
+1,48,46,24,1,0,0,0,0,192,0,-1--1--1,,1|(189,190)|
+1,49,35,46,1,0,0,0,0,64,0,-1--1--1,,1|(172,136)|
+10,50,Undeveloped Resources,222,371,42,22,3,3,0,0,-1,0,0,0,0,0,0,0,0,0
+1,51,53,50,100,0,0,22,0,192,0,-1--1--1,,1|(287,371)|
+1,52,53,1,4,0,0,22,0,192,0,-1--1--1,,1|(356,371)|
+11,53,0,317,371,6,8,34,3,0,0,1,0,0,0,0,0,0,0,0,0
+10,54,maturing inv,317,393,33,14,40,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,55,t mature,298,486,26,11,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+1,56,50,54,1,0,0,0,0,192,0,-1--1--1,,1|(248,421)|
+1,57,55,54,1,0,0,0,0,192,0,-1--1--1,,1|(318,454)|
+10,58,init UR,217,312,27,9,8,2,0,3,-1,0,0,0,128-128-128,0-0-0,|||128-128-128,0,0,0,0,0,0
+1,59,58,50,0,0,0,0,0,192,1,-1--1--1,,1|(0,0)|
+10,60,seed,1045,559,17,14,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,61,gstdv,1031,412,17,9,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,62,combined performance,666,509,38,14,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+1,63,13,62,1,0,0,0,0,192,0,-1--1--1,,1|(721,434)|
+10,64,Perceived perfromance gap,536,53,47,22,3,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,65,t update perf gap,390,57,32,19,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,66,sw endogen aspiration,855,106,38,22,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,67,exogen aspiration,666,209,30,17,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+1,68,67,20,1,0,0,0,0,192,1,-1--1--1,,1|(656,175)|
+1,69,21,64,1,0,0,0,0,192,0,-1--1--1,,1|(419,118)|
+1,70,65,64,1,0,0,0,0,192,0,-1--1--1,,1|(439,40)|
+12,71,48,821,148,10,8,0,3,0,0,-1,0,0,0,0,0,0,0,0,0
+1,72,74,71,100,0,0,22,0,192,0,-1--1--1,,1|(775,148)|
+1,73,74,20,4,0,0,22,0,192,0,-1--1--1,,1|(700,148)|
+11,74,0,734,148,6,8,34,3,0,0,1,0,0,0,0,0,0,0,0,0
+10,75,change in asp,734,172,25,16,40,3,0,0,-1,0,0,0,0,0,0,0,0,0
+1,76,66,74,1,0,0,0,0,192,0,-1--1--1,,1|(786,106)|
+1,77,64,74,1,0,0,0,0,192,0,-1--1--1,,1|(684,78)|
+10,78,t change asp,775,53,27,19,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+1,79,78,74,1,0,0,0,0,192,0,-1--1--1,,1|(744,89)|
+10,80,endogen resource inflow,216,599,45,16,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,81,sw endog inflow,36,510,31,18,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+1,82,81,31,1,0,0,0,0,192,0,-1--1--1,,1|(51,486)|
+10,83,Perceived comb perf,417,597,57,22,3,3,0,0,-1,0,0,0,0,0,0,0,0,0
+1,84,83,80,0,0,0,0,0,192,0,-1--1--1,,1|(0,0)|
+12,85,48,589,591,10,8,0,3,0,0,-1,0,0,0,0,0,0,0,0,0
+1,86,88,85,100,0,0,22,0,192,0,-1--1--1,,1|(560,591)|
+1,87,88,83,4,0,0,22,0,192,0,-1--1--1,,1|(502,591)|
+11,88,0,536,591,6,8,34,3,0,0,1,0,0,0,0,0,0,0,0,0
+10,89,change in perc comb perf,536,617,43,18,40,3,0,0,-1,0,0,0,0,0,0,0,0,0
+1,90,62,89,1,0,0,0,0,192,0,-1--1--1,,1|(640,570)|
+1,91,83,88,1,0,0,0,0,192,0,-1--1--1,,1|(450,550)|
+10,92,t adj perc upwards,517,684,28,17,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,93,t adj perc downwards,607,689,37,16,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+1,94,92,89,1,0,0,0,0,192,0,-1--1--1,,1|(545,657)|
+1,95,93,89,1,0,0,0,0,192,0,-1--1--1,,1|(583,655)|
+1,96,80,31,1,0,0,0,0,192,0,-1--1--1,,1|(139,539)|
+10,97,sens res inflow,225,656,42,22,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,98,inflow per perf,108,647,42,22,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+1,99,98,80,1,0,0,0,0,192,0,-1--1--1,,1|(150,614)|
+1,100,97,80,0,0,0,0,0,192,0,-1--1--1,,1|(0,0)|
+10,101,init perc comb perf,414,663,40,15,8,2,0,3,-1,0,0,0,128-128-128,0-0-0,|||128-128-128,0,0,0,0,0,0
+1,102,101,83,0,0,0,0,0,192,1,-1--1--1,,1|(0,0)|
+10,103,resource generative outcome,881,395,55,22,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+1,104,103,13,1,0,0,0,0,192,0,-1--1--1,,1|(821,361)|
+1,105,61,103,0,0,0,0,0,64,0,-1--1--1,,1|(0,0)|
+1,106,60,103,0,0,0,0,0,64,0,-1--1--1,,1|(0,0)|
+10,107,accidents,877,708,36,14,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,108,sw A to protective,858,458,42,22,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+1,109,108,13,0,0,0,0,0,192,0,-1--1--1,,1|(0,0)|
+10,110,TIME STEP,1094,628,25,19,8,2,0,3,-1,0,0,0,128-128-128,0-0-0,|||128-128-128,0,0,0,0,0,0
+1,111,110,107,0,0,0,0,0,192,0,-1--1--1,,1|(0,0)|
+1,112,60,107,0,0,0,0,0,192,0,-1--1--1,,1|(0,0)|
+12,113,0,2027,629,300,200,0,15,0,0,2,0,0,0,0,0,0,0,0,0
+accidents,Graph
+10,114,accident severity,943,865,32,20,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+1,115,114,145,1,0,0,0,0,192,0,-1--1--1,,1|(886,854)|
+10,116,accident rate A,1072,689,27,17,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+1,117,116,107,0,0,0,0,0,192,0,-1--1--1,,1|(0,0)|
+10,118,Accident shock level,716,788,56,22,3,3,0,0,-1,0,0,0,0,0,0,0,0,0
+1,119,107,144,1,0,0,0,0,192,0,-1--1--1,,1|(848,730)|
+12,120,48,530,791,10,8,0,3,0,0,-1,0,0,0,0,0,0,0,0,0
+1,121,123,118,100,0,0,22,0,192,0,-1--1--1,,1|(643,791)|
+1,122,123,120,4,0,0,22,0,192,0,-1--1--1,,1|(577,791)|
+11,123,0,621,791,6,8,34,3,0,0,1,0,0,0,0,0,0,0,0,0
+10,124,recovery rate,621,814,29,15,40,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,125,recovery time,682,906,34,20,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,126,recovery time base,814,956,35,15,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,127,k asp,832,892,27,20,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+1,128,127,125,0,0,0,0,0,192,0,-1--1--1,,1|(0,0)|
+1,129,126,125,0,0,0,0,0,192,0,-1--1--1,,1|(0,0)|
+1,130,118,124,1,0,0,0,0,192,0,-1--1--1,,1|(697,834)|
+1,131,125,124,1,0,0,0,0,192,0,-1--1--1,,1|(601,871)|
+10,132,shock effect on performance,802,604,42,22,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,133,shock sensitivity,707,663,32,21,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+1,134,118,132,0,0,0,0,0,192,0,-1--1--1,,1|(0,0)|
+1,135,133,132,0,0,0,0,0,192,0,-1--1--1,,1|(0,0)|
+1,136,132,13,0,0,0,0,0,192,0,-1--1--1,,1|(0,0)|
+10,137,total investments,560,484,47,22,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+1,138,1,137,0,0,0,0,0,192,0,-1--1--1,,1|(0,0)|
+10,139,sw B to protective,844,531,49,22,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+1,140,139,13,0,0,0,0,0,192,0,-1--1--1,,1|(0,0)|
+12,141,48,897,779,10,8,0,3,0,0,-1,0,0,0,0,0,0,0,0,0
+1,142,144,141,100,0,0,22,0,192,0,-1--1--1,,1|(865,779)|
+1,143,144,118,4,0,0,22,0,192,0,-1--1--1,,1|(802,779)|
+11,144,0,838,779,6,8,34,3,0,0,1,0,0,0,0,0,0,0,0,0
+10,145,"acc shock in-flow",838,808,35,21,40,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,146,gen stoch range,929,342,29,18,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+1,147,146,103,0,0,0,0,0,192,0,-1--1--1,,1|(0,0)|
+10,148,accident rate B,1072,743,35,23,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+1,149,148,107,0,0,0,0,0,192,0,-1--1--1,,1|(0,0)|
+10,150,Resources,656,967,44,10,8,2,0,3,-1,0,0,0,128-128-128,0-0-0,|||128-128-128,0,0,0,0,0,0
+1,151,150,125,0,0,0,0,0,192,0,-1--1--1,,1|(0,0)|
+\\\---/// Sketch information - do not modify anything except names
+V300  Do not put anything below this section - it will be ignored
+*Equilibrium Symmetrical
+$-1--1--1,0,|12||-1--1--1|-1--1--1|-1--1--1|-1--1--1|-1--1--1|96,96,100,0
+10,1,cAA,428,151,20,9,8,2,0,3,-1,0,0,0,128-128-128,0-0-0,|||128-128-128,0,0,0,0,0,0
+10,2,cBA,433,197,20,9,8,2,0,3,-1,0,0,0,128-128-128,0-0-0,|||128-128-128,0,0,0,0,0,0
+10,3,cBB,434,340,20,9,8,2,0,3,-1,0,0,0,128-128-128,0-0-0,|||128-128-128,0,0,0,0,0,0
+10,4,cAB,423,376,20,9,8,2,0,3,-1,0,0,0,128-128-128,0-0-0,|||128-128-128,0,0,0,0,0,0
+10,5,aspiration,436,255,40,9,8,2,0,3,-1,0,0,0,128-128-128,0-0-0,|||128-128-128,0,0,0,0,0,0
+10,6,t deteriorate,805,399,38,20,8,2,0,3,-1,0,0,0,128-128-128,0-0-0,|||128-128-128,0,0,0,0,0,0
+10,7,init res,735,180,19,20,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,8,eq init,805,116,25,9,8,2,0,3,-1,0,0,0,128-128-128,0-0-0,|||128-128-128,0,0,0,0,0,0
+10,9,eq init,1056,119,25,9,8,2,0,3,-1,0,0,0,128-128-128,0-0-0,|||128-128-128,0,0,0,0,0,0
+1,10,8,7,0,0,0,0,0,192,1,-1--1--1,,1|(0,0)|
+10,11,init resource,704,296,33,15,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+1,12,11,7,0,0,0,0,0,192,1,-1--1--1,,1|(0,0)|
+10,13,init A,650,202,18,10,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,14,init B,644,394,20,9,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+1,15,13,11,0,0,0,0,0,192,0,-1--1--1,,1|(0,0)|
+1,16,14,11,0,0,0,0,0,192,0,-1--1--1,,1|(0,0)|
+10,17,t mature,871,339,31,9,8,2,0,3,-1,0,0,0,128-128-128,0-0-0,|||128-128-128,0,0,0,0,0,0
+10,18,init UR,855,228,21,14,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+1,19,7,18,1,0,0,0,0,192,1,-1--1--1,,1|(776,232)|
+1,20,6,18,1,0,0,0,0,192,1,-1--1--1,,1|(793,334)|
+1,21,17,18,1,0,0,0,0,192,1,-1--1--1,,1|(838,257)|
+10,22,init perc comb perf,597,289,32,14,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+1,23,1,22,0,0,0,0,0,192,1,-1--1--1,,1|(0,0)|
+1,24,2,22,0,0,0,0,0,192,1,-1--1--1,,1|(0,0)|
+1,25,3,22,0,0,0,0,0,192,1,-1--1--1,,1|(0,0)|
+1,26,4,22,0,0,0,0,0,192,1,-1--1--1,,1|(0,0)|
+1,27,13,22,0,0,0,0,0,192,1,-1--1--1,,1|(0,0)|
+1,28,14,22,0,0,0,0,0,192,1,-1--1--1,,1|(0,0)|
+///---\\\
+:GRAPH Performance
+:TITLE Performance
+:SCALE
+:VAR performance[Goal]
+:DATASET 
+:LINE-WIDTH 2
+:VAR aspiration[Goal]
+:DATASET 
+:LINE-WIDTH 2
+
+:GRAPH Resources
+:TITLE Resources
+:SCALE
+:VAR Resources[Goal]
+:DATASET 
+
+:GRAPH Attention
+:TITLE Attention
+:SCALE
+:VAR inv weight[Goal]
+:DATASET 
+:L<%^E!@
+1:current.vdfx
+4:Time
+5:sw B to protective
+6:A
+6:B
+9:current
+19:90,0
+24:0
+25:100
+26:100
+23:0
+15:0,0,0,0,0,0
+27:0,
+34:0,
+42:0
+72:0
+73:0
+95:0
+96:0
+97:0
+77:0
+78:0
+102:1
+93:0
+94:0
+92:0
+91:0
+90:0
+87:0
+75:
+43:
+103:8,8,8,3,8
+105:0,0,0,0,0,0,0,0,0,0
+104:Arial|12||0-0-0|0-0-0|-1--1--1|0-0-255|192-192-192|-1--1--1

@@ -1,5 +1,5 @@
 """
-Python model 'model_13_gl.py'
+Python model 'model_13.py'
 Translated using PySD
 """
 
@@ -8,8 +8,8 @@ import numpy as np
 import xarray as xr
 from scipy import stats
 
-from pysd.py_backend.functions import xidz, not_implemented_function, if_then_else, sum
-from pysd.py_backend.statefuls import Integ, Initial, Smooth
+from pysd.py_backend.functions import if_then_else, xidz, sum
+from pysd.py_backend.statefuls import Initial, Integ, Smooth
 from pysd import Component
 
 __pysd_version__ = "3.14.3"
@@ -103,6 +103,38 @@ def time_step():
 
 
 @component.add(
+    name='"acc shock in-flow"',
+    subscripts=["Goal"],
+    comp_type="Auxiliary",
+    comp_subtype="Normal",
+    depends_on={"accidents": 1, "accident_severity": 1},
+)
+def acc_shock_inflow():
+    return accidents() * accident_severity()
+
+
+@component.add(
+    name="shock effect on performance",
+    subscripts=["Goal"],
+    comp_type="Auxiliary",
+    comp_subtype="Normal",
+    depends_on={"accident_shock_level": 1, "shock_sensitivity": 1},
+)
+def shock_effect_on_performance():
+    return accident_shock_level() * shock_sensitivity()
+
+
+@component.add(
+    name="accident rate B",
+    limits=(0.0, 5.0, 0.1),
+    comp_type="Constant",
+    comp_subtype="Normal",
+)
+def accident_rate_b():
+    return 1
+
+
+@component.add(
     name="performance",
     units="Dmnl",
     subscripts=["Goal"],
@@ -112,12 +144,12 @@ def time_step():
         "caa": 1,
         "resources": 4,
         "cba": 1,
-        "sw_a_to_protective": 2,
         "resource_generative_outcome": 2,
+        "sw_a_to_protective": 2,
         "shock_effect_on_performance": 2,
-        "cbb": 1,
         "cab": 1,
         "sw_b_to_protective": 2,
+        "cbb": 1,
     },
 )
 def performance():
@@ -128,26 +160,154 @@ def performance():
     value.loc[["A"]] = (
         caa() * float(resources().loc["A"])
         + cba() * float(resources().loc["B"])
-        + (1 - sw_a_to_protective()) * resource_generative_outcome()
-        + sw_a_to_protective() * shock_effect_on_performance()
+        + (1 - sw_a_to_protective()) * float(resource_generative_outcome().loc["A"])
+        + sw_a_to_protective() * float(shock_effect_on_performance().loc["A"])
     )
     value.loc[["B"]] = (
         cab() * float(resources().loc["A"])
         + cbb() * float(resources().loc["B"])
-        + (1 - sw_b_to_protective()) * resource_generative_outcome()
-        + sw_b_to_protective() * shock_effect_on_performance()
+        + (1 - sw_b_to_protective()) * float(resource_generative_outcome().loc["B"])
+        + sw_b_to_protective() * float(shock_effect_on_performance().loc["B"])
     )
     return value
 
 
 @component.add(
+    name="Accident shock level",
+    subscripts=["Goal"],
+    comp_type="Stateful",
+    comp_subtype="Integ",
+    depends_on={"_integ_accident_shock_level": 1},
+    other_deps={
+        "_integ_accident_shock_level": {
+            "initial": {},
+            "step": {"acc_shock_inflow": 1, "recovery_rate": 1},
+        }
+    },
+)
+def accident_shock_level():
+    return _integ_accident_shock_level()
+
+
+_integ_accident_shock_level = Integ(
+    lambda: acc_shock_inflow() - recovery_rate(),
+    lambda: xr.DataArray(0, {"Goal": _subscript_dict["Goal"]}, ["Goal"]),
+    "_integ_accident_shock_level",
+)
+
+
+@component.add(
+    name="accidents",
+    subscripts=["Goal"],
+    comp_type="Auxiliary",
+    comp_subtype="Normal",
+    depends_on={
+        "accident_rate_a": 1,
+        "time_step": 2,
+        "seed": 2,
+        "time": 2,
+        "accident_rate_b": 1,
+    },
+)
+def accidents():
+    value = xr.DataArray(np.nan, {"Goal": _subscript_dict["Goal"]}, ["Goal"])
+    value.loc[["A"]] = xr.DataArray(
+        np.clip(
+            np.random.poisson(lam=accident_rate_a() * time_step(), size=(1,)) * 1 + 0,
+            0,
+            5,
+        ),
+        {"Goal": ["A"]},
+        ["Goal"],
+    ).values
+    value.loc[["B"]] = xr.DataArray(
+        np.clip(
+            np.random.poisson(lam=accident_rate_b() * time_step(), size=(1,)) * 1 + 0,
+            0,
+            5,
+        ),
+        {"Goal": ["B"]},
+        ["Goal"],
+    ).values
+    return value
+
+
+@component.add(
+    name="recovery time",
+    units="Month",
+    subscripts=["Goal"],
+    comp_type="Auxiliary",
+    comp_subtype="Normal",
+    depends_on={"recovery_time_base": 1, "k_asp": 1, "resources": 1},
+)
+def recovery_time():
+    return np.maximum(0.1, recovery_time_base() / (1 + k_asp() * resources()))
+
+
+@component.add(
+    name="recovery rate",
+    subscripts=["Goal"],
+    comp_type="Auxiliary",
+    comp_subtype="Normal",
+    depends_on={"accident_shock_level": 1, "recovery_time": 1},
+)
+def recovery_rate():
+    return accident_shock_level() / recovery_time()
+
+
+@component.add(
+    name="gen stoch range",
+    limits=(0.0, 50.0, 0.1),
+    comp_type="Constant",
+    comp_subtype="Normal",
+)
+def gen_stoch_range():
+    return 10
+
+
+@component.add(
+    name="resource generative outcome",
+    subscripts=["Goal"],
+    comp_type="Auxiliary",
+    comp_subtype="Normal",
+    depends_on={"gen_stoch_range": 4, "gstdv": 2, "seed": 2, "time": 2},
+)
+def resource_generative_outcome():
+    value = xr.DataArray(np.nan, {"Goal": _subscript_dict["Goal"]}, ["Goal"])
+    value.loc[["A"]] = xr.DataArray(
+        stats.truncnorm.rvs(
+            xidz(-gen_stoch_range() - 0, gstdv(), -np.inf),
+            xidz(gen_stoch_range() - 0, gstdv(), np.inf),
+            loc=0,
+            scale=gstdv(),
+            size=(1,),
+        ),
+        {"Goal": ["A"]},
+        ["Goal"],
+    ).values
+    value.loc[["B"]] = xr.DataArray(
+        stats.truncnorm.rvs(
+            xidz(-gen_stoch_range() - 0, gstdv(), -np.inf),
+            xidz(gen_stoch_range() - 0, gstdv(), np.inf),
+            loc=0,
+            scale=gstdv(),
+            size=(1,),
+        ),
+        {"Goal": ["B"]},
+        ["Goal"],
+    ).values
+    return value
+
+
+@component.add(
     name="sw B to protective",
+    units="Dmnl",
     limits=(0.0, 1.0, 1.0),
     comp_type="Constant",
     comp_subtype="Normal",
 )
 def sw_b_to_protective():
-    return 1
+    return 0
 
 
 @component.add(
@@ -159,8 +319,6 @@ def sw_b_to_protective():
     depends_on={
         "perceived_perfromance_gap": 1,
         "sw_endogen_aspiration": 1,
-        "k_asp": 1,
-        "accident_shock_level": 1,
         "t_change_asp": 1,
     },
 )
@@ -168,90 +326,31 @@ def change_in_asp():
     """
     there should be some nonlinearity here, if perf gap is zero, change in aspirations should be positive rather than zero. Georgia: adding (1+k asp*Accident shock level), with big accidents, aspiration accelerates. -> crisis reveal aspirations. “Aspirations adjust to the performance gap at a base rate determined by t change asp, but this rate is multiplied by (1 + sensitivity × shock). If shocks are present, managers shorten the time horizon for adjustment — they react faster.”
     """
-    return (
-        -perceived_perfromance_gap()
-        * sw_endogen_aspiration()
-        * (1 + k_asp() * accident_shock_level())
-        / t_change_asp()
-    )
+    return -perceived_perfromance_gap() * sw_endogen_aspiration() / t_change_asp()
 
 
 @component.add(
-    name="accident rate", units="1/Month", comp_type="Constant", comp_subtype="Normal"
+    name="accident rate A",
+    units="1/Month",
+    limits=(0.0, 5.0, 0.1),
+    comp_type="Constant",
+    comp_subtype="Normal",
 )
-def accident_rate():
+def accident_rate_a():
     return 1
 
 
-@component.add(name="accident severity", comp_type="Constant", comp_subtype="Normal")
+@component.add(
+    name="accident severity",
+    limits=(0.0, 50.0, 1.0),
+    comp_type="Constant",
+    comp_subtype="Normal",
+)
 def accident_severity():
     """
     Magnitude of performance loss per accident event
     """
     return 10
-
-
-@component.add(
-    name="Accident shock level",
-    comp_type="Stateful",
-    comp_subtype="Integ",
-    depends_on={"_integ_accident_shock_level": 1},
-    other_deps={
-        "_integ_accident_shock_level": {
-            "initial": {},
-            "step": {"accidents": 1, "recovery_rate": 1},
-        }
-    },
-)
-def accident_shock_level():
-    return _integ_accident_shock_level()
-
-
-_integ_accident_shock_level = Integ(
-    lambda: accidents() - recovery_rate(), lambda: 0, "_integ_accident_shock_level"
-)
-
-
-@component.add(
-    name="accidents",
-    comp_type="Auxiliary",
-    comp_subtype="Normal",
-    depends_on={"accident_rate": 1, "time_step": 1, "seed": 1, "accident_severity": 1},
-)
-def accidents():
-    """
-    Uses PySD functionspace random_poisson function from fix_pysd_poisson.py
-    Implements Vensim RANDOM POISSON(0, 5, accident_rate*TIME_STEP, 0, 1, seed)
-
-    This function uses the proper PySD functionspace approach where random_poisson
-    is added to PySD's functionspace by fix_pysd_poisson.py.
-    """
-    # Call the PySD functionspace random_poisson function
-    # Parameters: (min, max, mean, shift, stretch, seed)
-    # This matches Vensim: RANDOM POISSON(0, 5, accident_rate*TIME_STEP, 0, 1, seed)
-    poisson_value = random_poisson(
-        0, 5, accident_rate() * time_step(), 0, 1, seed()
-    )
-    
-    # Apply accident severity and negative sign (from Vensim model)
-    return -poisson_value * accident_severity()
-
-
-# random_poisson function is provided by PySD functionspace
-# This is set up by fix_pysd_poisson.py using the proper PySD approach
-# The functionspace version will be used automatically when the model is loaded
-
-@component.add(
-    name="recovery time",
-    units="Month",
-    comp_type="Auxiliary",
-    comp_subtype="Normal",
-    depends_on={"recovery_time_base": 1, "total_investments": 1, "k_asp": 1},
-)
-def recovery_time():
-    return float(
-        np.maximum(0.1, recovery_time_base() / (1 + k_asp() * total_investments()))
-    )
 
 
 @component.add(
@@ -262,16 +361,6 @@ def recovery_time():
 )
 def total_investments():
     return sum(resources().rename({"Goal": "Goal!"}), dim=["Goal!"])
-
-
-@component.add(
-    name="recovery rate",
-    comp_type="Auxiliary",
-    comp_subtype="Normal",
-    depends_on={"accident_shock_level": 1, "recovery_time": 1},
-)
-def recovery_rate():
-    return accident_shock_level() / recovery_time()
 
 
 @component.add(
@@ -296,48 +385,25 @@ def recovery_time_base():
 
 
 @component.add(
-    name="shock sensitivity", units="Dmnl", comp_type="Constant", comp_subtype="Normal"
+    name="shock sensitivity",
+    units="Dmnl",
+    limits=(0.0, 50.0, 1.0),
+    comp_type="Constant",
+    comp_subtype="Normal",
 )
 def shock_sensitivity():
     return 1
 
 
 @component.add(
-    name="shock effect on performance",
-    comp_type="Auxiliary",
-    comp_subtype="Normal",
-    depends_on={"accident_shock_level": 1, "shock_sensitivity": 1},
-)
-def shock_effect_on_performance():
-    return accident_shock_level() * shock_sensitivity()
-
-
-@component.add(
     name="sw A to protective",
+    units="Dmnl",
     limits=(0.0, 1.0, 1.0),
     comp_type="Constant",
     comp_subtype="Normal",
 )
 def sw_a_to_protective():
-    return 1
-
-
-@component.add(
-    name="resource generative outcome",
-    comp_type="Auxiliary",
-    comp_subtype="Normal",
-    depends_on={"gstdv": 1, "seed": 1, "time": 1},
-)
-def resource_generative_outcome():
-    return float(
-        stats.truncnorm.rvs(
-            xidz(-10 - 0, gstdv(), -np.inf),
-            xidz(10 - 0, gstdv(), np.inf),
-            loc=0,
-            scale=gstdv(),
-            size=(),
-        )
-    )
+    return 0
 
 
 @component.add(
@@ -462,8 +528,8 @@ _smooth_perceived_perfromance_gap = Smooth(
     depends_on={
         "combined_performance": 2,
         "perceived_comb_perf": 2,
-        "t_adj_perc_upwards": 1,
         "t_adj_perc_downwards": 1,
+        "t_adj_perc_upwards": 1,
     },
 )
 def change_in_perc_comb_perf():
@@ -586,7 +652,10 @@ def gstdv():
     comp_subtype="Normal",
 )
 def inflow_per_perf():
-    return 0.05
+    """
+    0.04 seems to create long term equilibrium
+    """
+    return 0.04
 
 
 @component.add(

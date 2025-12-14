@@ -1,5 +1,5 @@
 """
-Python model 'model_13_gl.py'
+Python model 'model_13.py'
 Translated using PySD
 """
 
@@ -8,8 +8,8 @@ import numpy as np
 import xarray as xr
 from scipy import stats
 
-from pysd.py_backend.functions import xidz, not_implemented_function, if_then_else, sum
-from pysd.py_backend.statefuls import Integ, Initial, Smooth
+from pysd.py_backend.functions import xidz, sum, if_then_else
+from pysd.py_backend.statefuls import Integ, Smooth, Initial
 from pysd import Component
 
 __pysd_version__ = "3.14.3"
@@ -115,8 +115,8 @@ def time_step():
         "sw_a_to_protective": 2,
         "resource_generative_outcome": 2,
         "shock_effect_on_performance": 2,
-        "cbb": 1,
         "cab": 1,
+        "cbb": 1,
         "sw_b_to_protective": 2,
     },
 )
@@ -216,37 +216,33 @@ _integ_accident_shock_level = Integ(
     name="accidents",
     comp_type="Auxiliary",
     comp_subtype="Normal",
-    depends_on={"accident_rate": 1, "time_step": 1, "seed": 1, "accident_severity": 1},
+    depends_on={
+        "accident_rate": 1,
+        "time_step": 1,
+        "seed": 1,
+        "time": 1,
+        "accident_severity": 1,
+    },
 )
 def accidents():
-    """
-    Uses PySD functionspace random_poisson function from fix_pysd_poisson.py
-    Implements Vensim RANDOM POISSON(0, 5, accident_rate*TIME_STEP, 0, 1, seed)
-
-    This function uses the proper PySD functionspace approach where random_poisson
-    is added to PySD's functionspace by fix_pysd_poisson.py.
-    """
-    # Call the PySD functionspace random_poisson function
-    # Parameters: (min, max, mean, shift, stretch, seed)
-    # This matches Vensim: RANDOM POISSON(0, 5, accident_rate*TIME_STEP, 0, 1, seed)
-    poisson_value = random_poisson(
-        0, 5, accident_rate() * time_step(), 0, 1, seed()
+    return (
+        -float(
+            np.clip(
+                np.random.poisson(lam=accident_rate() * time_step(), size=()) * 1 + 0,
+                0,
+                5,
+            )
+        )
+        * accident_severity()
     )
-    
-    # Apply accident severity and negative sign (from Vensim model)
-    return -poisson_value * accident_severity()
 
-
-# random_poisson function is provided by PySD functionspace
-# This is set up by fix_pysd_poisson.py using the proper PySD approach
-# The functionspace version will be used automatically when the model is loaded
 
 @component.add(
     name="recovery time",
     units="Month",
     comp_type="Auxiliary",
     comp_subtype="Normal",
-    depends_on={"recovery_time_base": 1, "total_investments": 1, "k_asp": 1},
+    depends_on={"recovery_time_base": 1, "k_asp": 1, "total_investments": 1},
 )
 def recovery_time():
     return float(
@@ -382,8 +378,8 @@ _integ_aspiration = Integ(
             "initial": {
                 "caa": 1,
                 "init_a": 2,
-                "init_b": 2,
                 "cba": 1,
+                "init_b": 2,
                 "cab": 1,
                 "cbb": 1,
             },
@@ -462,8 +458,8 @@ _smooth_perceived_perfromance_gap = Smooth(
     depends_on={
         "combined_performance": 2,
         "perceived_comb_perf": 2,
-        "t_adj_perc_upwards": 1,
         "t_adj_perc_downwards": 1,
+        "t_adj_perc_upwards": 1,
     },
 )
 def change_in_perc_comb_perf():
@@ -508,7 +504,7 @@ def resource_inflow():
     units="Dollar/Month",
     comp_type="Auxiliary",
     comp_subtype="Normal",
-    depends_on={"sens_res_inflow": 2, "perceived_comb_perf": 1, "inflow_per_perf": 1},
+    depends_on={"sens_res_inflow": 2, "inflow_per_perf": 1, "perceived_comb_perf": 1},
 )
 def endogen_resource_inflow():
     """
