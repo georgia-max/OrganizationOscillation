@@ -8,8 +8,8 @@ import numpy as np
 import xarray as xr
 from scipy import stats
 
-from pysd.py_backend.functions import if_then_else, xidz, sum
-from pysd.py_backend.statefuls import Initial, Integ, Smooth
+from pysd.py_backend.functions import sum, if_then_else, xidz
+from pysd.py_backend.statefuls import Smooth, Integ, Initial
 from pysd import Component
 
 __pysd_version__ = "3.14.3"
@@ -144,12 +144,12 @@ def accident_rate_b():
         "caa": 1,
         "resources": 4,
         "cba": 1,
-        "resource_generative_outcome": 2,
         "sw_a_to_protective": 2,
+        "resource_generative_outcome": 2,
         "shock_effect_on_performance": 2,
-        "cab": 1,
-        "sw_b_to_protective": 2,
         "cbb": 1,
+        "sw_b_to_protective": 2,
+        "cab": 1,
     },
 )
 def performance():
@@ -238,7 +238,7 @@ def accidents():
     subscripts=["Goal"],
     comp_type="Auxiliary",
     comp_subtype="Normal",
-    depends_on={"recovery_time_base": 1, "k_asp": 1, "resources": 1},
+    depends_on={"recovery_time_base": 1, "resources": 1, "k_asp": 1},
 )
 def recovery_time():
     return np.maximum(0.1, recovery_time_base() / (1 + k_asp() * resources()))
@@ -448,8 +448,8 @@ _integ_aspiration = Integ(
             "initial": {
                 "caa": 1,
                 "init_a": 2,
-                "init_b": 2,
                 "cba": 1,
+                "init_b": 2,
                 "cab": 1,
                 "cbb": 1,
             },

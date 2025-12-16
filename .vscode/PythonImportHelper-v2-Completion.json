@@ -398,6 +398,14 @@
         "documentation": {}
     },
     {
+        "label": "sum",
+        "importPath": "pysd.py_backend.functions",
+        "description": "pysd.py_backend.functions",
+        "isExtraImport": true,
+        "detail": "pysd.py_backend.functions",
+        "documentation": {}
+    },
+    {
         "label": "if_then_else",
         "importPath": "pysd.py_backend.functions",
         "description": "pysd.py_backend.functions",
@@ -407,14 +415,6 @@
     },
     {
         "label": "xidz",
-        "importPath": "pysd.py_backend.functions",
-        "description": "pysd.py_backend.functions",
-        "isExtraImport": true,
-        "detail": "pysd.py_backend.functions",
-        "documentation": {}
-    },
-    {
-        "label": "sum",
         "importPath": "pysd.py_backend.functions",
         "description": "pysd.py_backend.functions",
         "isExtraImport": true,
@@ -678,6 +678,22 @@
         "documentation": {}
     },
     {
+        "label": "Smooth",
+        "importPath": "pysd.py_backend.statefuls",
+        "description": "pysd.py_backend.statefuls",
+        "isExtraImport": true,
+        "detail": "pysd.py_backend.statefuls",
+        "documentation": {}
+    },
+    {
+        "label": "Integ",
+        "importPath": "pysd.py_backend.statefuls",
+        "description": "pysd.py_backend.statefuls",
+        "isExtraImport": true,
+        "detail": "pysd.py_backend.statefuls",
+        "documentation": {}
+    },
+    {
         "label": "Initial",
         "importPath": "pysd.py_backend.statefuls",
         "description": "pysd.py_backend.statefuls",
@@ -702,22 +718,6 @@
         "documentation": {}
     },
     {
-        "label": "Integ",
-        "importPath": "pysd.py_backend.statefuls",
-        "description": "pysd.py_backend.statefuls",
-        "isExtraImport": true,
-        "detail": "pysd.py_backend.statefuls",
-        "documentation": {}
-    },
-    {
-        "label": "Smooth",
-        "importPath": "pysd.py_backend.statefuls",
-        "description": "pysd.py_backend.statefuls",
-        "isExtraImport": true,
-        "detail": "pysd.py_backend.statefuls",
-        "documentation": {}
-    },
-    {
         "label": "Initial",
         "importPath": "pysd.py_backend.statefuls",
         "description": "pysd.py_backend.statefuls",
@@ -835,14 +835,6 @@
         "description": "pysd.py_backend.statefuls",
         "isExtraImport": true,
         "detail": "pysd.py_backend.statefuls",
-        "documentation": {}
-    },
-    {
-        "label": "functionspace",
-        "importPath": "pysd.builders.python.python_expressions_builder",
-        "description": "pysd.builders.python.python_expressions_builder",
-        "isExtraImport": true,
-        "detail": "pysd.builders.python.python_expressions_builder",
         "documentation": {}
     },
     {
@@ -852,6 +844,14 @@
         "importPath": "matplotlib.pyplot",
         "description": "matplotlib.pyplot",
         "detail": "matplotlib.pyplot",
+        "documentation": {}
+    },
+    {
+        "label": "functionspace",
+        "importPath": "pysd.builders.python.python_expressions_builder",
+        "description": "pysd.builders.python.python_expressions_builder",
+        "isExtraImport": true,
+        "detail": "pysd.builders.python.python_expressions_builder",
         "documentation": {}
     },
     {
@@ -1667,6 +1667,33 @@
         "description": "2025.2025.12.model_13",
         "peekOfCode": "_integ_undeveloped_resources = Integ(\n    lambda: investing() - maturing_inv(),\n    lambda: init_ur(),\n    \"_integ_undeveloped_resources\",\n)\n@component.add(\n    name=\"exogen inflow\",\n    units=\"Dollar/Month\",\n    limits=(0.0, 20.0, 0.1),\n    comp_type=\"Constant\",",
         "detail": "2025.2025.12.model_13",
+        "documentation": {}
+    },
+    {
+        "label": "setup_pysd_functionspace",
+        "kind": 2,
+        "importPath": "2025.2025.12.test_model_fixed",
+        "description": "2025.2025.12.test_model_fixed",
+        "peekOfCode": "def setup_pysd_functionspace():\n    \"\"\"Set up PySD functionspace with random_poisson function\"\"\"\n    print(\"🔧 SETTING UP PYSD FUNCTIONSPACE WITH RANDOM POISSON:\")\n    print(\"=\" * 70)\n    # Import the functionspace\n    from pysd.builders.python.python_expressions_builder import functionspace\n    # Define the random_poisson function following PySD's pattern\n    random_poisson_expression = \"\"\"\n    np.clip(\n        np.random.poisson(lam=%(2)s, size=%(size)s) * %(4)s + %(3)s,",
+        "detail": "2025.2025.12.test_model_fixed",
+        "documentation": {}
+    },
+    {
+        "label": "test_model_with_pysd_poisson",
+        "kind": 2,
+        "importPath": "2025.2025.12.test_model_fixed",
+        "description": "2025.2025.12.test_model_fixed",
+        "peekOfCode": "def test_model_with_pysd_poisson():\n    \"\"\"Test model with the PySD functionspace random_poisson\"\"\"\n    print(f\"\\n🧪 TESTING MODEL WITH PYSD FUNCTIONSPACE:\")\n    print(\"=\" * 60)\n    try:\n        # Load the model\n        print(\"Loading model...\")\n        model = pysd.load(\"model_13.py\")\n        print(\"✅ Model loaded successfully\")\n        # Run simulation",
+        "detail": "2025.2025.12.test_model_fixed",
+        "documentation": {}
+    },
+    {
+        "label": "visualize_results",
+        "kind": 2,
+        "importPath": "2025.2025.12.test_model_fixed",
+        "description": "2025.2025.12.test_model_fixed",
+        "peekOfCode": "def visualize_results(success, accidents_data, result):\n    \"\"\"Create visualization if test was successful\"\"\"\n    if not success:\n        print(\"❌ Cannot create visualization - model test failed\")\n        return\n    # Create comprehensive visualization\n    plt.figure(figsize=(15, 10))\n    # Plot 1: Accidents over time\n    plt.subplot(2, 3, 1)\n    accidents_data.plot(title='Accidents Over Time (PySD Functionspace)', color='blue')",
+        "detail": "2025.2025.12.test_model_fixed",
         "documentation": {}
     },
     {
